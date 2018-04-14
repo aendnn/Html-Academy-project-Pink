@@ -6,57 +6,59 @@
   </head>
   <body class="form-page">
     <header class="page-header">
-      <a class="page-header__logo logo-link" href="index.html">
-        <img class="page-header__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть/закрыть меню</button>
+        <a class="main-nav__logo logo-link" href="index.html">
+          <img class="main-nav__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-nav">
-          <li class-"site-nav__item">
+          <li class="site-nav__item">
             <a class="site-nav__link" href="index.html">Главная</a>
           </li>
-          <li class-"site-nav__item">
-            <a class="site-nav__link">Фотографии</a>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="photo.html">Фотографии</a>
           </li>
-          <li class-"site-nav__item">
-            <a class="site-nav__link" href="form.html">Конкурс</a>
+          <li class="site-nav__item site-nav__item--current">
+            <a class="site-nav__link">Конкурс</a>
           </li>
-          <li class-"site-nav__item">
-            <a class="site-nav__link" href="#">HTML Academy</a>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
       </nav>
-      <div class="competition-intro">
+      <div class="page-header__competition-intro competition-intro">
         <h2 class="competition-intro__title">
           Конкурс на самое безбашенное путешествие с Пинк
         </h2>
       </div>
     </header>
     <main class="page-main">
+      <h1 class="visually-hidden">Мобильное приложение «Pink» для раскрашивания серых будней в розовый цвет</h1>
       <section class="comtetition">
         <header class="competition__header">
-          <p class="copetition__desc">
+          <h2 class="visually-hidden">Конкурс на 1000 миль</h2>
+          <p class="competition__desc">
             Поделитесь своей историей
             и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           </p>
         </header>
         <form class="competition__form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="competition__group">
-            <legend class="competition__group-title">ФИО</legend>
+            <legend class="visually-hidden">ФИО</legend>
             <p class="competition__item">
               <input class="competition__input competition__input--text-field" type="text"
-               id="surname" name="surname" placeholder="Укажите фамилию *">
+               id="surname" name="surname" placeholder="Укажите фамилию *" required>
                <label class="competition__input-mark" for="surname">Фамилия:</label>
             </p>
             <p class="competition__item">
               <input class="competition__input competition__input--text-field" type="text"
-               id="name" name="name" placeholder="Введите ваше имя *">
+               id="name" name="name" placeholder="Введите ваше имя *" required>
                <label class="competition__input-mark" for="name">Имя:</label>
             </p>
             <p class="competition__item">
               <input class="competition__input competition__input--text-field" type="text"
                id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
-               <label class="competition__input-mark" for="partonymic">Отчество:</label>
+               <label class="competition__input-mark" for="patronymic">Отчество:</label>
             </p>
         </fieldset>
         <fieldset class="competition__group">
@@ -65,12 +67,12 @@
           </legend>
           <p class="competition__item">
             <input class="competition__input competition__input--checkbox" type="checkbox"
-             id="selfie" name="selfie">
+             id="selfie" name="selfie" checked>
              <label class="competition__input-mark" for="selfie">Сделал селфи с акулой</label>
           </p>
           <p class="competition__item">
             <input class="competition__input competition__input--checkbox" type="checkbox"
-             id="beach" name="beach">
+             id="beach" name="beach" checked>
              <label class="competition__input-mark" for="beach">Обгорел на пляже</label>
           </p>
           <p class="competition__item">
@@ -85,7 +87,7 @@
           </p>
           <p class="competition__item">
             <input class="competition__input competition__input--checkbox" type="checkbox"
-             id="tower" name="tower">
+             id="tower" name="tower" checked>
              <label class="competition__input-mark" for="tower">Удержал башню</label>
           </p>
           <p class="competition__item">
@@ -95,7 +97,7 @@
           </p>
         </fieldset>
         <fieldset class="competition__group">
-          <legend class="competition__group-title visually-hidden">Контакты</legend>
+          <legend class="visually-hidden">Контакты</legend>
             <p class="competition__item">
               <input class="competition__input competition__input--text-field" type="number"
                id="phone" name="phone" placeholder="Номер, пожалуйста">
@@ -103,7 +105,7 @@
             </p>
             <p class="competition__item">
               <input class="competition__input competition__input--text-field" type="email"
-               id="email" name="email" placeholder="Введите почту *">
+               id="email" name="email" placeholder="Введите почту *" required>
                <label class="competition__input-mark" for="phone">Адрес почты</label>
             </p>
         </fieldset>
@@ -113,7 +115,7 @@
           </legend>
           <p class="competition__item">
             <input class="competition__input competition__input--radio" type="radio"
-             id="ios" name="ios">
+             id="ios" name="ios" checked>
              <label class="competition__input-mark" for="ios">Pink для iOS</label>
           </p>
           <p class="competition__item">
@@ -127,8 +129,10 @@
              <label class="competition__input-mark" for="windows">Windows Phone</label>
           </p>
         </fieldset>
+        <fieldset class="competition__group">
+          <legend class="competition__group-title">Опишите свои эмоции</legend>
           <p class="competition__item">
-            <label class="competition__input-mark" for="emotions">Опишите свои эмоции</label>
+            <label class="visually-hidden" for="emotions">Опишите свои эмоции</label>
             <textarea class="competition__textarea" id="emotions" name="emotions">
               Можно прям в красках, не стесняясь в выражениях
             </textarea>
@@ -138,6 +142,7 @@
             <span class="competition__star competition__star--pink">*</span>
              — обязательные поля
            </p>
+         </fieldset>
         </form>
       </section>
     </main>
@@ -147,15 +152,16 @@
         <img class="main-footer__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
       </a>
       <section class="main-footer__social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="main-footer__social-list social-list">
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--icon social-list__link--vk" href="vk.com">Vk</a>
+            <a class="social-list__link social-list__link--vk" href="vk.com">Vk</a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--icon social-list__link--fb" href="facebook.com">Facebook</a>
+            <a class="social-list__link social-list__link--fb" href="facebook.com">Facebook</a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--icon social-list__link--ytb" href="youtube.com">Youtube</a>
+            <a class="social-list__link social-list__link--ytb" href="youtube.com">Youtube</a>
           </li>
         </ul>
       </section>

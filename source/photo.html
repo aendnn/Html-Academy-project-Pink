@@ -6,27 +6,27 @@
   </head>
   <body class="photo-page">
     <header class="page-header">
-      <a class="page-header__logo logo-link" href="index.html">
-        <img class="page-header__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть/закрыть меню</button>
+        <a class="main-nav__logo logo-link" href="index.html">
+          <img class="main-nav__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-nav">
-          <li class-"site-nav__item">
+          <li class="site-nav__item">
             <a class="site-nav__link" href="index.html">Главная</a>
           </li>
-          <li class-"site-nav__item">
+          <li class="site-nav__item site-nav__item--current">
             <a class="site-nav__link">Фотографии</a>
           </li>
-          <li class-"site-nav__item">
+          <li class="site-nav__item">
             <a class="site-nav__link" href="form.html">Конкурс</a>
           </li>
-          <li class-"site-nav__item">
-            <a class="site-nav__link" href="#">HTML Academy</a>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
       </nav>
-      <div class="gallery-intro">
+      <div class="page-header__gallery-intro gallery-intro">
         <h2 class="gallery-intro__title">Фотографии пользователей</h2>
       </div>
     </header>
@@ -43,7 +43,8 @@
             <section class="photos-list__publication publication publication--pub-day">
               <h3 class="visually-hidden">Публикация пользователя</h3>
               <a class="publication__photo-full" href="full-size.html">
-              <img class="publication__image" src="#" width="280" height="180" alt="Вид с моста для банджи-джампинга">
+                <img class="publication__image" src="#" width="280" height="180" alt="Вид с моста для банджи-джампинга">
+              </a>
               <span class="publication__author">Анна</span>
               <span class="publication__time">(5 минут назад)</span>
               <p class="photos-list__pub-text">
@@ -122,7 +123,7 @@
                 <img class="publication__image" src="#" width="320" height="137" alt="Вид с окна самолета">
               </a>
               <span class="publication__author">Надежда</span>
-              <span class="publication__time">(45 чаосв назад)</span>
+              <span class="publication__time">(45 часов назад)</span>
               <p class="photos-list__pub-text">Всем GM и взаимные лайки!</p>
               <p class="publication__likes publication__likes--icon">Нравится: 2560</p>
             </section>
@@ -143,9 +144,11 @@
         </div>
         <div class="photo-editor__range range">
           <!-- тут будет ползунок -->
-        </div> <!-- нужна ли тут форма? -->
-        <button class="photo-editor__btn photo-editor__btn--post btn" type="submit">Запостить</button>
-        <button class="photo-editor__btn photo-editor__btn--cancel btn" type="reset">Отмена</button>
+        </div>
+        <form class="photo-editor__form">
+          <button class="photo-editor__btn photo-editor__btn--post btn" type="submit">Запостить</button>
+          <button class="photo-editor__btn photo-editor__btn--cancel btn" type="reset">Отмена</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
@@ -154,15 +157,16 @@
         <img class="main-footer__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
       </a>
       <section class="main-footer__social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="main-footer__social-list social-list">
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--icon social-list__link--vk" href="vk.com">Vk</a>
+            <a class="social-list__link social-list__link--vk" href="vk.com">Vk</a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--icon social-list__link--fb" href="facebook.com">Facebook</a>
+            <a class="social-list__link social-list__link--fb" href="facebook.com">Facebook</a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--icon social-list__link--ytb" href="youtube.com">Youtube</a>
+            <a class="social-list__link social-list__link--ytb" href="youtube.com">Youtube</a>
           </li>
         </ul>
       </section>
