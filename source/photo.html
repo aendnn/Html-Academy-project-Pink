@@ -6,7 +6,7 @@
   </head>
   <body class="photo-page">
     <header class="page-header">
-      <a class="page-header__logo logo-link">
+      <a class="page-header__logo logo-link" href="index.html">
         <img class="page-header__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
       </a>
       <nav class="main-nav">
@@ -26,21 +26,23 @@
           </li>
         </ul>
       </nav>
+      <div class="gallery-intro">
+        <h2 class="gallery-intro__title">Фотографии пользователей</h2>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Мобильное приложение «Pink» для раскрашивания серых будней в розовый цвет</h1>
       <section class="gallery">
-        <header class="gallery__intro">
-          <h2 class="gallery__title">Фотографии пользователей</h2>
-          <p class="gallery__text">
-            Взгляните на фотографии, которые выкладывают пользователи!
-            Видите, как не хватает ваших?
-          </p>
-        </header>
+        <h2 class="visually-hidden">Публикации пользователей</h2>
+        <p class="gallery-intro__text">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </p>
         <ul class="gallery__list photos-list">
           <li class="photos-list__item">
             <section class="photos-list__publication publication publication--pub-day">
               <h3 class="visually-hidden">Публикация пользователя</h3>
+              <a class="publication__photo-full" href="full-size.html">
               <img class="publication__image" src="#" width="280" height="180" alt="Вид с моста для банджи-джампинга">
               <span class="publication__author">Анна</span>
               <span class="publication__time">(5 минут назад)</span>
@@ -54,7 +56,9 @@
           <li class="photos-list__item">
             <section class="photos-list__publication publication--pub-day">
               <h3 class="visually-hidden">Публикация пользователя</h3>
-              <img class="publication__image" src="#" width="280" height="180" alt="Фото машины">
+              <a class="publication__photo-full" href="full-size.html">
+                <img class="publication__image" src="#" width="280" height="180" alt="Фото машины">
+              </a>
               <span class="publication__author">Левон</span>
               <span class="publication__time">(5 часов назад)</span>
               <p class="photos-list__pub-text">
@@ -66,7 +70,9 @@
           <li class="photos-list__item">
             <section class="photos-list__publication publication--pub-day">
               <h3 class="visually-hidden">Публикация пользователя</h3>
-              <img class="publication__image" src="#" width="280" height="180" alt="Барабаны">
+              <a class="publication__photo-full" href="full-size.html">
+                <img class="publication__image" src="#" width="280" height="180" alt="Барабаны">
+              </a>
               <span class="publication__author">Антон</span>
               <span class="publication__time">(12 часов назад)</span>
               <p class="photos-list__pub-text">Соседи будут рады!</p>
@@ -76,7 +82,9 @@
           <li class="photos-list__item">
             <section class="photos-list__publication publication--pub-day">
               <h3 class="visually-hidden">Публикация пользователя</h3>
-              <img class="publication__image" src="#" width="280" height="180" alt="Фото прилегающих зданий и неба">
+              <a class="publication__photo-full" href="full-size.html">
+                <img class="publication__image" src="#" width="280" height="180" alt="Фото прилегающих зданий и неба">
+              </a>
               <span class="publication__author">Борис</span>
               <span class="publication__time">(20 часов назад)</span>
               <p class="photos-list__pub-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -86,7 +94,9 @@
           <li class="photos-list__item">
             <section class="photos-list__publication publication--pub-day">
               <h3 class="visually-hidden">Публикация пользователя</h3>
-              <img class="publication__image" src="#" width="280" height="180" alt="Рынок Кубанская Бахча">
+              <a class="publication__photo-full" href="full-size.html">
+                <img class="publication__image" src="#" width="280" height="180" alt="Рынок Кубанская Бахча">
+              </a>
               <span class="publication__author">Сергей</span>
               <span class="publication__time">(25 часов назад)</span>
               <p class="photos-list__pub-text">Самая кубанская в мире!</p>
@@ -96,7 +106,9 @@
           <li class="photos-list__item">
             <section class="photos-list__publication publication--pub-day">
               <h3 class="visually-hidden">Публикация пользователя</h3>
-              <img class="publication__image" src="#" width="280" height="180" alt="Фото ног на фоне гор">
+              <a class="publication__photo-full" href="full-size.html">
+                <img class="publication__image" src="#" width="280" height="180" alt="Фото ног на фоне гор">
+              </a>
               <span class="publication__author">Максим</span>
               <span class="publication__time">(40 часов назад)</span>
               <p class="photos-list__pub-text">Где снег-то?</p>
@@ -106,7 +118,9 @@
           <li class="photos-list__item">
             <section class="photos-list__publication publication--pub-day">
               <h3 class="visually-hidden">Публикация пользователя</h3>
-              <img class="publication__image" src="#" width="320" height="137" alt="Вид с окна самолета">
+              <a class="publication__photo-full" href="full-size.html">
+                <img class="publication__image" src="#" width="320" height="137" alt="Вид с окна самолета">
+              </a>
               <span class="publication__author">Надежда</span>
               <span class="publication__time">(45 чаосв назад)</span>
               <p class="photos-list__pub-text">Всем GM и взаимные лайки!</p>
@@ -124,12 +138,19 @@
         <div class="photo-editor__range range">
           <!-- тут будет ползунок -->
         </div>
-        <button class="photo-editor__btn phot-editor__btn--post btn" type="button">Запостить</button>
-        <button class="photo-editor__btn phot-editor__btn--cancel btn" type="button">Отмена</button>
+        <div class="photo-editor__range range">
+          <!-- тут будет ползунок -->
+        </div>
+        <div class="photo-editor__range range">
+          <!-- тут будет ползунок -->
+        </div> <!-- нужна ли тут форма? -->
+        <button class="photo-editor__btn photo-editor__btn--post btn" type="submit">Запостить</button>
+        <button class="photo-editor__btn photo-editor__btn--cancel btn" type="reset">Отмена</button>
       </section>
     </main>
     <footer class="main-footer">
-      <a class="main-footer__logo logo-link">
+      <a class="main-footer__logo logo-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">Ссылка ведет на интенсив Html Academy</span>
         <img class="main-footer__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
       </a>
       <section class="main-footer__social">
@@ -147,7 +168,10 @@
       </section>
       <p class="main-footer__copyright copyright">
         Разработано:
-        <img class="copyright__image" src="#" width="27" height="34" alt="Html Academy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Ссылка ведет на интенсив Html Academy</span>
+          <img class="copyright__image" src="#" width="27" height="34" alt="Html Academy">
+        </a>
       </p>
     </footer>
   </body>
