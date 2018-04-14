@@ -10,7 +10,7 @@
         <img class="page-header__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
+        <button class="main-nav__toggle" type="button">Открыть/закрыть меню</button>
         <ul class="main-nav__list site-nav">
           <li class-"site-nav__item">
             <a class="site-nav__link">Главная</a>
@@ -26,20 +26,20 @@
           </li>
         </ul>
       </nav>
-      <section class="promo-app">
-        <p class="promo-app__lead">Взгляните на жизнь иначе!</p>
-        <img class="promo-app__image" src="#" width="111" height="197" alt="Фото нашего приложения на iPhone 5S">
-        <a class="promo-app__link download-link" href="download.html">Скачать приложение</a>
-        <ul class="promo-app__platforms">
-          <li class="promo-app__item promo-app__item--apple"></li>
-          <li class="promo-app__item promo-app__item--android"></li>
-          <li class="promo-app__item promo-app__item--windows"></li>
-        </ul>
-        <p class="promo-app__desc">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </section>
     </header>
+    <section class="promo-app">
+      <p class="promo-app__lead">Взгляните на жизнь иначе!</p>
+      <img class="promo-app__image" src="#" width="111" height="197" alt="Фото нашего приложения на iPhone 5S">
+      <a class="promo-app__link download-link" href="download.html">Скачать приложение</a>
+      <ul class="promo-app__platforms">
+        <li class="promo-app__item promo-app__item--apple"></li>
+        <li class="promo-app__item promo-app__item--android"></li>
+        <li class="promo-app__item promo-app__item--windows"></li>
+      </ul>
+      <p class="promo-app__desc">
+        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
+    </section>
     <main class="page-main">
       <h1 class="visually-hidden">Мобильное приложение «Pink» для раскрашивания серых будней в розовый цвет</h1>
       <section class="features">
@@ -79,45 +79,50 @@
           </section>
         </li>
       </ul>
-      <img class="features__image" src="#" width="157" height="330" alt="Отредактированная фотография на iPhone 5S со смайликами и текстовыми эффектами">
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Отзывы наших пользователей</h2>
         <ul class="reviews__list slider-list">
           <li class="reviews__item reviews-slider__item">
-            <b class="reviews__author reviews__author--block">Николай Петров</b>
-            <blockquote class="reviews__desc">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            <blockquote class="reviews__review">
+              <cite class="reviews__author reviews__author--block">Николай Петров</cite>
+              <p class="reviews__desc">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
             </blockquote>
           </li>
-          <li class="reviews__item slider__item">
-            <b class="reviews__author reviews__author--block">Николай Петров</b>
-            <blockquote class="reviews__desc">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          <li class="reviews__item reviews-slider__item">
+            <blockquote class="reviews__review">
+              <cite class="reviews__author reviews__author--block">Николай Петров</cite>
+              <p class="reviews__desc">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
             </blockquote>
           </li>
-          <li class="reviews__item slider__item">
-            <b class="reviews__author reviews__author--block">Николай Петров</b>
-            <blockquote class="reviews__desc">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          <li class="reviews__item reviews-slider__item">
+            <blockquote class="reviews__review">
+              <cite class="reviews__author reviews__author--block">Николай Петров</cite>
+              <p class="reviews__desc">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
             </blockquote>
           </li>
         </ul>
         <p class="reviews__toggles slider__toggles">
-          <button class="reviews-slider__toggle" type="button"></button>
-          <button class="reviews-slider__toggle" type="button"></button>
-          <button class="reviews-slider__toggle" type="button"></button>
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
         </p>
       </div>
       </section>
       <section class="price">
         <div class="price__wrapper slider">
-        <h2 class="visually-hidden">Стоимость подписки на приложение</h2>
-        <table class="price__list">
+          <h2 class="visually-hidden">Стоимость подписки на приложение</h2>
+          <table class="price__list">
           <thead>
             <tr>
               <th class="price__header">
@@ -137,37 +142,37 @@
           <tbody>
             <tr>
               <td class="price__filter">Розовый фильтр</td>
-              <td class="price__filter-yes">
+              <td class="price__filter-yes--check">
                 <img src="#" width="31" height="21" alt="Фильтр присутствует">
               </td>
-              <td class="price__filter-yes">
+              <td class="price__filter-yes--check">
                 <img src="#" width="31" height="21" alt="Фильтр присутствует">
               </td>
             </tr>
             <tr>
               <td class="price__filter">Смайлики</td>
-              <td class="price__filter-yes">
+              <td class="price__filter-yes--check">
                 <img src="#" width="31" height="21" alt="Фильтр присутствует">
               </td>
-              <td class="price__filter-yes">
+              <td class="price__filter-yes--check">
                 <img src="#" width="31" height="21" alt="Фильтр присутствует">
               </td>
             </tr>
             <tr>
               <td class="price__filter">Комментарии</td>
-              <td class="price__filter-yes">
+              <td class="price__filter-yes--check">
                 <img src="#" width="31" height="21" alt="Фильтр присутствует">
               </td>
-              <td class="price__filter-yes">
+              <td class="price__filter-no--cross">
                 <img src="#" width="31" height="21" alt="Фильтр отсутствует">
               </td>
             </tr>
           </tbody>
         </table>
         <p class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
         </p>
       </div>
       </section>
@@ -194,7 +199,7 @@
           </a>
         </p>
         <p class="main-footer__item">
-          <img class="main-footer__image" src="#" width="320" height="645">
+          <img class="main-footer__image" src="#" width="320" height="645" alt="Санкт-Петербург, ул. Большая Конюшенная, 19/8">
         </p>
       </section>
     </footer>
