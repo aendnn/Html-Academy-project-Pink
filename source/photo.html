@@ -6,10 +6,10 @@
   </head>
   <body class="photo-page">
     <header class="page-header">
+      <a class="page-header__logo logo-link" href="index.html">
+        <img class="page-header__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
+      </a>
       <nav class="main-nav">
-        <a class="main-nav__logo logo-link" href="index.html">
-          <img class="main-nav__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
-        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item">
@@ -27,11 +27,10 @@
         </ul>
       </nav>
       <div class="page-header__gallery-intro gallery-intro">
-        <h2 class="gallery-intro__title">Фотографии пользователей</h2>
+        <h1 class="gallery-intro__title">Фотографии пользователей</h1>
       </div>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Мобильное приложение «Pink» для раскрашивания серых будней в розовый цвет</h1>
       <section class="gallery">
         <h2 class="visually-hidden">Публикации пользователей</h2>
         <p class="gallery-intro__text">
@@ -46,12 +45,17 @@
                 <img class="publication__image" src="#" width="280" height="180" alt="Вид с моста для банджи-джампинга">
               </a>
               <span class="publication__author">Анна</span>
-              <span class="publication__time">(5 минут назад)</span>
+              <span class="publication__time">
+                (<span class="publication__time-signal">5 минут</span> назад)
+              </span>
               <p class="photos-list__pub-text">
                 Прыгать или нет? Напишите в коментарии свой совет
                 и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
-              <p class="publication__likes publication__likes--icon">Нравится: 215</p>
+              <button class="publication__likes publication__likes--icon">
+                Нравится:
+                <span class="publication__likes-counter">215</span>
+              </button>
             </section>
           </li>
           <li class="photos-list__item">
@@ -61,11 +65,15 @@
                 <img class="publication__image" src="#" width="280" height="180" alt="Фото машины">
               </a>
               <span class="publication__author">Левон</span>
-              <span class="publication__time">(5 часов назад)</span>
+              <span class="publication__time">
+                (<span class="publication__time-signal">5 часов</span> назад)</span>
               <p class="photos-list__pub-text">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
-              <p class="publication__likes publication__likes--icon">Нравится: 356</p>
+              <button class="publication__likes publication__likes--icon">
+                Нравится:
+                <span class="publication__likes-counter">356</span>
+              </button>
             </section>
           </li>
           <li class="photos-list__item">
@@ -75,9 +83,13 @@
                 <img class="publication__image" src="#" width="280" height="180" alt="Барабаны">
               </a>
               <span class="publication__author">Антон</span>
-              <span class="publication__time">(12 часов назад)</span>
+              <span class="publication__time">
+                (<span class="publication__time-signal">12 часов</span> назад)</span>
               <p class="photos-list__pub-text">Соседи будут рады!</p>
-              <p class="publication__likes publication__likes--icon">Нравится: 666</p>
+              <button class="publication__likes publication__likes--icon">
+                Нравится:
+                <span class="publication__likes-counter">666</span>
+              </button>
             </section>
           </li>
           <li class="photos-list__item">
@@ -87,9 +99,13 @@
                 <img class="publication__image" src="#" width="280" height="180" alt="Фото прилегающих зданий и неба">
               </a>
               <span class="publication__author">Борис</span>
-              <span class="publication__time">(20 часов назад)</span>
+              <span class="publication__time">
+                (<span class="publication__time-signal">20 часов</span> назад)</span>
               <p class="photos-list__pub-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <p class="publication__likes publication__likes--icon">Нравится: 215</p>
+              <button class="publication__likes publication__likes--icon">
+                Нравится:
+                <span class="publication__likes-counter">215</span>
+              </button>
             </section>
           </li>
           <li class="photos-list__item">
@@ -99,9 +115,13 @@
                 <img class="publication__image" src="#" width="280" height="180" alt="Рынок Кубанская Бахча">
               </a>
               <span class="publication__author">Сергей</span>
-              <span class="publication__time">(25 часов назад)</span>
+              <span class="publication__time">
+                (<span class="publication__time-signal">25 часов</span> назад)</span>
               <p class="photos-list__pub-text">Самая кубанская в мире!</p>
-              <p class="publication__likes publication__likes--icon">Нравится: 4</p>
+              <button class="publication__likes publication__likes--icon">
+                Нравится:
+                <span class="publication__likes-counter">4</span>
+              </button>
             </section>
           </li>
           <li class="photos-list__item">
@@ -111,9 +131,13 @@
                 <img class="publication__image" src="#" width="280" height="180" alt="Фото ног на фоне гор">
               </a>
               <span class="publication__author">Максим</span>
-              <span class="publication__time">(40 часов назад)</span>
+              <span class="publication__time">
+                (<span class="publication__time-signal">40 часов</span> назад)</span>
               <p class="photos-list__pub-text">Где снег-то?</p>
-              <p class="publication__likes publication__likes--icon">Нравится: 150</p>
+              <button class="publication__likes publication__likes--icon">
+                Нравится:
+                <span class="publication__likes-counter">150</span>
+              </button>
             </section>
           </li>
           <li class="photos-list__item">
@@ -123,16 +147,20 @@
                 <img class="publication__image" src="#" width="320" height="137" alt="Вид с окна самолета">
               </a>
               <span class="publication__author">Надежда</span>
-              <span class="publication__time">(45 часов назад)</span>
+              <span class="publication__time">
+                (<span class="publication__time-signal">45 часов</span> назад)</span>
               <p class="photos-list__pub-text">Всем GM и взаимные лайки!</p>
-              <p class="publication__likes publication__likes--icon">Нравится: 2560</p>
+              <button class="publication__likes publication__likes--icon">
+                Нравится:
+                <span class="publication__likes-counter">2560</span>
+              </button>
             </section>
           </li>
         </ul>
       </section>
       <section class="photo-editor">
-        <h2 class="visually-hidden">Обзор редактора фотографий</h2>
-        <p class="photo-editor__intro-text">
+        <h2 class="visually-hidden">Загрузи и отредактируй фото</h2>
+        <p class="photo-editor__desc">
           Затмите их всех! Выкладывайте все, что накопилось в телефоне!
         </p>
         <img class="photo-editor__image" src="#" width="280" height="374" alt="Фото заснеженной дороги">
@@ -152,8 +180,8 @@
       </section>
     </main>
     <footer class="main-footer">
-      <a class="main-footer__logo logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">Ссылка ведет на интенсив Html Academy</span>
+      <a class="main-footer__logo logo-link" href="index.html">
+        <span class="visually-hidden">Главная</span>
         <img class="main-footer__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
       </a>
       <section class="main-footer__social">

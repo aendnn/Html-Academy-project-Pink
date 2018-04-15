@@ -6,10 +6,10 @@
   </head>
   <body class="form-page">
     <header class="page-header">
+      <a class="page-header__logo logo-link" href="index.html">
+        <img class="page-header__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
+      </a>
       <nav class="main-nav">
-        <a class="main-nav__logo logo-link" href="index.html">
-          <img class="main-nav__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
-        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item">
@@ -27,16 +27,15 @@
         </ul>
       </nav>
       <div class="page-header__competition-intro competition-intro">
-        <h2 class="competition-intro__title">
+        <h1 class="competition-intro__title">
           Конкурс на самое безбашенное путешествие с Пинк
-        </h2>
+        </h1>
       </div>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Мобильное приложение «Pink» для раскрашивания серых будней в розовый цвет</h1>
       <section class="comtetition">
         <header class="competition__header">
-          <h2 class="visually-hidden">Конкурс на 1000 миль</h2>
+          <h2 class="visually-hidden">Анкета для участия</h2>
           <p class="competition__desc">
             Поделитесь своей историей
             и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
@@ -99,7 +98,7 @@
         <fieldset class="competition__group">
           <legend class="visually-hidden">Контакты</legend>
             <p class="competition__item">
-              <input class="competition__input competition__input--text-field" type="number"
+              <input class="competition__input competition__input--text-field" type="tel"
                id="phone" name="phone" placeholder="Номер, пожалуйста">
                <label class="competition__input-mark" for="phone">Номер телефона</label>
             </p>
@@ -130,12 +129,9 @@
           </p>
         </fieldset>
         <fieldset class="competition__group">
-          <legend class="competition__group-title">Опишите свои эмоции</legend>
           <p class="competition__item">
             <label class="visually-hidden" for="emotions">Опишите свои эмоции</label>
-            <textarea class="competition__textarea" id="emotions" name="emotions">
-              Можно прям в красках, не стесняясь в выражениях
-            </textarea>
+            <textarea class="competition__textarea" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" resize="none"></textarea>
           </p>
           <button class="competition__button button-submit" type="submit">Отправить форму</button>
           <p class="competition__require">
@@ -147,8 +143,8 @@
       </section>
     </main>
     <footer class="main-footer">
-      <a class="main-footer__logo logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">Ссылка ведет на интенсив Html Academy</span>
+      <a class="main-footer__logo logo-link" href="index.html">
+        <span class="visually-hidden">Главная</span>
         <img class="main-footer__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
       </a>
       <section class="main-footer__social">

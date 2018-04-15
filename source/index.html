@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="page-header">
+      <a class="page-header__logo logo-link" href="index.html">
+        <img class="page-header__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
+      </a>
       <nav class="main-nav">
-        <a class="main-nav__logo logo-link" href="index.html">
-          <img class="main-nav__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
-        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item">
@@ -120,7 +120,7 @@
           </li>
         </ul>
         <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle slider__toggle--current" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </p>
@@ -132,6 +132,9 @@
         <table class="price__list">
           <thead>
             <tr>
+              <td>
+                <span class="visually-hidden">Фильтры</span>
+              </td>
               <th class="price__header">
                 <p class="price__name">Стандарт</p>
                 <p class="price__cost">3,99 USD</p>
@@ -150,35 +153,44 @@
             <tr>
               <td class="price__filter">Розовый фильтр</td>
               <td class="price__filter-yes--check">
-                <img src="#" width="31" height="21" alt="Фильтр присутствует">
+                <span class="visually-hidden">Розовый фильтр присутствует</span>
               </td>
               <td class="price__filter-yes--check">
-                <img src="#" width="31" height="21" alt="Фильтр присутствует">
+                <span class="visually-hidden">Розовый фильтр присутствует</span>
+              </td>
+              <td class="price__filter-yes--check">
+                <span class="visually-hidden">Розовый фильтр присутствует</span>
               </td>
             </tr>
             <tr>
               <td class="price__filter">Смайлики</td>
               <td class="price__filter-yes--check">
-                <img src="#" width="31" height="21" alt="Фильтр присутствует">
+                <span class="visually-hidden">Розовый фильтр присутствует</span>
               </td>
               <td class="price__filter-yes--check">
-                <img src="#" width="31" height="21" alt="Фильтр присутствует">
+                <span class="visually-hidden">Розовый фильтр присутствует</span>
+              </td>
+              <td class="price__filter-yes--check">
+                <span class="visually-hidden">Розовый фильтр присутствует</span>
               </td>
             </tr>
             <tr>
               <td class="price__filter">Комментарии</td>
               <td class="price__filter-yes--check">
-                <img src="#" width="31" height="21" alt="Фильтр присутствует">
+                <span class="visually-hidden">Розовый фильтр присутствует</span>
               </td>
               <td class="price__filter-no--cross">
-                <img src="#" width="31" height="21" alt="Фильтр отсутствует">
+                <span class="visually-hidden">Розовый фильтр присутствует</span>
+              </td>
+              <td class="price__filter-no--cross">
+                <span class="visually-hidden">Розовый фильтр присутствует</span>
               </td>
             </tr>
           </tbody>
         </table>
         <p class="price__toggles slider__toggles">
           <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle slider__toggle--current" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </p>
       </div>
@@ -186,7 +198,10 @@
     </main>
     <footer class="main-footer">
       <section class="main-footer__contacts contacts">
-        <h2 class="main-footer__title">Остались вопросы?Свяжитесь с нами!</h2>
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <p class="main-footer__title">
+          <b class="main-footer__feedback">Остались вопросы?Свяжитесь с нами!</b>
+        </p>
         <p class="main-footer__item">
           <span class="main-footer__offer main-footer__offer--bold-text">Звоните:</span>
           <a class="main-footer__link main-footer__link--red" href="tel:+7(812)555-66-66">
@@ -209,31 +224,6 @@
           <img class="main-footer__image" src="#" width="320" height="645" alt="Санкт-Петербург, ул. Большая Конюшенная, 19/8">
         </p>
       </section>
-      <a class="main-footer__logo logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">Ссылка ведет на интенсив Html Academy</span>
-        <img class="main-footer__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
-      </a>
-      <section class="main-footer__social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="main-footer__social social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk" href="vk.com">Vk</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--fb" href="facebook.com">Facebook</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--ytb" href="youtube.com">Youtube</a>
-          </li>
-        </ul>
-      </section>
-      <p class="main-footer__copyright copyright">
-        Разработано:
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">Ссылка ведет на интенсив Html Academy</span>
-          <img class="copyright__image" src="#" width="27" height="34" alt="Html Academy">
-        </a>
-      </p>
     </footer>
   </body>
 </html>
