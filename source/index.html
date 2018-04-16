@@ -5,8 +5,227 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="page-header">
+      <a class="page-header__logo logo-link" href="index.html">
+        <img class="page-header__logo-image" src="#" width="75" height="22" alt="Мобильное приложение «Pink»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Меню</span>
+        </button>
+        <ul class="main-nav__list site-nav">
+          <li class="site-nav__item">
+            <a class="site-nav__link">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="promo-app">
+        <h2 class="visually-hidden">Наше приложение</h2>
+        <p class="promo-app__lead">Взгляните на жизнь иначе!</p>
+        <img class="promo-app__image" src="#" width="111" height="197" alt="Фото нашего приложения на iPhone 5S">
+        <a class="promo-app__btn btn" href="https://www.apple.com/ru/itunes">Скачать приложение</a>
+        <ul class="promo-app__platforms">
+          <li class="promo-app__item">
+            <a class="promo-app__link promo-app__link--apple" href="https://www.apple.com/ru/itunes/">Itunes</a>
+          </li>
+          <li class="promo-app__item">
+            <a class="promo-app__link promo-app__link--android" href="https://play.google.com">Google Play</a>
+          </li>
+          <li class="promo-app__item">
+            <a class="promo-app__link promo-app__link--windows" href="https://www.microsoft.com/ru-ru/store">Windows</a>
+          </li>
+        </ul>
+        <p class="promo-app__desc">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </section>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Мобильное приложение «Pink» для раскрашивания серых будней в розовый цвет</h1>
+      <section class="features">
+        <header class="features__header">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <p class="features__intro">
+            <span class="features__title features__title--block">Устали от серости мегаполиса?</span>
+            <span class="features__title">Нам есть, что вам предложить!</span>
+          </p>
+      </header>
+      <ul class="features__list">
+        <li class="features__item">
+          <section class="features__feature">
+            <h3 class="features__feature-title">Поднимает настроение</h3>
+            <img class="features__image" src="#" width="157" height="330" alt="Отредактированная фотография на iPhone 5S со смайликами и текстовыми эффектами">
+            <p class="features__feature-desc">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </section>
+        </li>
+        <li class="features__item">
+          <section class="features__feature">
+            <h3 class="features__feature-title">Меняет мир вокруг</h3>
+            <img class="features__image" src="#" width="157" height="330" alt="Отредактированная фотография на iPhone 5S со смайликами и текстовыми эффектами">
+            <p class="features__feature-desc">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </section>
+        </li>
+        <li class="features__item">
+          <section class="features__feature">
+            <h3 class="features__feature-title">Заводит новых друзей</h3>
+            <img class="features__image" src="#" width="157" height="330" alt="Отредактированная фотография на iPhone 5S со смайликами и текстовыми эффектами">
+            <p class="features__feature-desc">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </section>
+        </li>
+      </ul>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="visually-hidden">Отзывы наших пользователей</h2>
+        <ul class="reviews__list slider-list">
+          <li class="reviews__item reviews-slider__item">
+            <blockquote class="reviews__review">
+              <cite class="reviews__author reviews__author--block">Николай Петров</cite>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+          </li>
+          <li class="reviews__item reviews-slider__item">
+            <blockquote class="reviews__review">
+              <cite class="reviews__author reviews__author--block">Николай Петров</cite>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+          </li>
+          <li class="reviews__item reviews-slider__item">
+            <blockquote class="reviews__review">
+              <cite class="reviews__author reviews__author--block">Николай Петров</cite>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+          </li>
+        </ul>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--current" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+    <section class="price">
+      <div class="price__wrapper slider">
+        <h2 class="visually-hidden">Стоимость подписки на приложение</h2>
+        <table class="price__list">
+          <thead>
+            <tr>
+              <td>
+                <span class="visually-hidden">Фильтры</span>
+              </td>
+              <th class="price__header">
+                <p class="price__name">Стандарт</p>
+                <p class="price__cost">3,99 USD</p>
+              </th>
+              <th class="price__header">
+                <p class="price__name">Стандарт</p>
+                <p class="price__cost">3,99 USD</p>
+              </th>
+              <th class="price__header">
+                <p class="price__name">Стандарт</p>
+                <p class="price__cost">3,99 USD</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="price__filter">Розовый фильтр</td>
+              <td class="price__filter-yes--check">
+                <span class="visually-hidden">Розовый фильтр присутствует</span>
+              </td>
+              <td class="price__filter-yes--check">
+                <span class="visually-hidden">Розовый фильтр присутствует</span>
+              </td>
+              <td class="price__filter-yes--check">
+                <span class="visually-hidden">Розовый фильтр присутствует</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="price__filter">Смайлики</td>
+              <td class="price__filter-yes--check">
+                <span class="visually-hidden">Смайлики присутствуют</span>
+              </td>
+              <td class="price__filter-yes--check">
+                <span class="visually-hidden">Смайлики присутствуют</span>
+              </td>
+              <td class="price__filter-yes--check">
+                <span class="visually-hidden">Смайлики присутствуют</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="price__filter">Комментарии</td>
+              <td class="price__filter-yes--check">
+                <span class="visually-hidden">Комментарии присутствуют</span>
+              </td>
+              <td class="price__filter-no--cross">
+                <span class="visually-hidden">Комментарии присутствуют</span>
+              </td>
+              <td class="price__filter-no--cross">
+                <span class="visually-hidden">Комментарии присутствуют</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="price__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle slider__toggle--current" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section class="main-footer__contacts contacts">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <p class="main-footer__title">
+          <b class="main-footer__feedback">Остались вопросы?Свяжитесь с нами!</b>
+        </p>
+        <p class="main-footer__item">
+          <span class="main-footer__offer main-footer__offer--bold-text">Звоните:</span>
+          <a class="main-footer__link main-footer__link--red" href="tel:+7(812)555-66-66">
+            +7 (812) 555-66-66
+          </a>
+        </p>
+        <p class="main-footer__item">
+          <span class="main-footer__offer main-footer__offer--bold-text">Пишите:</span>
+          <a class="main-footer__link main-footer__link--red" href="mailto:mail@htmlacademy.ru">
+            mail@htmlacademy.ru
+          </a>
+        </p>
+        <p class="main-footer__item">
+          <span class="main-footer__offer main-footer__offer--bold-text">Приезжайте в гости:</span>
+          <a class="main-footer__link main-footer__link-red" href="https://www.google.com/maps">
+            ул. Большая Конюшенная, 19/8
+          </a>
+        </p>
+        <p class="main-footer__item">
+          <img class="main-footer__image" src="#" width="320" height="645" alt="Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+        </p>
+      </section>
+    </footer>
   </body>
 </html>
