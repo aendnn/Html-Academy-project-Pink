@@ -1,0 +1,24 @@
+.reviews {
+  padding-bottom: 45px;
+}
+
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__review {
+  @include text-reset;
+}
+
+.reviews__author {
+  margin-bottom: 20px;
+  @include bold-text;
+  line-height: 30px;
+  font-style: normal;
+}
+
+.reviews__text {
+  @include text-reset;
+  font-size: 14px;
+  line-height: 30px;
+}
