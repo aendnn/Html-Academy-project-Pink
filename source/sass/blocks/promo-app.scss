@@ -4,7 +4,12 @@
 }
 
 .promo-app__btn {
-  margin-bottom: 30px;
+  &--white {
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
 }
 
 .promo-app__platforms {

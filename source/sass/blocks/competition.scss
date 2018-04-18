@@ -16,7 +16,7 @@
 
 .competition__group-title {
   line-height: 18px;
-  color: #d22856;
+  color: $secondary-color;
   text-transform: uppercase;
 }
 
@@ -35,7 +35,7 @@
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
-    color: #283645;
+    color: $primary-color;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
   }
@@ -43,11 +43,11 @@
 
 .competition__input-mark {
   line-height: 30px;
-  color: #d22856;
+  color: $secondary-color;
   text-transform: uppercase;
   &--dark {
     font-size: 18px;
-    color: #283645;
+    color: $primary-color;
     text-transform: none;
   }
 }
@@ -58,7 +58,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  color: #283645;
+  color: $primary-color;
   border: 2px solid #e5e5e5;
   resize: vertical;
 }
@@ -67,7 +67,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  color: #283645;
+  color: %$primary-color;
 }
 
 .competition__require {
@@ -76,5 +76,5 @@
 }
 
 .competition__star {
-  color: #d22856;
+  color: $secondary-color;
 }

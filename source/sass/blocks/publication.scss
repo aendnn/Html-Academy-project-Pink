@@ -14,6 +14,11 @@
   text-transform: uppercase;
 }
 
+.publication__likes {
+  text-transform: uppercase;
+  color: $secondary-color;
+}
+
 .publication__like {
   position: relative;
   padding-left: 25px;
@@ -29,9 +34,4 @@
     background-image: url("../../img/icon-heart.svg");
     background-repeat: no-repeat;
   }
-}
-
-.publication__likes {
-  text-transform: uppercase;
-  color: #d22856;
 }

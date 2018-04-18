@@ -1,5 +1,6 @@
 .photo-editor {
   padding-bottom: 60px;
+  background-color: #f2f2f2;
 }
 
 .photo-editor__desc {
@@ -7,15 +8,20 @@
   line-height: 30px;
 }
 
+.photo-editor__range {
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+
 .photo-editor__btn {
   font-size: 18px;
   line-height: 18px;
   &--post {
-  color: #d22856;
-  border-color: #d22856;
+  color: $secondary-color;
+  border-color: $secondary-color;
 }
   &--cancel {
-    color: rgba(40, 54, 69, 0.1);
-    border-color: rgba(40, 54, 69, 0.1);
+    color: transparentize($primary-color, 0.9);
+    border-color: transparentize($primary-color, 0.9);
   }
 }

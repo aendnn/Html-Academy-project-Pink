@@ -1,9 +1,6 @@
 .features {
   margin-bottom: 45px;
   padding-top: 65px;
-  background-image: url("../../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-position: 0 20px;
 }
 
 .features__header {
@@ -25,9 +22,21 @@
 
 .features__list {
   @include list-reset;
+  background-color: #f2f2f2;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 20px;
+}
+
+.features__item {
+  margin-bottom: 20px;
 }
 
 .features__feature-title {
   @include text-reset;
   @include bold-text;
+}
+
+.features__feature-desc {
+  @include text-reset;
 }
