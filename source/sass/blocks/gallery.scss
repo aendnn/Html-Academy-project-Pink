@@ -1,0 +1,9 @@
+.gallery {
+  margin-bottom: 45px;
+}
+
+.gallery__text {
+  margin-bottom: 55px;
+  @include text-reset;
+  line-height: 24px;
+}
