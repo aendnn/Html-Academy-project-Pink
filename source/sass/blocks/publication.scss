@@ -1,6 +1,23 @@
 .publication {
+  position: relative;
   margin-bottom: 20px;
   background-color: #f2f2f2;
+  &--pub-day::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    left: 150px;
+    padding: 10px 25px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: $secondary-color;
+  }
+}
+
+.publication__image{
+  display: block;
 }
 
 .publication__author {
@@ -15,6 +32,7 @@
 }
 
 .publication__likes {
+  font-size: 12px;
   text-transform: uppercase;
   color: $secondary-color;
 }

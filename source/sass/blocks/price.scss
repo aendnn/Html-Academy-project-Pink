@@ -21,6 +21,7 @@
   @include text-reset;
   @include bold-text;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .price__cost {
@@ -28,11 +29,13 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .price__filter {
   font-size: 14px;
   line-height: 30px;
+  text-transform: uppercase;
   background-color: #ffffff;
 }
 
