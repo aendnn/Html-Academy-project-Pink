@@ -1,10 +1,11 @@
 .site-nav {
   @include list-reset;
-  .site-nav__link {
-    font-size: 18px;
-    line-height: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
+}
+
+.site-nav__link {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
 }
