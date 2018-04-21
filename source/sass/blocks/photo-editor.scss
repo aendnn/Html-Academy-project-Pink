@@ -1,0 +1,27 @@
+.photo-editor {
+  padding-bottom: 60px;
+  background-color: #f2f2f2;
+}
+
+.photo-editor__desc {
+  @include text-reset;
+  line-height: 30px;
+}
+
+.photo-editor__range {
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+
+.photo-editor__btn {
+  font-size: 18px;
+  line-height: 18px;
+  &--post {
+  color: $secondary-color;
+  border-color: $secondary-color;
+}
+  &--cancel {
+    color: transparentize($primary-color, 0.9);
+    border-color: transparentize($primary-color, 0.9);
+  }
+}

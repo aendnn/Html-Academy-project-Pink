@@ -1,0 +1,23 @@
+.promo-app {
+  padding-top: 28px;
+  padding-bottom: 35px;
+}
+
+.promo-app__btn {
+  &--white {
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+}
+
+.promo-app__platforms {
+  @include list-reset;
+  margin-bottom: 20px;
+}
+
+.promo-app__desc {
+  @include text-reset;
+  font-weight: 300;
+}

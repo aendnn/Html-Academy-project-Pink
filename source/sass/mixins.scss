@@ -1,0 +1,22 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin text-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin bold-text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+@mixin heading {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+}

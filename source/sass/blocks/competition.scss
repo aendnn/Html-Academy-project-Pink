@@ -1,0 +1,80 @@
+.competition__header {
+  padding-bottom: 40px;
+}
+
+.competition__desc {
+  @include text-reset;
+  line-height: 30px;
+}
+
+.competition__group {
+  border: none;
+  &--bg {
+    background-color: #f2f2f2;
+  }
+}
+
+.competition__group-title {
+  line-height: 18px;
+  color: $secondary-color;
+  text-transform: uppercase;
+}
+
+.competition__item {
+  @include text-reset;
+  margin-bottom: 20px;
+}
+
+.competition__item:last-child {
+  margin-bottom: 45px;
+}
+
+.competition__input {
+  &--text-field {
+    padding: 15px 25px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $primary-color;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+  }
+}
+
+.competition__input-mark {
+  line-height: 30px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  &--dark {
+    font-size: 18px;
+    color: $primary-color;
+    text-transform: none;
+  }
+}
+
+.competition__textarea {
+  min-height: 200px;
+  padding: 15px 20px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $primary-color;
+  border: 2px solid #e5e5e5;
+  resize: vertical;
+}
+
+.competition__textarea::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: %$primary-color;
+}
+
+.competition__require {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.competition__star {
+  color: $secondary-color;
+}

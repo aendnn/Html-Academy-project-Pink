@@ -1,0 +1,58 @@
+.price {
+  padding-top: 120px;
+  padding-bottom: 45px;
+  background-color: #f2f2f2;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 20px;
+}
+
+.price__list {
+  margin-bottom: 40px;
+  border-spacing: 2px;
+}
+
+.price__header {
+  color: #ffffff;
+  background-color: $primary-color;
+}
+
+.price__name {
+  @include text-reset;
+  @include bold-text;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price__cost {
+  @include text-reset;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.price__filter {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.price__filter-yes--check {
+    background-color: #ffffff;
+  &::before {
+    content: url(../../img/icon-yes.svg);
+    width: 21px;
+    height: 16px;
+  }
+}
+
+.price__filter-no--cross {
+    background-color: #ffffff;
+  &::before {
+    content: url(../../img/icon-no.svg);
+    width: 26px;
+    height: 26px;
+  }
+}
