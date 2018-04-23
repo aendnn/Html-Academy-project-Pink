@@ -1,11 +1,26 @@
 .photo-editor {
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   background-color: #f2f2f2;
+}
+
+.photo-editor__intro {
+  margin-bottom: 20px;
+  padding-bottom: 45px;
+  background-color: #ffffff;
 }
 
 .photo-editor__desc {
   @include text-reset;
   line-height: 30px;
+  text-align: center;
+}
+
+.photo-editor__image {
+  display: block;
+  width: 280px;
+  height: 374px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .photo-editor__range {
@@ -13,10 +28,16 @@
   padding-bottom: 50px;
 }
 
+.photo-editor__form {
+  display: block;
+}
+
 .photo-editor__btn {
+  width: 100%;
   font-size: 18px;
   line-height: 18px;
   &--post {
+    margin-bottom: 10px;
   color: $secondary-color;
   border-color: $secondary-color;
 }
