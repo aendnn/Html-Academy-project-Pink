@@ -1,4 +1,7 @@
 .promo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-top: 128px;
   padding-bottom: 30px;
 }
@@ -66,4 +69,10 @@
   @include text-reset;
   font-weight: 300;
   text-align: center;
+}
+
+@media (min-width: $tablet) {
+  .promo-app {
+    display: flex;
+  }
 }

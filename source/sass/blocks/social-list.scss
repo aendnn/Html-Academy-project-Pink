@@ -1,3 +1,40 @@
 .social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 175px;
   @include list-reset;
+}
+
+.social-list__item {
+  margin-right: 10px;
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  background-color: #ffffff;
+  border: 3px solid #f2f2f2;
+  border-radius: 50%;
+  &--twi::before {
+    content: "";
+    width: 17px;
+    height: 15px;
+    background-image: url("../../img/icon-twitter.svg");
+  }
+  &--fb::before {
+    content: "";
+    width: 8px;
+    height: 18px;
+    background-image: url("../../img/icon-facebook.svg");
+  }
+  &--ytb::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url("../../img/icon-youtube.svg");
+  }
 }

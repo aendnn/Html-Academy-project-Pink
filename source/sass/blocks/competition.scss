@@ -1,3 +1,4 @@
+
 .competition__header {
   padding-bottom: 40px;
 }
@@ -5,22 +6,34 @@
 .competition__desc {
   @include text-reset;
   line-height: 30px;
+  text-align: center;
+}
+
+.competition__form {
+  display: block;
 }
 
 .competition__group {
+  @include text-reset;
+  margin-bottom: 30px;
   border: none;
   &--bg {
+    padding-top: 30px;
     background-color: #f2f2f2;
   }
 }
 
 .competition__group-title {
+  margin-bottom: 20px;
   line-height: 18px;
+  text-align: center;
   color: $secondary-color;
   text-transform: uppercase;
 }
 
 .competition__item {
+  display: flex;
+  flex-direction: column;
   @include text-reset;
   margin-bottom: 20px;
 }
@@ -42,6 +55,7 @@
 }
 
 .competition__input-mark {
+  order: -1;
   line-height: 30px;
   color: $secondary-color;
   text-transform: uppercase;
@@ -53,6 +67,7 @@
 }
 
 .competition__textarea {
+  width: 280px;
   min-height: 200px;
   padding: 15px 20px;
   font-size: 18px;
@@ -72,6 +87,7 @@
 
 .competition__require {
   line-height: 30px;
+  text-align: center;
   text-transform: uppercase;
 }
 

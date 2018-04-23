@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -37,6 +38,7 @@
     </header>
     <main class="page-main">
       <section class="competition">
+        <div class="container">
         <header class="competition__header">
           <h2 class="visually-hidden">Анкета для участия</h2>
           <p class="competition__desc">
@@ -132,8 +134,9 @@
           </p>
         </fieldset>
         <fieldset class="competition__group">
+          <legend class="competition__group-title">Опишите свои эмоции</legend>
           <p class="competition__item">
-            <label class="visually-hidden" for="emotions">Опишите свои эмоции</label>
+            <label class="visually-hidden" for="emotions">Напишите, что чувствуете</label>
             <textarea class="competition__textarea" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </p>
           <button class="competition__button competition-button" type="submit">Отправить форму</button>
@@ -144,17 +147,19 @@
         </fieldset>
         </form>
       </section>
+    </div>
     </main>
     <footer class="main-footer">
+      <div class="main-footer__container container">
       <a class="main-footer__logo logo-link logo-link--blue" href="index.html">
         <span class="visually-hidden">Главная</span>
-        <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Мобильное приложение «Pink»">
+        <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="129" height="34" alt="Мобильное приложение «Pink»">
       </a>
       <section class="main-footer__social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="main-footer__social-list social-list">
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk" href="vk.com">Vk</a>
+            <a class="social-list__link social-list__link--twi" href="twitter.com">Twitter</a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link social-list__link--fb" href="facebook.com">Facebook</a>
@@ -171,21 +176,26 @@
           <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Html Academy">
         </a>
       </p>
+    </div>
     </footer>
     <section class="modal modal--hidden">
+      <div class="container">
       <h2 class="modal__message">Что-то пошло не так!</h2>
       <p class="modal__instructions">
         Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
       </p>
       <button class="modal__button competition-button" type="button">OK</button>
+    </div>
     </section>
     <section class="modal modal--hidden">
+      <div class="container">
       <h2 class="modal__message">Ваша заявка отправлена</h2>
       <p class="modal__instructions">
         Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
         оповестим вас.
       </p>
       <button class="modal__button competition-button" type="button">ЗАКРЫТЬ ОКНО</button>
+    </div>
     </section>
   </body>
 </html>
