@@ -3,22 +3,32 @@
 }
 
 .reviews__list {
+  display: block;
   @include list-reset;
 }
 
 .reviews__review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @include text-reset;
 }
 
+.reviews__about-author {
+  display: none;
+}
+
 .reviews__author {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   @include bold-text;
   line-height: 30px;
   font-style: normal;
+  text-align: center;
 }
 
 .reviews__text {
   @include text-reset;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
 }

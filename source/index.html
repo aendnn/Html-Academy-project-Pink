@@ -34,7 +34,6 @@
             <h2 class="visually-hidden">Наше приложение</h2>
             <p class="promo-app__lead">Взгляните на жизнь иначе!</p>
             <img class="promo-app__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Фото нашего приложения на iPhone 5S">
-            <div class="container">
             <a class="promo-app__btn promo-app__btn--white btn" href="https://www.apple.com/ru/itunes">Скачать приложение</a>
             <ul class="promo-app__platforms">
               <li class="promo-app__item">
@@ -64,7 +63,7 @@
       <section class="features">
         <header class="features__header">
           <h2 class="visually-hidden">Наши преимущества</h2>
-            <span class="features__title features__title--block">Устали от серости мегаполиса?</span>
+            <span class="features__title features">Устали от серости мегаполиса?</span>
             <span class="features__title">Нам есть, что вам предложить!</span>
       </header>
       <ul class="features__list">
@@ -87,7 +86,7 @@
         <li class="features__item">
           <section class="features__feature">
             <h3 class="features__feature-title">Заводит новых друзей</h3>
-            <p class="features__feature-desc">
+            <p class="features__feature-desc features__feature-desc--margin">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
             <img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Отредактированная фотография на iPhone 5S со смайликами и текстовыми эффектами">
@@ -157,7 +156,7 @@
         <table class="price__list">
           <thead>
             <tr>
-              <td>
+              <td class="price__header price__header--hidden">
                 <span class="visually-hidden">Фильтры</span>
               </td>
               <th class="price__header">
@@ -176,7 +175,7 @@
           </thead>
           <tbody>
             <tr>
-              <td class="price__filter">Розовый фильтр</td>
+              <td class="price__filter" rowspan="1">Розовый фильтр</td>
               <td class="price__filter-yes price__filter-yes--check">
                 <span class="visually-hidden">Розовый фильтр присутствует</span>
               </td>
@@ -188,7 +187,7 @@
               </td>
             </tr>
             <tr>
-              <td class="price__filter">Смайлики</td>
+              <td class="price__filter" colspan="1">Смайлики</td>
               <td class="price__filter-yes price__filter-no--cross">
                 <span class="visually-hidden">Смайлики отсутствуют</span>
               </td>
@@ -200,7 +199,7 @@
               </td>
             </tr>
             <tr>
-              <td class="price__filter">Комментарии</td>
+              <td class="price__filter" colspan="1">Комментарии</td>
               <td class="price__filter-yes price__filter-no--cross">
                 <span class="visually-hidden">Комментарии отсутствуют</span>
               </td>

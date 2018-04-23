@@ -1,9 +1,15 @@
 .features {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 45px;
-  padding-top: 65px;
 }
 
 .features__header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   padding-bottom: 20px;
   background-color: #ffffff;
 }
@@ -12,31 +18,52 @@
   @include text-reset;
 }
 
-.features__title {
-  @include heading;
-&--block {
-  display: block;
-  margin-bottom: 25px;
-  }
-}
-
 .features__list {
+  display: block;
   @include list-reset;
   background-color: #f2f2f2;
-  background-image: url("../../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-position: 0 20px;
 }
 
 .features__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 20px;
+}
+
+.features__item:last-child {
+  margin-bottom: 0;
+}
+
+.features__title {
+  @include heading;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.features__title:last-child {
+  margin-bottom: 0;
 }
 
 .features__feature-title {
   @include text-reset;
   @include bold-text;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .features__feature-desc {
   @include text-reset;
+  text-align: center;
+}
+
+.features__feature-desc--margin {
+  margin-bottom: 40px;
+}
+
+.features__image {
+  display: block;
+  width: 157px;
+  height: 320px;
+  margin: 0 auto;
 }
