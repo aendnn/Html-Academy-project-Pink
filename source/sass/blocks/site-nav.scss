@@ -1,11 +1,19 @@
 .site-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @include list-reset;
 }
 
 .site-nav__link {
+  display: block;
+  padding: 15px 60px;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+  background-color: $primary-color;
+  box-shadow: 0 -1px 0 0 #000000,
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
 }

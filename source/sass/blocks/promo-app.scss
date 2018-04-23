@@ -1,10 +1,9 @@
 .promo-app {
-  width: 320px;
-  margin: 0 auto;
-  padding-top: 28px;
+  padding-top: 128px;
 }
 
 .promo-app__btn {
+  margin-bottom: 20px;
   &--white {
     font-size: 18px;
     line-height: 18px;
@@ -14,18 +13,56 @@
 }
 
 .promo-app__platforms {
+  display: flex;
+  justify-content: center;
   @include list-reset;
   margin-bottom: 20px;
 }
 
+.promo-app__item {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.promo-app__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--apple::before {
+    content: "";
+    width: 46px;
+    height: 56px;
+    background-image: url("../../img/logo-apple.svg");
+  }
+  &--android::before {
+    content: "";
+    width: 42px;
+    height: 47px;
+    background-image: url("../../img/logo-android.svg");
+  }
+  &--windows::before {
+    content: "";
+    width: 44px;
+    height: 42px;
+    background-image: url("../../img/logo-microsoft.svg");
+  }
+}
+
 .promo-app__lead {
+  display: none;
   @include text-reset;
   font-size: 40px;
   line-height: 48px;
   font-weight: 300;
 }
 
+.promo-app__image {
+  display: block;
+  margin-bottom: 30px;
+}
+
 .promo-app__desc {
   @include text-reset;
   font-weight: 300;
+  text-align: center;
 }

@@ -1,16 +1,10 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  width: 320px;
   margin-bottom: 45px;
   color: #ffffff;
-  background-color: #1d2631;
+  background-color: $primary-color;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-}
-
-.page-header__logo {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: $primary-color;
+  background-position: center;
 }
