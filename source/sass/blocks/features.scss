@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 45px;
+  background-color: #f2f2f2;
 }
 
 .features__header {
@@ -65,4 +66,26 @@
   width: 157px;
   height: 320px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .features__container {
+    margin: 0;
+  }
+  .features {
+    position: relative;
+  }
+  .features__img-wrapper {
+    position: absolute;
+    top: 100px;
+    left: 0;
+  }
+  .features__title {
+    margin: 0;
+    text-align: center;
+  }
+  .features__list {
+    width: 320px;
+    margin-left: auto;
+  }
 }

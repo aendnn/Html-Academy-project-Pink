@@ -8,3 +8,11 @@
   line-height: 24px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .gallery__text {
+    width: 440px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+}

@@ -22,3 +22,16 @@
   @include text-reset;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .main-footer__info {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

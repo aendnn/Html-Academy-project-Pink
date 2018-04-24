@@ -71,8 +71,20 @@
   text-align: center;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet-width) {
   .promo-app {
-    display: flex;
+    flex-direction: row;
+  }
+  .promo-app__lead {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .promo-app__wrapper-img {
+    order: 1;
+  }
+  .promo-app__wrapper-text {
+    width: 300px;
   }
 }

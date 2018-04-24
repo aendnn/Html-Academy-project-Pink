@@ -8,7 +8,6 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
       <a class="page-header__logo logo-link">
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
       </a>
@@ -37,7 +36,8 @@
               <img class="promo-app__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Фото нашего приложения на iPhone 5S">
             </div>
             <div class="promo-app__wrapper-text">
-              <p class="promo-app__lead">Взгляните на жизнь иначе!</p>
+              <div class="container">
+              <p class="promo-app__lead">Взгляните<br> на жизнь иначе!</p>
               <a class="promo-app__btn promo-app__btn--white btn" href="https://www.apple.com/ru/itunes">Скачать приложение</a>
               <ul class="promo-app__platforms">
                 <li class="promo-app__item">
@@ -60,18 +60,18 @@
                 Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
               </p>
             </div>
+          </div>
         </section>
-      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Мобильное приложение «Pink» для раскрашивания серых будней в розовый цвет</h1>
       <section class="features">
-        <div class="container">
         <header class="features__header">
           <h2 class="visually-hidden">Наши преимущества</h2>
-            <span class="features__title features">Устали от серости мегаполиса?</span>
+            <span class="features__title">Устали от серости мегаполиса?</span>
             <span class="features__title">Нам есть, что вам предложить!</span>
       </header>
+      <div class="features__container container">
       <ul class="features__list">
         <li class="features__item">
           <section class="features__feature">
@@ -95,19 +95,25 @@
             <p class="features__feature-desc features__feature-desc--margin">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
-            <img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Отредактированная фотография на iPhone 5S со смайликами и текстовыми эффектами">
+            <div class="features__img-wrapper">
+              <img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Отредактированная фотография на iPhone 5S со смайликами и текстовыми эффектами">
+            </div>
           </section>
         </li>
       </ul>
     </div>
     </section>
     <section class="exploration">
-      <h2 class="exploration__heading">Эффект на 24 часа!</h2>
-      <p class="exploration__desc">
-        Британские ученые провели исследования и доказали,
-        что положительный эффект от использования приложения длится целые сутки!
-      </p>
-      <a class="exploration__link" href="more-info.html">Узнать больше об исследовании</a>
+      <div class="exploration__container container">
+        <div class="exploration__wrapper">
+        <h2 class="exploration__heading">Эффект<br> на 24 часа!</h2>
+        <p class="exploration__desc">
+          Британские ученые провели исследования и доказали,
+          что положительный эффект от использования приложения длится целые сутки!
+        </p>
+        <a class="exploration__link" href="more-info.html">Узнать больше об исследовании</a>
+      </div>
+    </div>
     </section>
     <section class="reviews">
       <div class="container">
@@ -117,8 +123,8 @@
           <li class="reviews__item reviews-slider__item">
             <blockquote class="reviews__review">
               <cite class="reviews__author reviews__author--block">
-                <span class="reviews__about-author">25 лет, водитель трамвая</span>
                 Николай Петров
+                <span class="reviews__about-author">25 лет, водитель трамвая</span>
               </cite>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
@@ -129,8 +135,8 @@
           <li class="reviews__item reviews-slider__item">
             <blockquote class="reviews__review">
               <cite class="reviews__author reviews__author--block">
-                <span class="reviews__about-author">30 лет, программист</span>
                 Иван Иванов
+                <span class="reviews__about-author">30 лет, программист</span>
               </cite>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
@@ -141,8 +147,8 @@
           <li class="reviews__item reviews-slider__item">
             <blockquote class="reviews__review">
               <cite class="reviews__author reviews__author--block">
-                <span class="reviews__about-author">26 лет, хореограф</span>
                 Сергей Васильев
+                <span class="reviews__about-author">26 лет, хореограф</span>
               </cite>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
@@ -250,7 +256,7 @@
     </main>
     <footer class="main-footer">
       <section class="main-footer__contacts contacts">
-        <div class="container">
+        <div class="main-footer__container container">
         <h2 class="visually-hidden">Обратная связь</h2>
         <p class="contacts__title">
           <b class="contacts__feedback contacts__feedback--block">Остались вопросы?</b>
@@ -268,17 +274,44 @@
             mail@htmlacademy.ru
           </a>
         </p>
-        <p class="contacts__item">
+        <p class="contacts__item contacts__item--center">
           <span class="contacts__offer">Приезжайте в гости:</span>
           <a class="contacts__link contacts__link-red" href="https://www.google.com/maps">
             ул. Большая Конюшенная, 19/8
           </a>
         </p>
-      </div>
         <p class="contacts__item">
           <img class="contacts__image" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Санкт-Петербург, ул. Большая Конюшенная, 19/8">
         </p>
       </section>
-    </footer>
+      <section class="main-footer__info">
+      <a class="main-footer__logo logo-link logo-link--blue" href="index.html">
+        <span class="visually-hidden">Главная</span>
+        <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="129" height="34" alt="Мобильное приложение «Pink»">
+      </a>
+      <section class="main-footer__social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="main-footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twi" href="twitter.com">Twitter</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--fb" href="facebook.com">Facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--ytb" href="youtube.com">Youtube</a>
+          </li>
+        </ul>
+      </section>
+      <p class="main-footer__copyright copyright">
+        Разработано:
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Ссылка ведет на интенсив Html Academy</span>
+          <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Html Academy">
+        </a>
+      </p>
+  </section>
+  </div>
+</footer>
   </body>
 </html>

@@ -58,3 +58,23 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .publication {
+    width: 300px;
+    &--pub-day {
+      width: 620px;
+    }
+  }
+  .publication__info-wrapper {
+    width: 300px;
+    &--width {
+      width: 620px;
+    }
+  }
+  .publication__like--icon {
+    &::before {
+      left: 200px;
+    }
+  }
+}

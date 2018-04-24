@@ -1,7 +1,7 @@
 .competition-button {
   display: block;
   width: 100%;
-  padding: 18px 45px;
+  padding: 15px 45px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -11,4 +11,9 @@
   border: none;
   border-radius: 3px;
   cursor: pointer;
+}
+@media (min-width: $tablet-width) {
+  .competition-button {
+    width: 300px;
+  }
 }

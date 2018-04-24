@@ -16,6 +16,9 @@
 
 .reviews__about-author {
   display: none;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
 }
 
 .reviews__author {
@@ -31,4 +34,18 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__author {
+    margin-bottom: 10px;
+  }
+  .reviews__about-author {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .reviews__text {
+    order: -1;
+    margin-bottom: 30px;
+  }
 }

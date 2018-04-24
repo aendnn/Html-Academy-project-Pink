@@ -46,3 +46,16 @@
     border-color: transparentize($primary-color, 0.9);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .photo-editor__container {
+    display: flex;
+  }
+  .photo-editor__img-wrap,
+  .photo-editor__wrapper {
+    width: 300px;
+  }
+  .photo-editor__img-wrap {
+    margin-right: 20px;
+  }
+}

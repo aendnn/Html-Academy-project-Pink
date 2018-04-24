@@ -1,5 +1,6 @@
 .photos-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   @include list-reset;
 }
@@ -9,5 +10,27 @@
   margin: 0 auto;
   &--full {
     width: 100%;
+  }
+}
+
+.photos-list__pub-text {
+  @include text-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .photos-list {
+    width: 620px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .photos-list__item {
+    width: 300px;
+  }
+  .photos-list__item:first-child {
+    width: 620px;
+    margin: 0 auto;
+  }
+  .photos-list__pub-text--width {
+    width: 620px;
   }
 }

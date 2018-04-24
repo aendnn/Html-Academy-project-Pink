@@ -42,3 +42,25 @@
     color: transparentize($primary-color, 0.7);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__item {
+    margin-right: 90px;
+    &--center {
+      margin: 0 auto;
+    }
+  }
+  .contacts__title {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .contacts__feedback {
+    font-size: 40px;
+    line-height: 48px;
+    color: $primary-color;
+  }
+  .contacts__item {
+    width: 220px;
+  }
+
+}

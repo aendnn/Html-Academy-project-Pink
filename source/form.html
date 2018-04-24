@@ -38,12 +38,13 @@
     </header>
     <main class="page-main">
       <section class="competition">
-        <div class="container">
+        <div class="competition__container container">
         <header class="competition__header">
           <h2 class="visually-hidden">Анкета для участия</h2>
           <p class="competition__desc">
             Поделитесь своей историей
             и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span class="competition__instruction">Пожалуйста, заполните форму ниже:</span>
           </p>
         </header>
         <form class="competition__form" action="https://echo.htmlacademy.ru" method="get">
@@ -100,14 +101,14 @@
             <label class="competition__input-mark competition__input-mark--dark" for="hotel">Разгромил отель</label>
           </p>
         </fieldset>
-        <fieldset class="competition__group">
-          <legend class="visually-hidden">Контакты</legend>
-            <p class="competition__item">
+        <fieldset class="competition__group competition__group--bg">
+          <legend class="competition__group-title">Контактная информация</legend>
+            <p class="competition__item competition__item--center">
               <input class="competition__input competition__input--text-field" type="tel"
               id="phone" name="phone" placeholder="Номер, пожалуйста">
               <label class="competition__input-mark" for="phone">Номер телефона</label>
             </p>
-            <p class="competition__item">
+            <p class="competition__item competition__item--center">
               <input class="competition__input competition__input--text-field" type="email"
               id="email" name="email" placeholder="Введите почту *" required>
               <label class="competition__input-mark" for="phone">Адрес почты</label>
@@ -133,18 +134,18 @@
             <label class="competition__input-mark competition__input-mark--dark" for="windows">Windows Phone</label>
           </p>
         </fieldset>
-        <fieldset class="competition__group">
+        <fieldset class="competition__group competition__group--bg">
           <legend class="competition__group-title">Опишите свои эмоции</legend>
           <p class="competition__item">
             <label class="visually-hidden" for="emotions">Напишите, что чувствуете</label>
             <textarea class="competition__textarea" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </p>
+          </fieldset>
           <button class="competition__button competition-button" type="submit">Отправить форму</button>
           <p class="competition__require">
             <span class="competition__star competition__star--pink">*</span>
             — обязательные поля
           </p>
-        </fieldset>
         </form>
       </section>
     </div>

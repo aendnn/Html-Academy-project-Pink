@@ -1,3 +1,52 @@
 .exploration {
+  position: relative;
   display: none;
+  margin-bottom: 45px;
+  padding-bottom: 25px;
+  &::before {
+    content: "24";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 253px;
+    height: 253px;
+    font-size: 96px;
+    line-height: 149px;
+    font-weight: 700;
+    text-align: center;
+    color: $secondary-color;
+    background-image: url("../../img/icon-editor-diagram-fill.svg");
+  }
+}
+
+.exploration__heading {
+  @include text-reset;
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.exploration__desc {
+  @include text-reset;
+  margin-bottom: 10px;
+}
+
+.exploration__link {
+  text-decoration: underline;
+  color: $secondary-color;
+}
+
+@media (min-width: $tablet-width) {
+  .exploration {
+    display: block;
+  }
+  .exploration__container {
+    display: flex;
+  }
+  .exploration__wrapper {
+    width: 310px;
+    margin-left: auto;
+  }
 }
