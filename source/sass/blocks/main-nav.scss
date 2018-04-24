@@ -21,3 +21,13 @@
     background-image: url("../../img/icon-menu-burger.svg");
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 625px;
+    margin-left: auto;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+}

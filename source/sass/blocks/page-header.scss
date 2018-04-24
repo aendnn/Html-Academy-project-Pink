@@ -7,3 +7,14 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    display: flex;
+    background-color: transparentize(#151c24, 0.7);
+    justify-content: space-between;
+  }
+  .page-header__logo {
+    width: 160px;
+  }
+}
