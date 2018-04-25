@@ -1,0 +1,24 @@
+
+
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  @include text-reset;
+  margin: 0 auto;
+}
+
+.slider__toggle {
+  margin-right: 20px;
+  font-size: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  border: none;
+}
+
+.slider__toggle:last-child {
+  margin-right: 0;
+}

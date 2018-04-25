@@ -1,16 +1,13 @@
 .features {
-  display: flex;
-  flex-direction: column;
+  display: block;
   margin-bottom: 45px;
   background-color: #f2f2f2;
 }
 
 .features__header {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   padding-bottom: 20px;
   background-color: #ffffff;
 }

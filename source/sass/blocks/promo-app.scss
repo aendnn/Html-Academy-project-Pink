@@ -1,9 +1,10 @@
 .promo-app {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding-top: 128px;
   padding-bottom: 30px;
+}
+
+.promo-app__wrapper-text {
+  display: block;
 }
 
 .promo-app__btn {

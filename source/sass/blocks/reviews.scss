@@ -5,6 +5,7 @@
 .reviews__list {
   display: block;
   @include list-reset;
+  margin-bottom: 30px;
 }
 
 .reviews__review {
