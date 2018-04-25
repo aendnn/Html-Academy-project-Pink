@@ -40,7 +40,6 @@
     </header>
     <main class="page-main">
       <section class="competition">
-        <div class="competition__container container">
           <header class="competition__header">
             <h2 class="visually-hidden">Анкета для участия</h2>
             <p class="competition__desc">
@@ -52,6 +51,7 @@
           <form class="competition__form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="competition__group">
               <legend class="visually-hidden">ФИО</legend>
+              <div class="competition__container container">
               <p class="competition__item">
                 <input class="competition__input competition__input--text-field" type="text"
                 id="surname" name="surname" placeholder="Укажите фамилию *" required>
@@ -67,11 +67,13 @@
                 id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
                 <label class="competition__input-mark" for="patronymic">Отчество:</label>
               </p>
+            </div>
           </fieldset>
           <fieldset class="competition__group competition__group--bg">
             <legend class="competition__group-title">
               Ваши безбашенные достижения в путешествии
             </legend>
+            <div class="competition__container container">
             <p class="competition__item">
               <input class="competition__input competition__input--checkbox" type="checkbox"
               id="selfie" name="selfie" checked>
@@ -102,9 +104,11 @@
               id="hotel" name="hotel">
               <label class="competition__input-mark competition__input-mark--dark" for="hotel">Разгромил отель</label>
             </p>
+          </div>
           </fieldset>
           <fieldset class="competition__group competition__group--bg">
             <legend class="competition__group-title">Контактная информация</legend>
+            <div class="competition__container container">
               <p class="competition__item competition__item--center">
                 <input class="competition__input competition__input--text-field" type="tel"
                 id="phone" name="phone" placeholder="Номер, пожалуйста">
@@ -115,11 +119,13 @@
                 id="email" name="email" placeholder="Введите почту *" required>
                 <label class="competition__input-mark" for="phone">Адрес почты</label>
               </p>
+            </div>
           </fieldset>
           <fieldset class="competition__group competition__group--bg">
             <legend class="competition__group-title">
               С каким приложением путешествовали?
             </legend>
+            <div class="competition__container container">
             <p class="competition__item">
               <input class="competition__input competition__input--radio" type="radio"
               id="ios" name="platform" checked>
@@ -135,21 +141,25 @@
               id="windows" name="platform">
               <label class="competition__input-mark competition__input-mark--dark" for="windows">Windows Phone</label>
             </p>
+          </div>
           </fieldset>
           <fieldset class="competition__group competition__group">
             <legend class="competition__group-title">Опишите свои эмоции</legend>
+            <div class="competition__container container">
             <p class="competition__item">
               <label class="visually-hidden" for="emotions">Напишите, что чувствуете</label>
               <textarea class="competition__textarea" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
+            </div>
             </fieldset>
+            <div class="competition__container container">
             <button class="competition__button competition-button" type="submit">Отправить форму</button>
             <p class="competition__require">
               <span class="competition__star competition__star--pink">*</span>
               — обязательные поля
             </p>
+          </div>
           </form>
-        </div>
       </section>
     </main>
     <footer class="main-footer">

@@ -1,14 +1,15 @@
 .publication {
   position: relative;
   margin-bottom: 20px;
-  background-color: #f2f2f2;
   &--pub-day::before {
     content: "Панорама дня";
     position: absolute;
     top: 0;
-    left: 150px;
-    padding: 10px 25px;
+    left: 120px;
+    width: 140px;
+    padding: 5px 15px;
     font-size: 12px;
+    line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
@@ -16,9 +17,14 @@
   }
 }
 
+.publication__container {
+
+}
+
 .publication__info-wrapper {
   width: 280px;
   padding: 20px;
+  background-color: #f2f2f2;
 }
 
 .publication__image{

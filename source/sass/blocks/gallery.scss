@@ -1,11 +1,14 @@
 .gallery {
+  display: block;
   margin-bottom: 45px;
 }
 
 .gallery__text {
   @include text-reset;
+  width: 250px;
+  margin: 0 auto;
   margin-bottom: 55px;
-  line-height: 24px;
+  line-height: 30px;
   text-align: center;
 }
 
