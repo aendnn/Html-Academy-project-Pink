@@ -1,3 +1,7 @@
+.competition {
+  display: block;
+}
+
 .competition__header {
   padding-bottom: 40px;
 }
@@ -8,8 +12,13 @@
   text-align: center;
 }
 
+.competition__instruction {
+  display: none;
+}
+
 .competition__form {
   display: block;
+  background-color: #ffffff;
 }
 
 .competition__group {
@@ -82,6 +91,10 @@
   line-height: 30px;
   font-weight: 400;
   color: %$primary-color;
+}
+
+.competition-button {
+  margin-bottom: 30px;
 }
 
 .competition__require {
