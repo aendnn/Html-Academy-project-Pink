@@ -10,7 +10,6 @@
 
 .price__list {
   width: 940px;
-
   margin-bottom: 40px;
   transform: translateX(-220px);
 }
@@ -27,10 +26,36 @@
 }
 
 .price__name {
+  position: relative;
   @include text-reset;
   @include bold-text;
   line-height: 30px;
   text-transform: uppercase;
+  &--hit::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    width: 61px;
+    height: 61px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    background-image: url("../../img/bg-hit-tablet.svg");
+  }
+  &--hit::after {
+    content: "хит";
+    position: absolute;
+    top: -16px;
+    left: -20px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    transform: rotate(-45deg);
+  }
+
 }
 
 .price__cost {
@@ -71,5 +96,21 @@
     content: url(../../img/icon-no.svg);
     width: 26px;
     height: 26px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price__list {
+    transform: none;
+  }
+  .price__header--hidden {
+    display: block;
+    background: none;
+  }
+  .price__filter--hidden {
+    display: block;
+  }
+  .price__filter-name--hidden {
+    display: none;
   }
 }

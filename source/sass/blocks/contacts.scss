@@ -44,8 +44,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts__items-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .contacts__item {
-    margin-right: 90px;
+    margin-bottom: 50px;
     &--center {
       margin: 0 auto;
     }
@@ -58,9 +64,6 @@
     font-size: 40px;
     line-height: 48px;
     color: $primary-color;
-  }
-  .contacts__item {
-    width: 220px;
   }
 
 }

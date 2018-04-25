@@ -28,14 +28,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-footer__container {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
   .main-footer__info {
-    width: 620px;
     display: flex;
     justify-content: space-between;
+  }
+  .main-footer__logo {
+    margin-right: auto;
   }
 }

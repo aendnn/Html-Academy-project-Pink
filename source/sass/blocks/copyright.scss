@@ -1,3 +1,9 @@
 .copyright {
   line-height: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin-left: auto;
+  }
+}

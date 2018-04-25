@@ -2,19 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  @include list-reset;
-}
-
-.photos-list__item {
-  width: 280px;
-  margin: 0 auto;
-  &--full {
-    width: 100%;
-  }
-}
-
-.photos-list__pub-text {
-  @include text-reset;
 }
 
 @media (min-width: $tablet-width) {

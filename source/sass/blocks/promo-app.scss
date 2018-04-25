@@ -61,8 +61,7 @@
   font-weight: 300;
 }
 
-.promo-app__image {
-  display: block;
+.promo-app__wrapper-img {
   margin-bottom: 30px;
 }
 
@@ -73,8 +72,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo-app {
-    flex-direction: row;
+  .promo-app__container {
+    display: flex;
   }
   .promo-app__lead {
     position: relative;
@@ -83,9 +82,15 @@
     text-align: center;
   }
   .promo-app__wrapper-img {
+    position: relative;
+    left: -70px;
+    top: 0;
     order: 1;
+    width: 258px;
   }
   .promo-app__wrapper-text {
+    position: relative;
+    z-index: 1;
     width: 300px;
   }
 }

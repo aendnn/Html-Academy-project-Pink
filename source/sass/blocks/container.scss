@@ -3,3 +3,9 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    min-width: 660px;
+  }
+}

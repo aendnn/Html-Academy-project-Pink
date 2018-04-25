@@ -17,10 +17,6 @@
   }
 }
 
-.publication__container {
-
-}
-
 .publication__info-wrapper {
   width: 280px;
   padding: 20px;
@@ -67,7 +63,7 @@
 
 @media (min-width: $tablet-width) {
   .publication {
-    width: 300px;
+    width: 100%;
     &--pub-day {
       width: 620px;
     }
@@ -76,6 +72,9 @@
     width: 300px;
     &--width {
       width: 620px;
+    }
+    .publication__info-wrapper--width {
+      width: 100%;
     }
   }
   .publication__like--icon {

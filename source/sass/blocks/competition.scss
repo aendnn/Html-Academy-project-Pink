@@ -113,6 +113,10 @@
     width: 420px;
     margin: 0 auto;
   }
+  .competition__instruction {
+    display: block;
+  }
+
   .competition__form {
     display: flex;
     flex-direction: column;
@@ -126,9 +130,21 @@
     }
   }
   .competition__item {
+    flex-direction: row;
     &--center {
       width: 500px;
       margin: 0 auto;
+    }
+  }
+  .competition__input-mark {
+    margin-right: 10px;
+    &--dark {
+      order: 1;
+    }
+  }
+  .competition__input {
+    &--text-field {
+      width: 100%;
     }
   }
   .competition__textarea {

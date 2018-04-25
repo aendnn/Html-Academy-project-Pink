@@ -33,6 +33,7 @@
 }
 
 .features__title {
+  display: block;
   @include heading;
   margin-bottom: 25px;
   text-align: center;
@@ -75,14 +76,16 @@
   .features__img-wrapper {
     position: absolute;
     top: 100px;
-    left: 0;
+    left: 100px;
   }
   .features__title {
-    margin: 0;
-    text-align: center;
+    margin: 0 auto;
+    &--width {
+      width: 320px;
+    }
   }
   .features__list {
-    width: 320px;
+    width: 310px;
     margin-left: auto;
   }
 }
