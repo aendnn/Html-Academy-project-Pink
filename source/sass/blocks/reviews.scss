@@ -50,3 +50,10 @@
     margin-bottom: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews__list {
+    display: flex;
+    justify-content: center;
+  }
+}

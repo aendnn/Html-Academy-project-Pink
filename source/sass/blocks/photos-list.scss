@@ -1,21 +1,18 @@
-.photos-list__container {
+.photos-list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.photos-list__pub-text {
+  @include text-reset;
 }
 
 @media (min-width: $tablet-width) {
   .photos-list__container {
-
-    flex-direction: row;
-
-  }
-  .photos-list__item {
-    width: 300px;
-  }
-  .photos-list__item:first-child {
-    width: 620px;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .photos-list__pub-text--width {
     width: 620px;

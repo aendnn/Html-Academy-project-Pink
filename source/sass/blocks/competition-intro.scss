@@ -10,3 +10,11 @@
   font-weight: 300;
   text-align: center;
 }
+
+@media (min-width: $desktop-width) {
+  .competition-intro__title {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 300;
+  }
+}

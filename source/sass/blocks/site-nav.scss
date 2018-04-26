@@ -24,3 +24,19 @@
     text-align: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-nav {
+    flex-direction: row;
+  }
+  .site-nav__link {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: none;
+    box-shadow: none;
+    background: none;
+  }
+}

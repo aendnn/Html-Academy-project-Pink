@@ -7,3 +7,10 @@
   background-repeat: no-repeat;
   background-position: 0;
 }
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    display: flex;
+    background-color: black;
+  }
+}

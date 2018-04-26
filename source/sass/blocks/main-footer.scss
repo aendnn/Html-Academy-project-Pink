@@ -9,7 +9,12 @@
 }
 
 .main-footer__info {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &--hidden {
+    display: none;
+  }
 }
 
 .main-footer__logo {
@@ -30,6 +35,7 @@
 @media (min-width: $tablet-width) {
   .main-footer__info {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
   .main-footer__logo {

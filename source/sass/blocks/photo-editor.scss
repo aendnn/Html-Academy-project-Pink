@@ -25,7 +25,7 @@
 
 .photo-editor__range {
   margin-bottom: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 0p5x;
 }
 
 .photo-editor__form {
@@ -57,5 +57,26 @@
   }
   .photo-editor__img-wrap {
     margin-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-editor__img-wrap {
+    margin-right: 80px;
+    margin-left: 95px;
+  }
+  .photo-editor__form {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+  }
+  .photo-editor__btn {
+    width: 185px;
+    &--post {
+      margin-bottom: 0;
+    }
+  }
+  .photo-editor__range {
+    padding-bottom: 100px;
   }
 }

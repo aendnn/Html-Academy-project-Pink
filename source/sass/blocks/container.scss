@@ -9,3 +9,10 @@
     min-width: 660px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .container {
+    min-width: 960px;
+    padding: 0 10px;
+  }
+}

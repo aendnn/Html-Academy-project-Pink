@@ -94,3 +94,13 @@
     width: 300px;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .promo-app__container {
+    justify-content: space-between;
+  }
+  .promo-app__wrapper-img {
+    left: 0;
+  }
+}

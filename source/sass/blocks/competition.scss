@@ -17,7 +17,8 @@
 }
 
 .competition__form {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
 }
 
@@ -29,6 +30,14 @@
     padding-top: 30px;
     background-color: #f2f2f2;
   }
+    &--order {
+      order: 0;
+    }
+}
+
+.competition__group-wrap {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .competition__group-title {
@@ -114,11 +123,14 @@
     margin: 0 auto;
   }
   .competition__instruction {
-    display: block;
+    &--block {
+      display: block;
+    }
   }
 
   .competition__form {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
   }
   .competition__group {
@@ -153,5 +165,33 @@
   }
   .competition__require {
     text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition__desc {
+    width: 900px;
+    text-align: center;
+  }
+  .competition__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 940px;
+    margin: 0 auto;
+  }
+  .competition__group {
+    width: 435px;
+    &--center {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+  }
+  .competition__group-wrap {
+    width: 100%;
+  }
+  .competition__require {
+    margin-left: auto;
   }
 }

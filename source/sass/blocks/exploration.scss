@@ -51,3 +51,10 @@
     margin-left: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .exploration__wrapper {
+    width: 570px;
+    margin: 0 auto;
+  }
+}

@@ -67,3 +67,16 @@
   }
 
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__items-wrap {
+    justify-content: center;
+  }
+  .contacts__item {
+    margin: 0;
+    margin-right: 30px;
+    &--last {
+      order: 1;
+    }
+  }
+}

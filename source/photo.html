@@ -8,28 +8,30 @@
   </head>
   <body class="photo-page">
     <header class="page-header">
-      <a class="page-header__logo logo-link" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Меню</span>
-        </button>
-        <ul class="main-nav__list site-nav">
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-nav__item site-nav__item--current">
-            <a class="site-nav__link">Фотографии</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo-link" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+          <ul class="main-nav__list site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item site-nav__item--current">
+              <a class="site-nav__link">Фотографии</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="container">
         <div class="page-header__gallery-intro gallery-intro">
           <h1 class="gallery-intro__title">Фотографии пользователей</h1>
@@ -38,54 +40,52 @@
     </header>
     <main class="page-main">
       <section class="gallery">
-          <header class="gallery__header">
-            <h2 class="visually-hidden">Публикации пользователей</h2>
+        <header class="gallery__header">
+          <h2 class="visually-hidden">Публикации пользователей</h2>
             <p class="gallery__text">
               Взгляните на фотографии, которые выкладывают пользователи!
               Видите, как не хватает ваших?
             </p>
-          </header>
-          <div class="gallery__list photos-list">
-              <section class="photos-list__publication publication publication--pub-day">
-                <h3 class="visually-hidden">Публикация пользователя</h3>
-                <div class="publication__img-wrapper">
-                <a class="publication__photo-full" href="full-size.html">
-                  <span class="visually-hidden">Увиличить изображение</span>
-                  <img class="publication__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Вид с моста для банджи-джампинга">
-                  </a>
-                </div>
-                <div class="container">
-                <div class="publication__info-wrapper publication__info-wrapper--width">
-                <span class="publication__author">Анна</span>
-                <span class="publication__time">
-                  (<span class="publication__time-signal">5 минут</span> назад)
-                </span>
-                <p class="photos-list__pub-text photos-list__pub-text--width">
+        </header>
+        <div class="gallery__list photos-list">
+          <section class="photos-list__publication publication publication--pub-day">
+            <h3 class="visually-hidden">Публикация пользователя</h3>
+            <div class="publication__img-wrapper">
+              <a class="publication__photo-full" href="full-size.html">
+                <span class="visually-hidden">Увиличить изображение</span>
+                <img class="publication__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Вид с моста для банджи-джампинга">
+              </a>
+            </div>
+            <div class="publication__info-wrapper publication__info-wrapper--width">
+              <span class="publication__author">Анна</span>
+              <span class="publication__time">
+                (<span class="publication__time-signal">5 минут</span> назад)
+              </span>
+              <p class="photos-list__pub-text photos-list__pub-text--width">
                   Прыгать или нет? Напишите в коментарии свой совет
                   и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-                </p>
-                <button class="publication__like publication__like--icon" type="button">
-                  <span class="visually-hidden">Лайк</span>
-                </button>
-                <span class="publication__likes">
-                  Нравится:
-                  <span class="publication__likes-counter">215</span>
-                </span>
-                </div>
-              </div>
-              </section>
-              <div class="photos-list__container container">
-              <section class="photos-list__publication publication">
-                <h3 class="visually-hidden">Публикация пользователя</h3>
-                <a class="publication__photo-full" href="full-size.html">
-                  <span class="visually-hidden">Увиличить изображение</span>
-                  <img class="publication__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото машины">
-                </a>
-
-                <div class="publication__info-wrapper">
+              </p>
+              <button class="publication__like publication__like--icon" type="button">
+                <span class="visually-hidden">Лайк</span>
+              </button>
+              <span class="publication__likes">
+                Нравится:
+                <span class="publication__likes-counter">215</span>
+              </span>
+            </div>
+          </section>
+          <div class="photos-list__container container">
+            <section class="photos-list__publication publication">
+              <h3 class="visually-hidden">Публикация пользователя</h3>
+              <a class="publication__photo-full" href="full-size.html">
+                <span class="visually-hidden">Увиличить изображение</span>
+                <img class="publication__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото машины">
+              </a>
+              <div class="publication__info-wrapper">
                 <span class="publication__author">Левон</span>
                 <span class="publication__time">
-                  (<span class="publication__time-signal">5 часов</span> назад)</span>
+                  (<span class="publication__time-signal">5 часов</span> назад)
+                </span>
                 <p class="photos-list__pub-text">
                   Вчера он на луну летал, сегодня в руки к нам попал.
                 </p>
@@ -96,7 +96,7 @@
                     Нравится:
                     <span class="publication__likes-counter">356</span>
                   </span>
-              </div>
+                </div>
               </section>
               <section class="photos-list__publication publication">
                 <h3 class="visually-hidden">Публикация пользователя</h3>
@@ -105,18 +105,18 @@
                   <img class="publication__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабаны">
                 </a>
                 <div class="publication__info-wrapper">
-                <span class="publication__author">Антон</span>
-                <span class="publication__time">
-                  (<span class="publication__time-signal">12 часов</span> назад)</span>
-                <p class="photos-list__pub-text">Соседи будут рады!</p>
-                <button class="publication__like publication__like--icon" type="button">
-                  <span class="visually-hidden">Лайк</span>
-                </button>
-                <span class="publication__likes">
-                  Нравится:
-                  <span class="publication__likes-counter">666</span>
-                </span>
-              </div>
+                  <span class="publication__author">Антон</span>
+                  <span class="publication__time">
+                    (<span class="publication__time-signal">12 часов</span> назад)</span>
+                  <p class="photos-list__pub-text">Соседи будут рады!</p>
+                  <button class="publication__like publication__like--icon" type="button">
+                    <span class="visually-hidden">Лайк</span>
+                  </button>
+                  <span class="publication__likes">
+                    Нравится:
+                    <span class="publication__likes-counter">666</span>
+                  </span>
+                </div>
               </section>
               <section class="photos-list__publication publication">
                 <h3 class="visually-hidden">Публикация пользователя</h3>
@@ -125,18 +125,18 @@
                   <img class="publication__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Вид из окна">
                 </a>
                 <div class="publication__info-wrapper">
-                <span class="publication__author">Борис</span>
-                <span class="publication__time">
-                  (<span class="publication__time-signal">20 часов</span> назад)</span>
-                <p class="photos-list__pub-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <button class="publication__like publication__like--icon" type="button">
-                  <span class="visually-hidden">Лайк</span>
-                </button>
-                <span class="publication__likes">
-                  Нравится:
-                  <span class="publication__likes-counter">215</span>
-                </span>
-            </div>
+                  <span class="publication__author">Борис</span>
+                  <span class="publication__time">
+                    (<span class="publication__time-signal">20 часов</span> назад)</span>
+                  <p class="photos-list__pub-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <button class="publication__like publication__like--icon" type="button">
+                    <span class="visually-hidden">Лайк</span>
+                  </button>
+                  <span class="publication__likes">
+                    Нравится:
+                    <span class="publication__likes-counter">215</span>
+                  </span>
+                </div>
               </section>
               <section class="photos-list__publication publication">
                 <h3 class="visually-hidden">Публикация пользователя</h3>
@@ -145,18 +145,18 @@
                   <img class="publication__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Рынок Кубанская Бахча">
                 </a>
                 <div class="publication__info-wrapper">
-                <span class="publication__author">Сергей</span>
-                <span class="publication__time">
-                  (<span class="publication__time-signal">25 часов</span> назад)</span>
-                <p class="photos-list__pub-text">Самая кубанская в мире!</p>
-                <button class="publication__like publication__like--icon" type="button">
-                  <span class="visually-hidden">Лайк</span>
-                </button>
-                <span class="publication__likes">
-                  Нравится:
-                  <span class="publication__likes-counter">4</span>
-                </span>
-              </div>
+                  <span class="publication__author">Сергей</span>
+                  <span class="publication__time">
+                    (<span class="publication__time-signal">25 часов</span> назад)</span>
+                  <p class="photos-list__pub-text">Самая кубанская в мире!</p>
+                  <button class="publication__like publication__like--icon" type="button">
+                    <span class="visually-hidden">Лайк</span>
+                  </button>
+                  <span class="publication__likes">
+                    Нравится:
+                    <span class="publication__likes-counter">4</span>
+                  </span>
+                </div>
               </section>
               <section class="photos-list__publication publication">
                 <h3 class="visually-hidden">Публикация пользователя</h3>
@@ -165,18 +165,18 @@
                   <img class="publication__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото ног на фоне гор">
                 </a>
                 <div class="publication__info-wrapper">
-                <span class="publication__author">Максим</span>
-                <span class="publication__time">
-                  (<span class="publication__time-signal">40 часов</span> назад)</span>
-                <p class="photos-list__pub-text">Где снег-то?</p>
-                <button class="publication__like publication__like--icon" type="button">
-                  <span class="visually-hidden">Лайк</span>
-                </button>
-                <span class="publication__likes">
-                  Нравится:
-                  <span class="publication__likes-counter">150</span>
-                </span>
-            </div>
+                  <span class="publication__author">Максим</span>
+                  <span class="publication__time">
+                    (<span class="publication__time-signal">40 часов</span> назад)</span>
+                  <p class="photos-list__pub-text">Где снег-то?</p>
+                  <button class="publication__like publication__like--icon" type="button">
+                    <span class="visually-hidden">Лайк</span>
+                  </button>
+                  <span class="publication__likes">
+                    Нравится:
+                    <span class="publication__likes-counter">150</span>
+                  </span>
+                </div>
               </section>
               <section class="photos-list__publication publication">
                 <h3 class="visually-hidden">Публикация пользователя</h3>
@@ -185,30 +185,30 @@
                   <img class="publication__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Вид с окна самолета">
                 </a>
                 <div class="publication__info-wrapper">
-                <span class="publication__author">Надежда</span>
-                <span class="publication__time">
-                  (<span class="publication__time-signal">45 часов</span> назад)</span>
-                <p class="photos-list__pub-text">Всем GM и взаимные лайки!</p>
-                <button class="publication__like publication__like--icon" type="button">
-                  <span class="visually-hidden">Лайк</span>
-                </button>
-                <span class="publication__likes">
-                  Нравится:
-                  <span class="publication__likes-counter">2560</span>
-                </span>
-              </div>
+                  <span class="publication__author">Надежда</span>
+                  <span class="publication__time">
+                    (<span class="publication__time-signal">45 часов</span> назад)</span>
+                  <p class="photos-list__pub-text">Всем GM и взаимные лайки!</p>
+                  <button class="publication__like publication__like--icon" type="button">
+                    <span class="visually-hidden">Лайк</span>
+                  </button>
+                  <span class="publication__likes">
+                    Нравится:
+                    <span class="publication__likes-counter">2560</span>
+                  </span>
+                </div>
               </section>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="photo-editor">
+        </section>
+        <section class="photo-editor">
           <header class="photo-editor__intro">
             <h2 class="visually-hidden">Загрузка и редактирование фото</h2>
             <p class="photo-editor__desc">
               Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
             </p>
         </header>
-        <div class="container">
+        <div class="photo-editor__container container">
           <div class="photo-editor__img-wrap">
             <img class="photo-editor__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото заснеженной дороги">
           </div>
@@ -229,34 +229,37 @@
         </div>
       </div>
     </section>
-    </main>
-    <footer class="main-footer">
-      <div class="main-footer__container container">
-      <a class="main-footer__logo logo-link logo-link logo-link--blue" href="index.html">
-        <span class="visually-hidden">Главная</span>
-        <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Мобильное приложение «Pink»">
-      </a>
-      <section class="main-footer__social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="main-footer__social-list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--twi" href="twitter.com">Twitter</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--fb" href="facebook.com">Facebook</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--ytb" href="youtube.com">Youtube</a>
-          </li>
-        </ul>
-      </section>
-      <p class="main-footer__copyright copyright">
-        Разработано:
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">Ссылка ведет на интенсив Html Academy</span>
-          <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Html Academy">
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__container container">
+      <section class="main-footer__info">
+        <h2 class="visually-hidden">Второстепенная информация</h2>
+        <a class="main-footer__logo logo-link logo-link logo-link--blue" href="index.html">
+          <span class="visually-hidden">Главная</span>
+          <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Мобильное приложение «Pink»">
         </a>
-      </p>
+        <section class="main-footer__social">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <ul class="main-footer__social-list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--twi" href="twitter.com">Twitter</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--fb" href="facebook.com">Facebook</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--ytb" href="youtube.com">Youtube</a>
+            </li>
+          </ul>
+        </section>
+        <p class="main-footer__copyright copyright">
+          Разработано:
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Ссылка ведет на интенсив Html Academy</span>
+            <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Html Academy">
+          </a>
+        </p>
+      </section>
     </div>
     </footer>
   </body>
