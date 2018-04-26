@@ -11,7 +11,7 @@
 .price__list {
   width: 940px;
   margin-bottom: 40px;
-  transform: translateX(-220px);
+  transform: translateX(-280px);
 }
 
 .price__header {
@@ -110,6 +110,12 @@
   .price__filter--hidden {
     display: block;
   }
+  .price__filter-name--hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .price__filter-name--hidden {
     display: none;
   }
