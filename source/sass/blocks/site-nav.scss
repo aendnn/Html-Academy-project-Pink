@@ -22,10 +22,17 @@
 
 @media (min-width: $desktop-width) {
   .site-nav {
+    width: 630px;
     flex-direction: row;
   }
+  .site-nav__item {
+    margin-right: 80px;
+  }
+  .site-nav__item:last-child {
+    margin-right: 0;
+  }
   .site-nav__link {
-    padding: 20px;
+    padding: 0;
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;

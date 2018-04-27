@@ -4,13 +4,14 @@
 }
 
 .main-nav__toggle {
-  top: -15px;
-  left: 200px;
-  position: relative;
+  position: absolute;
+  top: -48px;
+  right: 90px;
   display: block;
   font: inherit;
   border: 0;
   background: none;
+  cursor: pointer;
   &::before {
     content: "";
     position: absolute;
@@ -24,8 +25,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 625px;
-    margin-left: auto;
+    width: 630px;
     background: none;
   }
   .main-nav__toggle {
