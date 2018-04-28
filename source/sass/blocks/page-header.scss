@@ -8,9 +8,13 @@
   background-position: center;
 }
 
+.page-header__wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .page-header__logo {
   display: block;
-  padding: 20px;
+  padding: 19px;
 }
 
 .page-header__logo-image {
@@ -33,10 +37,10 @@
   .page-header__logo {
     width: 160px;
     margin-right: 165px;
+    padding-top: 25px;
   }
   .page-header__wrapper {
     display: flex;
-    align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }

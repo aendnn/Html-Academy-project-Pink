@@ -1,6 +1,6 @@
 .features {
   display: block;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
   background-color: #f2f2f2;
 }
 
@@ -34,7 +34,9 @@
 
 .features__title {
   display: block;
+  width: 210px;
   @include heading;
+  margin: 0 auto;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -74,29 +76,49 @@
 
 @media (min-width: $tablet-width) {
   .features__container {
-    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
   }
   .features {
-    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 150px;
+  }
+  .features__header {
+    margin-bottom: 40px;
+  }
+  .features__item {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
   }
   .features__img-wrapper {
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 10px;
+    left: 50px;
+  }
+  .features__image {
+    width: 268px;
+    height: 558px;
   }
   .features__title {
+    width: auto;
+    font-size: 40px;
+    line-height: 40px;
     margin: 0 auto;
     &--width {
-      width: 320px;
+      width: 335px;
     }
   }
-  .features__list {
-    width: 310px;
-    margin-left: auto;
+  .features__feature-desc {
+    text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .features__header {
+    margin-bottom: 60px;
+  }
   .features__title {
     font-size: 50px;
     line-height: 50px;
@@ -105,15 +127,14 @@
     }
   }
   .features__list {
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    width: 940px;
   }
   .features__item {
-    width: 280px;
+    width: 240px;
   }
   .features__feature {
     display: flex;
@@ -122,8 +143,23 @@
   .features__img-wrapper {
     position: static;
     order: -1;
+    margin-bottom: 55px;
     &--hidden {
       display: block;
     }
+  }
+  .features__image {
+    width: 160px;
+  }
+  .features__feature-title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .features__feature-desc {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
   }
 }

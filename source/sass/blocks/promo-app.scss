@@ -1,6 +1,8 @@
 .promo-app {
   padding-top: 128px;
   padding-bottom: 30px;
+  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
 }
 
 .promo-app__wrapper-text {
@@ -8,7 +10,10 @@
 }
 
 .promo-app__btn {
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 20px;
+  background-color: transparent;
   &--white {
     font-size: 18px;
     line-height: 18px;
@@ -65,6 +70,10 @@
   margin-bottom: 30px;
 }
 
+.promo-app__wrapper-text {
+  padding-top: 200px;
+}
+
 .promo-app__desc {
   @include text-reset;
   font-weight: 300;
@@ -72,8 +81,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo-app__container {
+  .promo-app {
     display: flex;
+    padding-top: 50px;
+    background-position: right;
   }
   .promo-app__lead {
     position: relative;
@@ -81,18 +92,11 @@
     margin-bottom: 30px;
     text-align: center;
   }
-  .promo-app__wrapper-img {
-    position: relative;
-    left: -70px;
-    top: 0;
-    order: 1;
-    width: 258px;
-  }
   .promo-app__wrapper-text {
-    position: relative;
-    z-index: 1;
     width: 300px;
-  }
+    padding-top: 0;
+    padding-bottom: 100px;
+    }
 }
 
 
@@ -100,7 +104,8 @@
   .promo-app__container {
     justify-content: space-between;
   }
-  .promo-app__wrapper-img {
-    left: 0;
+  .promo-app__lead {
+    font-size: 50px;
+    line-height: 50px;
   }
 }

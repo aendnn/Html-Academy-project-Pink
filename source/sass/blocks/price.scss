@@ -11,7 +11,7 @@
 .price__list {
   width: 940px;
   margin-bottom: 40px;
-  transform: translateX(-280px);
+  transform: translateX(-290px);
 }
 
 .price__header {
@@ -78,15 +78,20 @@
 }
 
 .price__filter-name {
-  margin-right: 40px;
+  margin-right: 80px;
 }
 
 .price__filter-yes--check {
+  position: relative;
     background-color: #ffffff;
   &::before {
-    content: url(../../img/icon-yes.svg);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
     width: 21px;
     height: 16px;
+    background-image: url("../../img/icon-yes.svg");
   }
 }
 

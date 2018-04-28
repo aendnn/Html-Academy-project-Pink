@@ -48,13 +48,12 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
   .contacts__item {
+    width: 300px;
     margin-bottom: 50px;
-    &--center {
-      margin: 0 auto;
-    }
+
   }
   .contacts__title {
     margin: 0 auto;
@@ -70,11 +69,9 @@
 
 @media (min-width: $desktop-width) {
   .contacts__items-wrap {
-    justify-content: center;
+    justify-content: space-between;
   }
   .contacts__item {
-    margin: 0;
-    margin-right: 30px;
     &--last {
       order: 1;
     }
