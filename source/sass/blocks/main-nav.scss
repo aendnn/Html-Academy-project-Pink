@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 108px;
   background-color: $primary-color;
   &--closed {
     .main-nav__toggle::before {
@@ -18,7 +18,7 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 0;
+      left: 28px;
       width: 24px;
       height: 24px;
       background-image: url("../../img/icon-menu-cross.svg");
@@ -26,10 +26,11 @@
   }
 }
 
+
 .main-nav__toggle {
   position: absolute;
   top: -48px;
-  right: 31px;
+  right: 51px;
   display: block;
   font: inherit;
   border: 0;

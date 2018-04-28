@@ -1,12 +1,13 @@
 .promo-app {
-  padding-top: 128px;
-  padding-bottom: 30px;
   background-image: url("../../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position: -7px 1px;
 }
 
 .promo-app__wrapper-text {
   display: block;
+  padding-top: 316px;
+  padding-bottom: 28px;
 }
 
 .promo-app__btn {
@@ -68,10 +69,6 @@
 
 .promo-app__wrapper-img {
   margin-bottom: 30px;
-}
-
-.promo-app__wrapper-text {
-  padding-top: 200px;
 }
 
 .promo-app__desc {

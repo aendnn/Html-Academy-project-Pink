@@ -2,10 +2,10 @@
   display: block;
   margin-bottom: 35px;
   color: #ffffff;
-  background-color: $primary-color;
+  background-color: #1d2631;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -7px 258px;
 }
 
 .page-header__wrapper {
@@ -15,6 +15,7 @@
 .page-header__logo {
   display: block;
   padding: 19px;
+  padding-left: 12px;
 }
 
 .page-header__logo-image {

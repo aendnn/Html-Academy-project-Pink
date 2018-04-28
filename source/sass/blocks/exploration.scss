@@ -60,12 +60,4 @@
       background-image: url("../../img/icon-editor-diagram-fill.svg");
     }
 }
-
-@media (min-width: $desktop-width) {
-  .exploration {
-    width: auto;
-  }
-  .exploration__wrapper {
-    width: 570px;
-  }
 }

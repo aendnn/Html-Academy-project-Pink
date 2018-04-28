@@ -9,9 +9,9 @@
 }
 
 .price__list {
-  width: 940px;
+  width: 100%;
   margin-bottom: 40px;
-  transform: translateX(-290px);
+  transform: translateX(-250px);
 }
 
 .price__header {
@@ -27,6 +27,7 @@
 
 .price__name {
   position: relative;
+  width: 200px;
   @include text-reset;
   @include bold-text;
   line-height: 30px;
@@ -67,23 +68,24 @@
 }
 
 .price__filter {
-  padding: 20px 25px;
+  width: 280px;
+  padding: 15px 25px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   background-color: #ffffff;
+  border-width: 2px;
   &--hidden {
     display: none;
   }
 }
 
-.price__filter-name {
-  margin-right: 80px;
-}
-
 .price__filter-yes--check {
+  float: right;
   position: relative;
-    background-color: #ffffff;
+  margin-right: 15px;
+  width: 21px;
+  height: 16px;
   &::before {
     content: "";
     position: absolute;
@@ -96,11 +98,17 @@
 }
 
 .price__filter-no--cross {
-    background-color: #ffffff;
+    float: right;
+    position: relative;
+    margin-right: 15px;
   &::before {
-    content: url(../../img/icon-no.svg);
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 26px;
     height: 26px;
+    background-image: url("../../img/icon-no.svg");
   }
 }
 
@@ -108,20 +116,66 @@
   .price__list {
     transform: none;
   }
+  .price__header {
+    width: 155px;
+    padding: 0;
+    padding: 15px 0;
+  }
   .price__header--hidden {
-    display: block;
+    display: table-cell;
     background: none;
   }
+  .price__name {
+    width: 155px;
+  }
+  .price__filter {
+    width: 155px;
+    padding: 0;
+    padding: 10px;
+  }
   .price__filter--hidden {
-    display: block;
+    display: table-cell;
   }
   .price__filter-name--hidden {
     display: none;
+  }
+  .price__name--hit {
+    &::before {
+      top: -14px;
+      left: 0px;
+      background-image: url("../../img/bg-hit-tablet.svg");
+    }
+    &::after {
+      top: -10px;
+      left: 6px;
+    }
+  }
+  .price__filter-yes {
+    width: 31px;
+    height: 31px;
+    margin-right: 50%;
+  }
+  .price__filter-no{
+    width: 31px;
+    height: 31px;
+    margin-right: 40%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .price__filter-name--hidden {
     display: none;
+  }
+  .price__header {
+    width: 237px;
+  }
+  .price__name {
+    width: 237px;
+  }
+  .price__cost {
+    width: 237px;
+  }
+  .price__filter {
+    width: 237px;
   }
 }
