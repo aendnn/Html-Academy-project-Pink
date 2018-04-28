@@ -127,17 +127,27 @@
   }
   .price__name {
     width: 155px;
+    margin: 0 auto;
+  }
+  .price__cost {
+    width: 155px;
+    margin: 0 auto;
   }
   .price__filter {
     width: 155px;
     padding: 0;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
   }
   .price__filter--hidden {
     display: table-cell;
   }
   .price__filter-name--hidden {
     display: none;
+  }
+  .price__filter-name {
+    text-transform: none;
   }
   .price__name--hit {
     &::before {
