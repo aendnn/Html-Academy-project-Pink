@@ -25,9 +25,14 @@
 .publication__info-wrapper {
   padding: 15px 25px;
   background-color: #f2f2f2;
+  &--width {
+    width: 280px;
+    margin: 0 auto;
+  }
 }
 
 .publication__image {
+  display: block;
   width: 100%;
   margin: 0 auto;
 }

@@ -18,7 +18,7 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 28px;
+      left: 38px;
       width: 24px;
       height: 24px;
       background-image: url("../../img/icon-menu-cross.svg");
@@ -26,11 +26,32 @@
   }
 }
 
+.main-nav__wrap {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav--opened .main-nav__wrap {
+  background-color: $primary-color;
+}
+.main-nav--opened .main-nav__logo {
+  padding-bottom: 19px;
+}
+.main-nav__logo {
+  display: block;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.main-nav__logo-image {
+  width: 75px;
+  height: 22px;
+}
 
 .main-nav__toggle {
   position: absolute;
-  top: -48px;
-  right: 51px;
+  top: 20px;
+  right: 52px;
   display: block;
   font: inherit;
   border: 0;
@@ -42,6 +63,27 @@
   .main-nav--closed .site-nav__item {
     display: none;
   }
+  .main-nav--no-js .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    margin-bottom: 70px;
+  }
+  .main-nav__logo {
+    padding-top: 25px;
+    padding-bottom: 27px;
+  }
+  .main-nav__logo-image {
+    width: 147px;
+    height: 40px;
+  }
+  .main-nav__toggle {
+    top: 34px;
+    right: 52px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -52,5 +94,10 @@
   }
   .main-nav__toggle {
     display: none;
+  }
+  .main-nav__logo {
+    width: 160px;
+    margin-right: 165px;
+    padding-top: 25px;
   }
 }

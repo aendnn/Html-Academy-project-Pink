@@ -43,7 +43,6 @@
   }
   .exploration__wrapper {
     position: relative;
-    width: 310px;
     margin-left: auto;
     &::before {
       content: "24";
@@ -59,5 +58,11 @@
       color: $secondary-color;
       background-image: url("../../img/icon-editor-diagram-fill.svg");
     }
+  }
 }
+@media (min-width: $desktop-width) {
+  .exploration {
+    margin-bottom: 65px;
+    background-color: #f2f2f2;
+  }
 }

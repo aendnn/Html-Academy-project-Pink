@@ -8,30 +8,30 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo logo-link">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
-        </a>
-        <nav class="main-nav main-nav--opened">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Меню</span>
-          </button>
-          <ul class="main-nav__list site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link">Главная</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="photo.html">Фотографии</a>
+        <nav class="main-nav main-nav--opened main-nav--no-js">
+          <div class="main-nav__wrap">
+            <a class="main-nav__logo logo-link">
+              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
+            </a>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Меню</span>
+            </button>
+            <ul class="main-nav__list site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link">Главная</a>
               </li>
               <li class="site-nav__item">
-                <a class="site-nav__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="site-nav__item">
-                <a class="site-nav__link site-nav__link--border-dark" href="https://htmlacademy.ru/">HTML Academy</a>
-              </li>
-            </ul>
+                <a class="site-nav__link" href="photo.html">Фотографии</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link site-nav__link--border-dark" href="https://htmlacademy.ru/">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
           </nav>
-        </div>
         <section class="promo-app">
           <h2 class="visually-hidden">Наше приложение</h2>
           <div class="promo-app__container container">
@@ -108,8 +108,8 @@
           </ul>
         </div>
       </section>
-      <div class="exploration__container container">
-        <section class="exploration">
+      <section class="exploration">
+        <div class="exploration__container container">
           <div class="exploration__wrapper">
             <h2 class="exploration__heading">Эффект<br> на 24 часа!</h2>
             <p class="exploration__desc">
@@ -118,14 +118,14 @@
             </p>
             <a class="exploration__link" href="more-info.html">Узнать больше об исследовании</a>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <section class="reviews">
         <div class="reviews__container container">
           <div class="reviews__wrapper slider">
             <h2 class="visually-hidden">Отзывы наших пользователей</h2>
             <ul class="reviews__list slider-list">
-              <li class="reviews__item reviews-slider__item">
+              <li class="reviews__item reviews-slider__item reviews-slider__item--block">
                 <blockquote class="reviews__review">
                   <cite class="reviews__author reviews__author--block">
                     Николай Петров
@@ -266,7 +266,7 @@
                 </tr>
               </tbody>
             </table>
-            <p class="price__toggles slider__toggles">
+            <p class="price__toggles slider__toggles slider__toggles--hidden">
               <button class="slider__toggle" type="button">1</button>
               <button class="slider__toggle slider__toggle--current" type="button">2</button>
               <button class="slider__toggle" type="button">3</button>

@@ -1,3 +1,10 @@
+.reviews-slider__item {
+  display: none;
+  &--block {
+    display: block;
+  }
+}
+
 .slider__toggles {
   display: flex;
   justify-content: center;
@@ -27,4 +34,11 @@
 
 .slider__toggle:last-child {
   margin-right: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggles--hidden {
+    display: none;
+  }
+
 }

@@ -116,6 +116,9 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features {
+    margin-bottom: 0;
+  }
   .features__header {
     margin-bottom: 60px;
   }
