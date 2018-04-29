@@ -10,3 +10,10 @@
   font-weight: 300;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .gallery-intro-title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}

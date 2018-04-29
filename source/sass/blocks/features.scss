@@ -8,7 +8,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 20px;
+  margin-bottom: 63px;
+  padding-bottom: 50px;
   background-color: #ffffff;
 }
 
@@ -25,7 +26,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 31px;
 }
 
 .features__item:last-child {
@@ -34,10 +35,9 @@
 
 .features__title {
   display: block;
-  width: 210px;
   @include heading;
-  margin: 0 auto;
-  margin-bottom: 25px;
+  margin-left: 17px;
+  margin-bottom: 32px;
   text-align: center;
 }
 
@@ -48,7 +48,7 @@
 .features__feature-title {
   @include text-reset;
   @include bold-text;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   text-align: center;
 }
 
@@ -68,6 +68,8 @@
 }
 
 .features__image {
+  position: relative;
+  bottom: 20px;
   display: block;
   width: 157px;
   height: 320px;
