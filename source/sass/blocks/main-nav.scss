@@ -1,7 +1,7 @@
 .main-nav {
   position: relative;
   margin-bottom: 108px;
-  background-color: $primary-color;
+  background-color: rgba(0, 0, 0, 0.3);
   &--closed {
     .main-nav__toggle::before {
       content: "";
@@ -29,13 +29,10 @@
   }
 }
 
-.main-nav__wrap {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
 .main-nav--opened .main-nav__wrap {
   background-color: $primary-color;
 }
+
 .main-nav--opened .main-nav__logo {
   padding-bottom: 19px;
 }
@@ -92,11 +89,14 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     margin-bottom: 0px;
-    background: none;
   }
   .main-nav__wrap {
-    width: 100%;
     display: flex;
+    width: 940px;
+    margin: 0 auto;
+  }
+  .main-nav--opened .main-nav__wrap {
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .main-nav__toggle {
     display: none;
