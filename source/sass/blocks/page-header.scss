@@ -7,6 +7,11 @@
   background-repeat: no-repeat;
 }
 
+.page-header__container {
+  width: 100%;
+  padding: 0;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     background-size: cover;

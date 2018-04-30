@@ -3,6 +3,8 @@
 }
 
 .competition__header {
+  width: 280px;
+  margin: 0 auto;
   padding-bottom: 40px;
 }
 
@@ -30,14 +32,26 @@
     padding-top: 30px;
     background-color: #f2f2f2;
   }
-    &--order {
-      order: 0;
-    }
+  &--second {
+    order: 1;
+  }
+  &--third {
+    order: 2;
+  }
+  &--fourth {
+    order: 3;
+  }
+  &--fifth {
+    order: 4;
+  }
 }
 
 .competition__group-wrap {
   width: 280px;
   margin: 0 auto;
+  &--last {
+    order: 5;
+  }
 }
 
 .competition__group-title {
@@ -118,6 +132,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .competition__header {
+    width: 620px;
+    margin: 0 auto;
+  }
   .competition__desc {
     width: 420px;
     margin: 0 auto;
@@ -134,19 +152,28 @@
     flex-direction: column;
   }
   .competition__group {
-    display: flex;
-    flex-direction: column;
     &--bg {
       background-color: #ffffff;
       border: 2px solid #f2f2f2;
     }
+    &--second,
+    &--third,
+    &--fourth,
+    &--fifth {
+      order: 0;
+    }
+  }
+  .competition__group-wrap {
+    width: 620px;
+    margin: 0 auto;
+    &--last {
+      display: flex;
+      justify-content: center;
+      order: 0;
+    }
   }
   .competition__item {
     flex-direction: row;
-    &--center {
-      width: 500px;
-      margin: 0 auto;
-    }
   }
   .competition__input-mark {
     margin-right: 10px;
@@ -164,27 +191,39 @@
     margin: 0 auto;
   }
   .competition__require {
-    text-align: right;
+    width: 190px;
+    margin-top: 20px;
+    margin-left: auto;
+  }
+  .competition__require-text {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .competition__header {
+    width: 940px;
+    margin: 0 auto;
+  }
   .competition__desc {
-    width: 900px;
+    width: 600px;
     text-align: center;
+  }
+  .competition__instruction {
+    display: inline;
   }
   .competition__form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 940px;
+    width: 920px;
     margin: 0 auto;
   }
   .competition__group {
     width: 435px;
-    &--center {
-      display: flex;
-      flex-direction: row;
+    &--second,
+    &--third,
+    &--fifth  {
       width: 100%;
     }
   }
@@ -192,6 +231,10 @@
     width: 100%;
   }
   .competition__require {
+    width: 330px;
     margin-left: auto;
+  }
+  .competition__require-text {
+    display: inline;
   }
 }

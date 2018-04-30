@@ -24,6 +24,9 @@
       background-image: url("../../img/icon-menu-cross.svg");
     }
   }
+  &--margin {
+    margin-bottom: 0;
+  }
 }
 
 .main-nav__wrap {
@@ -59,7 +62,7 @@
   cursor: pointer;
 }
 
-@media (max-width: $mobile-tablet-width) {
+@media (min-width: $mobile-tablet-width) {
   .main-nav--closed .site-nav__item {
     display: none;
   }
@@ -88,7 +91,6 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 630px;
     margin-bottom: 0px;
     background: none;
   }

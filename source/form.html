@@ -8,31 +8,31 @@
   </head>
   <body class="form-page">
     <header class="page-header">
-      <nav class="main-nav main-nav--opened main-nav--no-js">
-        <div class="main-nav__wrap">
-          <a class="main-nav__logo logo-link">
-            <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Меню</span>
-          </button>
-          <ul class="main-nav__list site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link">Главная</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="photo.html">Фотографии</a>
+      <div class="page-header__container container">
+        <nav class="main-nav main-nav--opened main-nav--no-js main-nav--margin">
+          <div class="main-nav__wrap">
+            <a class="main-nav__logo logo-link">
+              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
+            </a>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Меню</span>
+            </button>
+            <ul class="main-nav__list site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="index.html">Главная</a>
               </li>
               <li class="site-nav__item">
-                <a class="site-nav__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="site-nav__item">
-                <a class="site-nav__link site-nav__link--border-dark" href="https://htmlacademy.ru/">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      <div class="container">
+                <a class="site-nav__link" href="photo.html">Фотографии</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class=" site-nav__link site-nav__link--current">Конкурс</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link site-nav__link--border-dark" href="https://htmlacademy.ru/">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         <div class="page-header__competition-intro competition-intro">
           <h1 class="competition-intro__title">
             Конкурс на самое безбашенное<br> путешествие с Пинк
@@ -71,7 +71,7 @@
               </p>
             </div>
           </fieldset>
-          <fieldset class="competition__group competition__group--bg competition__group--order">
+          <fieldset class="competition__group competition__group--bg competition__group--fourth">
             <legend class="competition__group-title">
               С каким приложением путешествовали?
             </legend>
@@ -93,7 +93,7 @@
             </p>
           </div>
           </fieldset>
-          <fieldset class="competition__group competition__group--bg competition__group--center">
+          <fieldset class="competition__group competition__group--bg competition__group--third">
             <legend class="competition__group-title">Контактная информация</legend>
             <div class="competition__group-wrap">
               <p class="competition__item competition__item--center">
@@ -108,7 +108,7 @@
               </p>
             </div>
           </fieldset>
-          <fieldset class="competition__group competition__group--bg competition__group--center">
+          <fieldset class="competition__group competition__group--bg competition__group--second">
             <legend class="competition__group-title">
               Ваши безбашенные достижения в путешествии
             </legend>
@@ -145,7 +145,7 @@
             </p>
           </div>
           </fieldset>
-          <fieldset class="competition__group competition__group competition__group--center">
+          <fieldset class="competition__group competition__group competition__group--fifth">
             <legend class="competition__group-title">Опишите свои эмоции</legend>
             <div class="competition__group-wrap">
             <p class="competition__item">
@@ -154,14 +154,14 @@
             </p>
             </div>
             </fieldset>
-            <div class="competition__group-wrap">
-            <button class="competition__button competition-button" type="submit">Отправить форму</button>
-            <p class="competition__require">
-              <span class="competition__star competition__star--pink">*</span>
-              — обязательные
-              <span class="competition__require-text">для заполнения</span> поля
-            </p>
-          </div>
+            <div class="competition__group-wrap competition__group-wrap--last">
+              <button class="competition__button competition-button" type="submit">Отправить форму</button>
+              <p class="competition__require">
+                <span class="competition__star competition__star--pink">*</span>
+                — обязательные
+                <span class="competition__require-text">для заполнения</span> поля
+              </p>
+            </div>
           </form>
       </section>
     </main>

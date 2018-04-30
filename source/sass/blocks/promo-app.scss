@@ -76,7 +76,9 @@
 }
 
 .promo-app__desc {
+  width: 255px;
   @include text-reset;
+  margin: 0 auto;
   font-weight: 300;
   text-align: center;
 }
@@ -84,6 +86,7 @@
 @media (min-width: $tablet-width) {
   .promo-app {
     display: flex;
+    margin-left: 10px;
     background-position: 304px 0;
   }
   .promo-app__wrapper-text {
@@ -101,7 +104,7 @@
   }
   .promo-app__btn {
     width: 100%;
-    margin-left: 6px;
+    margin: 0 auto;
     margin-bottom: 45px;
   }
   .promo-app__platforms {
@@ -115,11 +118,17 @@
 
 
 @media (min-width: $desktop-width) {
-  .promo-app__container {
-    justify-content: space-between;
+  .promo-app__wrapper-text {
+    width: 370px;
   }
   .promo-app__lead {
     font-size: 50px;
     line-height: 50px;
+  }
+  .promo-app__btn {
+    width: 300px;
+  }
+  .promo-app__desc {
+    width: 300px;
   }
 }

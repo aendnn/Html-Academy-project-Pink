@@ -14,7 +14,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  .photos-list__pub-text--width {
-    width: 620px;
+}
+
+@media (min-width: $desktop-width) {
+  .photos-list__container {
+    justify-content: space-between;
+    width: 940px;
   }
 }
