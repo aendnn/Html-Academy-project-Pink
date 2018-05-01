@@ -1,11 +1,27 @@
 .gallery-intro {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 35px;
   padding-bottom: 80px;
 }
 
 .gallery-intro__title {
+  width: 175px;
   @include text-reset;
+  margin: 0 auto;
   font-size: 24px;
   line-height: 28px;
   font-weight: 300;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery-intro {
+    width: 620px;
+  }
+  .gallery-intro__title {
+    width: 360px;
+    font-size: 50px;
+    line-height: 50px;
+  }
 }

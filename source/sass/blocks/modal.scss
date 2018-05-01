@@ -1,11 +1,22 @@
 .modal {
+  display: none;
+  padding-top: 25px;
+  padding-bottom: 45px;
   box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
 }
 
 .modal__message {
   @include text-reset;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
   font-weight: 700;
   color: #000000;
+}
+
+.modal__instructions {
+  @include text-reset;
+  margin-bottom: 30px;
+  text-align: center;
 }

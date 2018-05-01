@@ -1,27 +1,128 @@
 .photo-editor {
-  padding-bottom: 60px;
+  position: relative;
+  padding-bottom: 50px;
   background-color: #f2f2f2;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    width: 320px;
+    height: 2px;
+    background-color: #dddfe0;
+  }
+}
+
+.photo-editor__intro {
+  margin-bottom: 20px;
+  padding-bottom: 45px;
+  background-color: #ffffff;
 }
 
 .photo-editor__desc {
   @include text-reset;
   line-height: 30px;
+  text-align: center;
+}
+
+.photo-editor__image {
+  display: block;
+  width: 280px;
+  height: 374px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .photo-editor__range {
   margin-bottom: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 0p5x;
+}
+
+.photo-editor__form {
+  display: block;
 }
 
 .photo-editor__btn {
+  width: 100%;
   font-size: 18px;
   line-height: 18px;
   &--post {
+    margin-bottom: 10px;
   color: $secondary-color;
   border-color: $secondary-color;
 }
   &--cancel {
     color: transparentize($primary-color, 0.9);
     border-color: transparentize($primary-color, 0.9);
+  }
+}
+
+.photo-editor__filters {
+  position: relative;
+  display: flex;
+  width: 200px;
+  @include list-reset;
+  margin: 0 auto;
+  margin-bottom: 130px;
+}
+
+.photo-editor__item {
+  margin-right: 35px;
+}
+
+.photo-editor__item:last-child {
+  margin-right: none;
+}
+
+.photo-editor__range-filter {
+  position: absolute;
+  left: -20px;
+  width: 240px;
+  margin: 0 auto;
+  margin-top: 40px;
+  &--hidden {
+    display: none;
+  }
+}
+
+.photo-editor__bar {
+  position: relative;
+  height: 2px;
+  background-color: $primary-color;
+}
+
+.photo-editor__toggle {
+  position: absolute;
+  top: -5px;
+  right: 32px;
+  width: 14px;
+  height: 14px;
+  background-color: #f2f2f2;
+  border: 2px solid $secondary-color;
+  border-radius: 50%;
+}
+
+.photo-editor__img {
+  width: 48px;
+  height: 48px;
+  &--pink path {
+    fill: $secondary-color;
+  }
+}
+
+.photo-editor__img path {
+  color: rgba(40, 54, 69, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .photo-editor__container {
+    display: flex;
+  }
+  .photo-editor__img-wrap,
+  .photo-editor__wrapper {
+    width: 300px;
+  }
+  .photo-editor__img-wrap {
+    margin-right: 20px;
   }
 }

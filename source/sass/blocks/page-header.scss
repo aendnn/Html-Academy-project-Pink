@@ -1,7 +1,19 @@
 .page-header {
-  margin-bottom: 45px;
+  display: block;
+  margin-bottom: 42px;
   color: #ffffff;
   background-color: #1d2631;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+}
+
+.page-header__container {
+  width: 100%;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    background-size: cover;
+  }
 }

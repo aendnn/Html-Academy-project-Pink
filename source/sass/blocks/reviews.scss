@@ -3,22 +3,64 @@
 }
 
 .reviews__list {
+  display: block;
   @include list-reset;
+  margin-bottom: 30px;
 }
 
 .reviews__review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @include text-reset;
 }
 
+.reviews__about-author {
+  display: none;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
 .reviews__author {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   @include bold-text;
   line-height: 30px;
   font-style: normal;
+  text-align: center;
 }
 
 .reviews__text {
   @include text-reset;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__author {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .reviews__about-author {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .reviews__text {
+    order: -1;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    position: relative;
+    padding-top: 100px;
+  }
+  .reviews__list {
+    display: flex;
+    justify-content: center;
+  }
 }

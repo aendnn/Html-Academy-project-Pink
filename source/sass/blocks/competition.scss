@@ -1,26 +1,70 @@
+.competition {
+  display: block;
+}
+
 .competition__header {
+  width: 280px;
+  margin: 0 auto;
   padding-bottom: 40px;
 }
 
 .competition__desc {
   @include text-reset;
   line-height: 30px;
+  text-align: center;
+}
+
+.competition__instruction {
+  display: none;
+}
+
+.competition__form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
 }
 
 .competition__group {
+  @include text-reset;
+  margin-bottom: 30px;
   border: none;
   &--bg {
+    padding-top: 30px;
     background-color: #f2f2f2;
+  }
+  &--second {
+    order: 1;
+  }
+  &--third {
+    order: 2;
+  }
+  &--fourth {
+    order: 3;
+  }
+  &--fifth {
+    order: 4;
+  }
+}
+
+.competition__group-wrap {
+  width: 280px;
+  margin: 0 auto;
+  &--last {
+    order: 5;
   }
 }
 
 .competition__group-title {
+  margin-bottom: 20px;
   line-height: 18px;
+  text-align: center;
   color: $secondary-color;
   text-transform: uppercase;
 }
 
 .competition__item {
+  display: flex;
+  flex-direction: column;
   @include text-reset;
   margin-bottom: 20px;
 }
@@ -42,6 +86,7 @@
 }
 
 .competition__input-mark {
+  order: -1;
   line-height: 30px;
   color: $secondary-color;
   text-transform: uppercase;
@@ -53,6 +98,7 @@
 }
 
 .competition__textarea {
+  width: 280px;
   min-height: 200px;
   padding: 15px 20px;
   font-size: 18px;
@@ -70,11 +116,125 @@
   color: %$primary-color;
 }
 
+.competition-button {
+  margin-bottom: 30px;
+}
+
 .competition__require {
+  @include text-reset;
   line-height: 30px;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .competition__star {
   color: $secondary-color;
+}
+
+@media (min-width: $tablet-width) {
+  .competition__header {
+    width: 620px;
+    margin: 0 auto;
+  }
+  .competition__desc {
+    width: 420px;
+    margin: 0 auto;
+  }
+  .competition__instruction {
+    &--block {
+      display: block;
+    }
+  }
+
+  .competition__form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .competition__group {
+    &--bg {
+      background-color: #ffffff;
+      border: 2px solid #f2f2f2;
+    }
+    &--second,
+    &--third,
+    &--fourth,
+    &--fifth {
+      order: 0;
+    }
+  }
+  .competition__group-wrap {
+    width: 620px;
+    margin: 0 auto;
+    &--last {
+      display: flex;
+      justify-content: center;
+      order: 0;
+    }
+  }
+  .competition__item {
+    flex-direction: row;
+  }
+  .competition__input-mark {
+    margin-right: 10px;
+    &--dark {
+      order: 1;
+    }
+  }
+  .competition__input {
+    &--text-field {
+      width: 100%;
+    }
+  }
+  .competition__textarea {
+    width: 505px;
+    margin: 0 auto;
+  }
+  .competition__require {
+    width: 190px;
+    margin-top: 20px;
+    margin-left: auto;
+  }
+  .competition__require-text {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition__header {
+    width: 940px;
+    margin: 0 auto;
+  }
+  .competition__desc {
+    width: 600px;
+    text-align: center;
+  }
+  .competition__instruction {
+    display: inline;
+  }
+  .competition__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 920px;
+    margin: 0 auto;
+  }
+  .competition__group {
+    width: 435px;
+    &--second,
+    &--third,
+    &--fifth  {
+      width: 100%;
+    }
+  }
+  .competition__group-wrap {
+    width: 100%;
+  }
+  .competition__require {
+    width: 330px;
+    margin-left: auto;
+  }
+  .competition__require-text {
+    display: inline;
+  }
 }
