@@ -1,5 +1,5 @@
 .main-footer {
-  padding-top: 45px;
+  padding-top: 48px;
 }
 
 .main-footer__container {
@@ -39,6 +39,21 @@
     justify-content: space-between;
   }
   .main-footer__logo {
+    width: 150px;
     margin-right: auto;
   }
+  .main-footer__social {
+    width: 175px;
+  }
+  .main-footer__copyright {
+    width: 130px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    padding-top: 69px;
+  }
+
 }

@@ -25,14 +25,14 @@
 
 @media (min-width: $desktop-width) {
   .site-nav {
-    width: 630px;
+    width: 780px;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    margin-right: 10px;
+    justify-content: flex-end;
   }
   .site-nav__item {
     padding: 40px 0;
-
+    margin-right: 80px;
   }
   .site-nav__item:last-child {
     margin-right: 0;

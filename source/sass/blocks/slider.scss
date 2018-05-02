@@ -15,20 +15,19 @@
 }
 
 .slider__toggle {
-  padding: 0;
-  margin: 0;
+  position: relative;
   margin-right: 20px;
   font-size: 0;
   width: 6px;
   height: 6px;
   background-color: #bec2c7;
   border-radius: 50%;
-  border: none;
   &--current {
-    width: 9px;
-    height: 9px;
+    width: 11px;
+    height: 10px;
+    margin-right: 17px;
     background-color: #ffffff;
-    border: 2px solid #2d3b49;
+    border: 3px solid #2d3b49;
   }
 }
 

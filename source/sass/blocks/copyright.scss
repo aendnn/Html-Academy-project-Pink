@@ -2,8 +2,20 @@
   line-height: 18px;
 }
 
+.copyright__img path {
+  fill: $secondary-color;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
+    display: flex;
     margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    font-size: 18px;
+    line-height: 18px;
   }
 }

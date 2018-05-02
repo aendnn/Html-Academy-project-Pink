@@ -38,7 +38,6 @@
 }
 .main-nav__logo {
   display: block;
-  margin-left: 20px;
   padding-top: 20px;
   padding-bottom: 15px;
 }
@@ -88,7 +87,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    margin-bottom: 0px;
+    margin-bottom: 100px;
   }
   .main-nav__wrap {
     display: flex;
@@ -103,7 +102,6 @@
   }
   .main-nav__logo {
     width: 160px;
-    margin-right: 165px;
     padding-top: 25px;
   }
 }
