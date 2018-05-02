@@ -125,4 +125,26 @@
   .photo-editor__img-wrap {
     margin-right: 20px;
   }
+  .photo-editor__filters {
+    display: flex;
+    flex-direction: column;
+  }
+  .photo-editor__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+  }
+  .photo-editor__pic-wrap {
+    width: 24px;
+  }
+  .photo-editor__range-filter {
+    position: static;
+    width: 205px;
+    margin: 0;
+    padding: 25px 0;
+    &--hidden {
+      display: block;
+    }
+  }
 }
