@@ -1,5 +1,8 @@
 .copyright {
   width: 150px;
+  &--small {
+    width: 130px;
+  }
 }
 
 .copyright__autor {
@@ -15,6 +18,12 @@
   .copyright {
     display: flex;
     margin-left: auto;
+  }
+  .copyright__author {
+    margin-top: 7px;
+  }
+  .copyright__link {
+    margin-right: 15px;
   }
 }
 

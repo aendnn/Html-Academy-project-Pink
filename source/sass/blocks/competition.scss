@@ -88,7 +88,7 @@
   display: flex;
   flex-direction: column;
   @include text-reset;
-  margin-bottom: 47px;
+  margin-bottom: 49px;
   &--text {
     margin-bottom: 18px;
   }
@@ -156,7 +156,7 @@
 .competition__input--radio + .competition__input-mark::before {
   content: "";
   position: absolute;
-  top: -3px;
+  top: 0;
   left: 0;
   width: 38px;
   height: 37px;
@@ -201,8 +201,9 @@
 
 .competition__require {
   @include text-reset;
-  margin-top: 36px;
-  margin-left: 13px;
+  width: 185px;
+  margin: 0 auto;
+  margin-top: 33px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -288,26 +289,24 @@
   .competition__group-wrap {
     display: flex;
     flex-direction: column;
-    width: auto;
-    margin: 0;
+    width: 620px;
+    margin: 0 auto;
     padding-top: 34px;
     &--padding {
       padding-top: 0;
     }
-    &--row {
-      flex-direction: row;
-    }
+
   }
   .competition__item {
     margin: 0;
     flex-direction: row;
     margin-left: 60px;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
     &--text {
       margin-left: 0;
     }
     &--radio {
-      margin-bottom: 28px;
+      margin-bottom: 26px;
     }
     &--column {
       flex-direction: column;
@@ -337,6 +336,7 @@
   .competition__input {
     width: 525px;
     margin-left: auto;
+    padding: 15px 21px;
     &--width {
       width: 565px;
     }

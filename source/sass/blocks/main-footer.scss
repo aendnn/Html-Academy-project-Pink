@@ -1,5 +1,5 @@
 .main-footer {
-  padding-top: 40px;
+  padding-top: 48px;
 }
 
 .main-footer__container {
@@ -15,17 +15,29 @@
   &--hidden {
     display: none;
   }
+  &--column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .main-footer__logo {
   width: 150px;
   margin: 0 auto;
   margin-bottom: 31px;
+  &--center {
+    margin-top: 12px;
+    margin-bottom: 34px;
+  }
 }
 
 .main-footer__social {
   margin: 0 auto;
   margin-bottom: 31px;
+  &--center {
+    margin-bottom: 35px;
+  }
 }
 
 .main-footer__copyright {
@@ -51,7 +63,6 @@
   .main-footer__logo {
     width: 150px;
     margin-left: 0;
-    margin-right: 228px;
   }
   .main-footer__social {
     margin: 0;
