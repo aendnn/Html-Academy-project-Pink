@@ -29,15 +29,17 @@
     background-color: #ffffff;
     border: 3px solid #2d3b49;
   }
+  &--margin {
+    margin-right: 17px;
+  }
 }
 
 .slider__toggle:last-child {
   margin-right: 0;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .slider__toggles--hidden {
     display: none;
   }
-
 }

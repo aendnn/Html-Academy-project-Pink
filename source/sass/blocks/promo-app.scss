@@ -29,14 +29,18 @@
   width: 207px;
   @include list-reset;
   margin: 0 auto;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .promo-app__item {
   display: flex;
   align-items: flex-end;
   width: 45px;
-  margin-right: 40px;
+  margin-right: 37px;
+}
+
+.promo-app__item:last-child {
+  margin-right: 0;
 }
 
 .promo-app__link {
@@ -108,7 +112,7 @@
     margin-bottom: 45px;
   }
   .promo-app__platforms {
-    width: 220px;
+    width: 207px;
     margin-bottom: 38px;
   }
   .promo-app__desc {
@@ -143,9 +147,13 @@
       }
   }
   .promo-app__platforms {
+    width: 210px;
     margin: 0;
-    margin-left: 40px;
+    margin-left: 46px;
     margin-bottom: 57px;
+  }
+  .promo-app__item {
+    margin-right: 30px;
   }
   .promo-app__desc {
     margin: 0;

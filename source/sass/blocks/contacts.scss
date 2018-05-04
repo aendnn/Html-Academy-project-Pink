@@ -8,9 +8,10 @@
   justify-content: center;
   text-align: center;
   @include text-reset;
+  margin-left: 4px;
   margin-bottom: 26px;
   &--first {
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
 }
 
@@ -30,9 +31,6 @@
 .contacts__offer {
   @include bold-text;
   margin-bottom: 3px;
-  &--first {
-    margin-bottom: 0;
-  }
 }
 
 .contacts__link {

@@ -1,6 +1,6 @@
 .photo-editor {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 43px;
   background-color: #f2f2f2;
   &::before {
     content: "";
@@ -14,13 +14,17 @@
 }
 
 .photo-editor__intro {
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 20px;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
   background-color: #ffffff;
 }
 
 .photo-editor__desc {
+  width: 255px;
   @include text-reset;
+  margin-left: 30px;
   line-height: 30px;
   text-align: center;
 }
@@ -47,7 +51,7 @@
   font-size: 18px;
   line-height: 18px;
   &--post {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
   color: $secondary-color;
   border-color: $secondary-color;
 }
@@ -60,10 +64,10 @@
 .photo-editor__filters {
   position: relative;
   display: flex;
-  width: 200px;
+  width: 214px;
   @include list-reset;
   margin: 0 auto;
-  margin-bottom: 130px;
+  margin-bottom: 108px;
 }
 
 .photo-editor__item {
@@ -76,10 +80,10 @@
 
 .photo-editor__range-filter {
   position: absolute;
-  left: -20px;
+  left: -15px;
   width: 240px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 32px;
   &--hidden {
     display: none;
   }
@@ -93,8 +97,8 @@
 
 .photo-editor__toggle {
   position: absolute;
-  top: -5px;
-  right: 32px;
+  top: -6px;
+  right: 33px;
   width: 14px;
   height: 14px;
   background-color: #f2f2f2;
@@ -105,9 +109,7 @@
 .photo-editor__img {
   width: 48px;
   height: 48px;
-  &--pink path {
-    fill: $secondary-color;
-  }
+
 }
 
 .photo-editor__img path {

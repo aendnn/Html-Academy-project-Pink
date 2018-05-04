@@ -71,7 +71,7 @@
 .features__title {
   display: block;
   @include heading;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -109,7 +109,7 @@
     flex-direction: column;
     width: 620px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
   .features__list {
     margin-top: 34px;
@@ -136,9 +136,8 @@
   }
   .features__title {
     margin-bottom: 0;
-    margin-left: 4px;
     font-size: 40px;
-    line-height: 47px;
+    line-height: 48px;
     &--width {
       width: 335px;
       margin-left: auto;
