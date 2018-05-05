@@ -27,3 +27,9 @@
     line-height: 59px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .gallery-intro {
+    padding-bottom: 102px;
+  }
+}

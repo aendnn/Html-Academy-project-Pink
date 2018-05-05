@@ -23,6 +23,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .gallery {
+    margin-bottom: 43px;
+  }
   .gallery__header {
     width: 620px;
     margin: 0 auto;
@@ -37,6 +40,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .gallery {
+    margin-bottom: 7px;
+  }
+  .gallery__header {
+    width: 940px;
+    margin-bottom: 87px;
+    padding-top: 25px;
+  }
   .gallery__text {
     width: 575px;
   }

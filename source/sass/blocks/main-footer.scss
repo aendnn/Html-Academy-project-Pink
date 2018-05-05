@@ -1,5 +1,8 @@
 .main-footer {
   padding-top: 48px;
+  &--padding-form {
+    padding-top: 39px;
+  }
 }
 
 .main-footer__container {
@@ -28,7 +31,7 @@
   margin-bottom: 31px;
   &--center {
     margin-top: 12px;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
   }
 }
 
@@ -36,7 +39,7 @@
   margin: 0 auto;
   margin-bottom: 31px;
   &--center {
-    margin-bottom: 35px;
+    margin-bottom: 44px;
   }
 }
 
@@ -45,7 +48,6 @@
   justify-content: space-between;
   @include text-reset;
   margin: 0 auto;
-  margin-top: 5px;
 }
 
 .main-footer__copyright-author {
@@ -62,7 +64,7 @@
   }
   .main-footer__logo {
     width: 150px;
-    margin-left: 0;
+    margin: 0;
   }
   .main-footer__social {
     margin: 0;

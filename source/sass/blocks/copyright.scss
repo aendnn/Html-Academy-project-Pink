@@ -17,10 +17,10 @@
 @media (min-width: $tablet-width) {
   .copyright {
     display: flex;
-    margin-left: auto;
   }
   .copyright__author {
-    margin-top: 7px;
+    margin-top: 6px;
+    margin-left: 5px;
   }
   .copyright__link {
     margin-right: 15px;
