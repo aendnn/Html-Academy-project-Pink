@@ -1,20 +1,41 @@
 .competition-intro {
-  padding-top: 30px;
-  padding-bottom: 55px;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 31px;
+  padding-bottom: 53px;
 }
 
 .competition-intro__title {
   @include text-reset;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 29px;
   font-weight: 300;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
+  .competition-intro {
+    width: 660px;
+    padding-bottom: 82px;
+  }
   .competition-intro__title {
+    width: 485px;
+    margin: 0 auto;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 59px;
     font-weight: 300;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition-intro {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 26px;
+    padding-bottom: 101px;
+  }
+  .competition-intro__title {
+    width: 750px;
+    margin: 0 auto;
   }
 }

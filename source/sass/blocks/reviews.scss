@@ -1,11 +1,12 @@
 .reviews {
+  margin-bottom: 87px;
   padding-bottom: 45px;
 }
 
 .reviews__list {
   display: block;
   @include list-reset;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .reviews__review {
@@ -23,11 +24,12 @@
 }
 
 .reviews__author {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   @include bold-text;
   line-height: 30px;
   font-style: normal;
   text-align: center;
+  color: #000000;
 }
 
 .reviews__text {
@@ -38,18 +40,25 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    margin-bottom: 61px;
+  }
+  .reviews__list {
+    margin-bottom: 2px;
+  }
   .reviews__author {
+    margin: 0;
     font-size: 20px;
-    margin-bottom: 10px;
   }
   .reviews__about-author {
     font-size: 14px;
     display: block;
-    margin-bottom: 30px;
+    margin-top: 2px;
+    margin-bottom: 34px;
   }
   .reviews__text {
     order: -1;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-size: 18px;
   }
 }
@@ -57,10 +66,28 @@
 @media (min-width: $desktop-width) {
   .reviews {
     position: relative;
-    padding-top: 100px;
+    margin-bottom: 105px;
+    padding-top: 121px;
   }
   .reviews__list {
     display: flex;
     justify-content: center;
+  }
+  .reviews__text {
+    width: 695px;
+    margin: 0 auto;
+    margin-bottom: 37px;
+  }
+  .reviews__author {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .reviews__about-author {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  .reviews__toggles--hidden {
+    display: none;
   }
 }

@@ -1,13 +1,19 @@
 .gallery {
   display: block;
-  margin-bottom: 45px;
+  margin-bottom: 23px;
+}
+
+.gallery__header {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 3px;
 }
 
 .gallery__text {
   @include text-reset;
-  width: 250px;
+  width: 244px;
   margin: 0 auto;
-  margin-bottom: 55px;
+  margin-bottom: 49px;
   line-height: 30px;
   text-align: center;
 }
@@ -17,15 +23,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .gallery {
+    margin-bottom: 43px;
+  }
+  .gallery__header {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 42px;
+    margin-bottom: 75px;
+  }
   .gallery__text {
     width: 440px;
     margin: 0 auto;
-    margin-bottom: 55px;
     font-size: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .gallery {
+    margin-bottom: 4px;
+  }
+  .gallery__header {
+    width: 940px;
+    margin-bottom: 87px;
+    padding-top: 25px;
+  }
   .gallery__text {
     width: 575px;
   }

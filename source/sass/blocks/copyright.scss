@@ -1,9 +1,39 @@
 .copyright {
+  width: 150px;
+  &--small {
+    width: 127px;
+  }
+}
+
+.copyright__author {
+  width: 110px;
   line-height: 18px;
+}
+
+.copyright__img path {
+  fill: $secondary-color;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
-    margin-left: auto;
+    display: flex;
+  }
+  .copyright__author {
+    margin-top: 6px;
+    margin-left: 5px;
+  }
+  .copyright__link {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    width: 155px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .copyright__author {
+    margin-left: 0;
   }
 }

@@ -36,6 +36,12 @@
 .main-nav--opened .main-nav__logo {
   padding-bottom: 19px;
 }
+
+.main-nav__wrap {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .main-nav__logo {
   display: block;
   margin-left: 20px;
@@ -70,7 +76,13 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    margin-bottom: 70px;
+    margin-bottom: 71px;
+    &--margin {
+      margin-bottom: 41px;
+    }
+  }
+  .main-nav__wrap {
+    width: 660px;
   }
   .main-nav__logo {
     padding-top: 25px;
@@ -88,7 +100,10 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    margin-bottom: 0px;
+    margin-bottom: 93px;
+    &--margin {
+      margin-bottom: 40px;
+    }
   }
   .main-nav__wrap {
     display: flex;
@@ -103,7 +118,6 @@
   }
   .main-nav__logo {
     width: 160px;
-    margin-right: 165px;
     padding-top: 25px;
   }
 }

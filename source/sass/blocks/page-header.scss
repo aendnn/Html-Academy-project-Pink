@@ -5,6 +5,10 @@
   background-color: #1d2631;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: 0 200px;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+  }
 }
 
 .page-header__container {
@@ -14,6 +18,13 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    margin-bottom: 50px;
     background-size: cover;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    margin-bottom: 68px;
   }
 }

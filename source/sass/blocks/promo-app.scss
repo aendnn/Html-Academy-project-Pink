@@ -21,6 +21,13 @@
     color: #ffffff;
     border-color: #ffffff;
   }
+  &:hover {
+    color: $secondary-color;
+    background-color: #ffffff;
+  }
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .promo-app__platforms {
@@ -29,7 +36,7 @@
   width: 207px;
   @include list-reset;
   margin: 0 auto;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .promo-app__item {
@@ -37,6 +44,10 @@
   align-items: flex-end;
   width: 45px;
   margin-right: 37px;
+}
+
+.promo-app__item:last-child {
+  margin-right: 0;
 }
 
 .promo-app__link {
@@ -86,7 +97,6 @@
 @media (min-width: $tablet-width) {
   .promo-app {
     display: flex;
-    margin-left: 10px;
     background-position: 304px 0;
   }
   .promo-app__wrapper-text {
@@ -96,10 +106,11 @@
   }
   .promo-app__lead {
     position: relative;
+    width: 188px;
     display: block;
-    margin-left: 11px;
-    margin-top: 25px;
-    margin-bottom: 30px;
+    margin-top: 23px;
+    margin-left: 55px;
+    margin-bottom: 31px;
     text-align: center;
   }
   .promo-app__btn {
@@ -108,27 +119,50 @@
     margin-bottom: 45px;
   }
   .promo-app__platforms {
-    margin-bottom: 40px;
+    width: 207px;
+    margin-bottom: 38px;
   }
   .promo-app__desc {
-    margin-left: 5px;
+    width: 300px;
     font-size: 18px;
   }
 }
 
 
 @media (min-width: $desktop-width) {
-  .promo-app__wrapper-text {
-    width: 370px;
+    .promo-app__wrapper-text {
+      width: 370px;
+      padding-bottom: 122px;
+    }
+    .promo-app__lead {
+      width: 240px;
+      margin-top: 17px;
+      margin-left: 30px;
+      margin-bottom: 53px;
+      font-size: 50px;
+      line-height: 59px;
+    }
+    .promo-app__btn {
+      &--white {
+        width: 300px;
+        margin-bottom: 63px;
+        margin-left: 0;
+        padding: 0;
+        padding: 14px 25px;
+        font-size: 21px;
+        line-height: 21px;
+      }
   }
-  .promo-app__lead {
-    font-size: 50px;
-    line-height: 50px;
+  .promo-app__platforms {
+    width: 210px;
+    margin: 0;
+    margin-left: 46px;
+    margin-bottom: 57px;
   }
-  .promo-app__btn {
-    width: 300px;
+  .promo-app__item {
+    margin-right: 30px;
   }
   .promo-app__desc {
-    width: 300px;
+    margin: 0;
   }
 }

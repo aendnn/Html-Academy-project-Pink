@@ -4,10 +4,6 @@
   justify-content: center;
 }
 
-.photos-list__pub-text {
-  @include text-reset;
-}
-
 @media (min-width: $tablet-width) {
   .photos-list__container {
     display: flex;

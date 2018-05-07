@@ -3,7 +3,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  padding: 15px 45px;
+  padding: 16px 45px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -13,6 +13,20 @@
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  &--width {
+    width: 280px;
+    margin: 0 auto;
+  }
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &:disabled {
+    cursor: default;
+    background-color: #e5e5e5;
+  }
 }
 @media (min-width: $tablet-width) {
   .competition-button {
