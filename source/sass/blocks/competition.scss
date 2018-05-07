@@ -410,9 +410,10 @@
       width: 100%;
     }
     &--second {
-      padding-bottom: 15px;
+      padding-bottom: 16px;
     }
     &--third {
+      margin-bottom: 58px;
       padding-bottom: 11px;
     }
     &--fourth {
@@ -433,6 +434,9 @@
     margin-bottom: 25px;
     &--text {
       margin-bottom: 54px;
+    }
+    &--radio {
+      margin-bottom: 28px;
     }
     &--center {
       width: 376px;
@@ -455,22 +459,22 @@
     }
     &--order-first {
       order: 1;
-      margin-right: 48px;
+      margin-right: 57px;
     }
     &--order-third {
       order: 3;
     }
     &--order-second {
       order: 2;
-      margin-right: 48px;
+      margin-right: 54px;
     }
     &--order-fifth {
       order: 5;
-      margin-right: 55px;
+      margin-right: 63px;
     }
     &--order-fourth {
       order: 4;
-      margin-right: 44px;
+      margin-right: 48px;
     }
     &--order-sixth {
       order: 5;
@@ -494,6 +498,7 @@
   &--last {
     justify-content: space-between;
     margin-left: 0;
+    padding-top: 33px;
   }
   &--checkbox {
     display: flex;
@@ -515,13 +520,16 @@
       width: 314px;
       margin: 0;
     }
+    &--text-field {
+      padding: 14px 18px;
+    }
   }
   .competition__input-mark {
     &--dark {
       padding-left: 74px;
     }
     &--padding {
-      padding-left: 63px;
+      padding-left: 59px;
     }
     &--order {
       margin-left: 19px;
@@ -535,14 +543,15 @@
   }
   .competition__textarea {
     width: 820px;
-    min-height: 127px;
+    min-height: 125px;
     margin-left: auto;
     margin-right: auto;
+    padding: 11px 17px;
   }
   .competition__require {
     width: 315px;
     margin: 0;
-    margin-top: 14px;
+    margin-top: 19px;
     margin-left: auto;
   }
   .competition__require-text {

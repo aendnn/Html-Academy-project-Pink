@@ -1,7 +1,7 @@
 .publication {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   &--width {
     width: 100%;
   }
@@ -17,9 +17,10 @@
     content: "Панорама дня";
     position: absolute;
     top: 0;
-    right: 2px;
+    top: 0;
+    right: 20px;
     width: 140px;
-    padding: 5px 19px;
+    padding: 6px 19px;
     font-size: 12px;
     line-height: 24px;
     font-weight: 700;
@@ -39,8 +40,8 @@
   width: 280px;
   margin: 0 auto;
   padding-top: 17px;
-  padding-bottom: 21px;
-  padding-left: 17px;
+  padding-bottom: 20px;
+  padding-left: 19px;
   background-color: #f2f2f2;
 }
 
@@ -96,9 +97,10 @@
   .publication {
     width: 300px;
     margin-right: 20px;
+    margin-bottom: 20px;
     &--width {
       width: 100%;
-      margin-bottom: 45px;
+      margin-bottom: 51px;
     }
   }
   .publication:nth-child(2n) {
@@ -132,12 +134,13 @@
     &--width {
       min-height: auto;
       width: 620px;
-      padding: 23px 0;
-      padding-left: 39px;
+      padding-top: 25px;
+      padding-left: 37px;
+      padding-bottom: 13px;
     }
   }
   .publication__text {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     &--width {
       width: 595px;
     }
@@ -176,9 +179,9 @@
 @media (min-width: $desktop-width) {
   .publication {
     margin-right: 0px;
-    margin-bottom: 52px;
+    margin-bottom: 54px;
     &--width {
-      margin-bottom: 43px;
+      margin-bottom: 50px;
     }
   }
   .publication:last-child {

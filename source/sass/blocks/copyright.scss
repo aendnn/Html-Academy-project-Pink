@@ -1,11 +1,11 @@
 .copyright {
   width: 150px;
   &--small {
-    width: 130px;
+    width: 127px;
   }
 }
 
-.copyright__autor {
+.copyright__author {
   width: 110px;
   line-height: 18px;
 }
@@ -23,7 +23,7 @@
     margin-left: 5px;
   }
   .copyright__link {
-    margin-right: 15px;
+    margin-left: 15px;
   }
 }
 
@@ -32,5 +32,8 @@
     width: 155px;
     font-size: 18px;
     line-height: 18px;
+  }
+  .copyright__author {
+    margin-left: 0;
   }
 }

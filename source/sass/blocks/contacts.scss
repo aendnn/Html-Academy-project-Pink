@@ -55,7 +55,8 @@
   }
   .contacts__item {
     width: 300px;
-    margin-bottom: 50px;
+    margin-left: 0;
+    margin-bottom: 47px;
     &--last {
       margin-left: auto;
     }
@@ -98,7 +99,7 @@
       order: 1;
     }
     &--center {
-      margin-top: 23px;
+      margin-top: 26px;
     }
   }
   .contacts__offer {
