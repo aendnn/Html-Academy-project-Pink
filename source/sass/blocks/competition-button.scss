@@ -17,6 +17,16 @@
     width: 280px;
     margin: 0 auto;
   }
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &:disabled {
+    cursor: default;
+    background-color: #e5e5e5;
+  }
 }
 @media (min-width: $tablet-width) {
   .competition-button {

@@ -105,6 +105,10 @@
   background-color: #f2f2f2;
   border: 2px solid $secondary-color;
   border-radius: 50%;
+  cursor: pointer;
+  &:active {
+    background-color: $secondary-color;
+  }
 }
 
 .photo-editor__img {
@@ -114,6 +118,25 @@
 
 .photo-editor__img path {
   color: rgba(40, 54, 69, 0.3);
+}
+
+.photo-editor__btn{
+  &--post:hover {
+    color: rgb(255, 255, 255);
+    background-color: $secondary-color;
+  }
+  &--post:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &--cancel:hover {
+    color: #b5b9be;
+    border-color: #b5b9be;
+  }
+  &--cancel:active {
+    background-color: #b5b9be;
+    color: rgba(255, 255, 255, 0.3);
+    border-color: #b5b9be;
+  }
 }
 
 @media (min-width: $tablet-width) {

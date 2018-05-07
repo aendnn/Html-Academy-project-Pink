@@ -21,6 +21,13 @@
     color: #ffffff;
     border-color: #ffffff;
   }
+  &:hover {
+    color: $secondary-color;
+    background-color: #ffffff;
+  }
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .promo-app__platforms {

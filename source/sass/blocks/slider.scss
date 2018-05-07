@@ -32,6 +32,12 @@
   &--margin {
     margin-right: 17px;
   }
+  &:hover {
+    background-color: #7e868f;
+  }
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
 }
 
 .slider__toggle:last-child {
