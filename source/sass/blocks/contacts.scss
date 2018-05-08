@@ -8,10 +8,39 @@
   justify-content: center;
   text-align: center;
   @include text-reset;
-  margin-left: 4px;
   margin-bottom: 26px;
   &--first {
     margin-bottom: 20px;
+  }
+  &--image {
+    position: relative;
+    width: 320px;
+    height: 213px;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  &--image::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 61px;
+    background-image: url("../../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-size: 595px auto;
+    background-position: center;
+  }
+  &--image::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    width: 36px;
+    height: 36px;
+    background-image: url("../../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -47,6 +76,15 @@
   }
 }
 
+.contacts__image {
+  position: absolute;
+  top: -433px;
+  display: block;
+  height: 645px;
+  width: 640px;
+  object-fit: cover;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__items-wrap {
     display: flex;
@@ -60,6 +98,18 @@
     &--last {
       margin-left: auto;
     }
+    &--image {
+      width: 100%;
+      min-height: 355px;
+      margin-bottom: 0;
+    }
+    &--image::before {
+      top: -12px;
+    }
+    &--image::after {
+      top: 49%;
+      left: 47.2%;
+    }
   }
   .contacts__item:last-child {
     margin-left: auto;
@@ -72,13 +122,15 @@
   .contacts__offer {
     margin-bottom: 6px;
   }
+  .contacts__image {
+    top: -366px;
+    width: 700px;
+    height: 848px;
+  }
   .contacts__feedback {
     font-size: 40px;
     line-height: 48px;
     color: $primary-color;
-  }
-  .contacts__image {
-
   }
 }
 
@@ -101,11 +153,23 @@
     &--center {
       margin-top: 26px;
     }
+    &--image {
+      min-height: 521px;
+    }
+    &--image::after {
+      top: 54%;
+      left: 48%;
+    }
   }
   .contacts__offer {
     margin-bottom: 23px;
   &--margin {
     margin-bottom: 26px;
   }
+ }
+ .contacts__image {
+   top: -259px;
+   width: 100%;
+   height: 976px;
  }
 }

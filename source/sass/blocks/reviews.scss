@@ -1,6 +1,6 @@
 .reviews {
-  margin-bottom: 87px;
-  padding-bottom: 45px;
+  margin-bottom: 25px;
+  padding-bottom: 33px;
 }
 
 .reviews__list {
@@ -41,7 +41,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    margin-bottom: 61px;
+    margin-bottom: 0;
   }
   .reviews__list {
     margin-bottom: 2px;
@@ -66,7 +66,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     position: relative;
-    margin-bottom: 105px;
+    margin-bottom: 0;
     padding-top: 121px;
   }
   .reviews__list {

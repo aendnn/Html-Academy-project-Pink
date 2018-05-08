@@ -11,7 +11,11 @@
       <nav class="main-nav main-nav--opened main-nav--no-js main-nav--margin">
         <div class="main-nav__wrap">
           <a class="main-nav__logo logo-link" href="index.html">
-            <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Меню</span>
@@ -51,7 +55,11 @@
             <div class="publication__img-wrapper publication__img-wrapper--pub-day">
               <a class="publication__photo-full" href="full-size.html">
                 <span class="visually-hidden">Увиличить изображение</span>
-                <img class="publication__image publication__image--height" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Вид с моста для банджи-джампинга">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                  <img class="publication__image publication__image--height" src="img/panorama-mobile@1x.jpg" alt="Вид с моста для банджи-джампинга">
+                </picture>
               </a>
             </div>
             <div class="publication__info-wrapper publication__info-wrapper--width">
@@ -81,7 +89,11 @@
               <h3 class="visually-hidden">Публикация пользователя</h3>
               <a class="publication__photo-full" href="full-size.html">
                 <span class="visually-hidden">Увиличить изображение</span>
-                <img class="publication__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото машины">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="publication__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото машины">
+                </picture>
               </a>
               <div class="publication__info-wrapper">
                 <div class="publication__author-wrap">
@@ -106,7 +118,11 @@
                 <h3 class="visually-hidden">Публикация пользователя</h3>
                 <a class="publication__photo-full" href="full-size.html">
                   <span class="visually-hidden">Увиличить изображение</span>
-                  <img class="publication__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабаны">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x">
+                    <img class="publication__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабаны">
+                  </picture>
                 </a>
                 <div class="publication__info-wrapper">
                   <div class="publication__author-wrap">
@@ -128,7 +144,11 @@
                 <h3 class="visually-hidden">Публикация пользователя</h3>
                 <a class="publication__photo-full" href="full-size.html">
                   <span class="visually-hidden">Увиличить изображение</span>
-                  <img class="publication__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Вид из окна">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                    <img class="publication__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Вид из окна">
+                  </picture>
                 </a>
                 <div class="publication__info-wrapper">
                   <div class="publication__author-wrap">
@@ -150,7 +170,11 @@
                 <h3 class="visually-hidden">Публикация пользователя</h3>
                   <a class="publication__photo-full" href="full-size.html">
                   <span class="visually-hidden">Увиличить изображение</span>
-                  <img class="publication__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Рынок Кубанская Бахча">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" src="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                    <img class="publication__image" src="img/photo-fair-mobile@1x.jpg" src="img/photo-fair-mobile@2x.jpg 2x" alt="Рынок Кубанская Бахча">
+                  </picture>
                 </a>
                 <div class="publication__info-wrapper">
                   <div class="publication__author-wrap">
@@ -172,7 +196,11 @@
                 <h3 class="visually-hidden">Публикация пользователя</h3>
                   <a class="publication__photo-full" href="full-size.html">
                   <span class="visually-hidden">Увиличить изображение</span>
-                  <img class="publication__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото ног на фоне гор">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, iimg/photo-pov-tablet@2x.jpg 2x">
+                    <img class="publication__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото ног на фоне гор">
+                  </picture>
                 </a>
                 <div class="publication__info-wrapper">
                   <div class="publication__author-wrap">
@@ -194,7 +222,11 @@
                 <h3 class="visually-hidden">Публикация пользователя</h3>
                 <a class="publication__photo-full" href="full-size.html">
                   <span class="visually-hidden">Увиличить изображение</span>
-                  <img class="publication__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Вид с окна самолета">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                    <img class="publication__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Вид с окна самолета">
+                  </picture>
                 </a>
                 <div class="publication__info-wrapper">
                   <div class="publication__author-wrap">
@@ -224,7 +256,11 @@
         </header>
         <div class="photo-editor__container container">
           <div class="photo-editor__img-wrap">
-            <img class="photo-editor__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото заснеженной дороги">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="photo-editor__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото заснеженной дороги">
+            </picture>
           </div>
           <form class="photo-editor__form" action="https://echo.htmlacademy.ru" method="get">
             <ul class="photo-editor__filters">
@@ -296,7 +332,10 @@
         <h2 class="visually-hidden">Второстепенная информация</h2>
         <a class="main-footer__logo logo-link logo-link logo-link--blue logo-link--center" href="index.html">
           <span class="visually-hidden">Главная</span>
-          <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Мобильное приложение «Pink»">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="129" height="34" alt="Мобильное приложение «Pink»">
+          </picture>
         </a>
         <section class="main-footer__social main-footer__social--center">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>

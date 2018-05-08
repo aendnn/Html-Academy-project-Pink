@@ -11,7 +11,11 @@
       <nav class="main-nav main-nav--opened main-nav--no-js main-nav--margin main-nav--bottom">
         <div class="main-nav__wrap">
           <a class="main-nav__logo logo-link" href="index.html">
-            <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Меню</span>
@@ -169,7 +173,11 @@
           <h2 class="visually-hidden">Второстепенная информация</h2>
           <a class="main-footer__logo logo-link logo-link--blue main-footer__logo--center" href="index.html">
             <span class="visually-hidden">Главная</span>
-            <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="129" height="34" alt="Мобильное приложение «Pink»">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+              <img class="contacts__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg" alt="Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+            </picture>
           </a>
           <section class="main-footer__social main-footer__social--center">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>

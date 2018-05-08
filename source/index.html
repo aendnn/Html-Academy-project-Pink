@@ -11,7 +11,11 @@
       <nav class="main-nav main-nav--opened main-nav--no-js">
         <div class="main-nav__wrap">
           <a class="main-nav__logo logo-link">
-            <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение «Pink»">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Меню</span>
@@ -89,7 +93,7 @@
                 </section>
               </li>
               <li class="features__item">
-                <section class="features__feature features__feature--third">
+                <section class="features__feature features__feature--third-img">
                   <h3 class="features__feature-title features__feature-title--width">Заводит новых друзей</h3>
                   <p class="features__feature-desc features__feature-desc--last-width">
                     Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
@@ -285,9 +289,9 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__container container">
-        <section class="main-footer__contacts contacts">
-          <h2 class="visually-hidden">Обратная связь</h2>
+      <section class="main-footer__contacts contacts">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <div class="main-footer__container container">
           <p class="contacts__title">
             <b class="contacts__feedback contacts__feedback--block">Остались вопросы?</b>
             <b class="contacts__feedback">Свяжитесь с нами!</b>
@@ -312,15 +316,23 @@
               </a>
             </p>
           </div>
-          <p class="contacts__item">
-            <img class="contacts__image" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+        </div>
+          <p class="contacts__item contacts__item--image">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+              <img class="contacts__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg" alt="Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+            </picture>
           </p>
       </section>
       <section class="main-footer__info main-footer__info--hidden">
         <h2 class="visually-hidden">Второстепенная информация</h2>
         <a class="main-footer__logo logo-link logo-link--blue" href="index.html">
           <span class="visually-hidden">Главная</span>
-          <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="129" height="34" alt="Мобильное приложение «Pink»">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="129" height="34" alt="Мобильное приложение «Pink»">
+          </picture>
         </a>
         <section class="main-footer__social">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
@@ -348,7 +360,6 @@
           </a>
         </div>
       </section>
-    </div>
   </footer>
   </body>
 </html>

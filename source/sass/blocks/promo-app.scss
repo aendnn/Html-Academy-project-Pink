@@ -2,6 +2,10 @@
   background-image: url("../../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 1px;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/iphone-hand-mobile@2x.png");
+    background-size: 258px auto;
+  }
 }
 
 .promo-app__wrapper-text {
@@ -97,7 +101,13 @@
 @media (min-width: $tablet-width) {
   .promo-app {
     display: flex;
-    background-position: 304px 0;
+    background-image: url("../../img/iphone-hand-tablet@1x.png");
+    background-size: 700px auto;
+    background-position: -21px 4px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/iphone-hand-tablet@2x.png");
+      background-size: 700px auto;
+    }
   }
   .promo-app__wrapper-text {
     width: 300px;
@@ -130,6 +140,14 @@
 
 
 @media (min-width: $desktop-width) {
+    .promo-app {
+      background-image: url("../../img/iphone-hand-desktop@1x.png");
+      background-size: 1050px auto;
+      background-position: 17px 7px;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/iphone-hand-desktop@2x.png");
+      }
+    }
     .promo-app__wrapper-text {
       width: 370px;
       padding-bottom: 122px;
@@ -145,7 +163,7 @@
     .promo-app__btn {
       &--white {
         width: 300px;
-        margin-bottom: 63px;
+        margin-bottom: 64px;
         margin-left: 0;
         padding: 0;
         padding: 14px 25px;

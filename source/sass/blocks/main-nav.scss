@@ -4,6 +4,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   &--closed {
     .main-nav__toggle::before {
+      display: none;
       content: "";
       position: absolute;
       top: 0;
@@ -15,6 +16,7 @@
   }
   &--opened {
     .main-nav__toggle::after {
+      display: none;
       content: "";
       position: absolute;
       top: 0;
@@ -33,10 +35,6 @@
   background-color: $primary-color;
 }
 
-.main-nav--opened .main-nav__logo {
-  padding-bottom: 19px;
-}
-
 .main-nav__wrap {
   width: 320px;
   margin: 0 auto;
@@ -44,9 +42,9 @@
 
 .main-nav__logo {
   display: block;
-  margin-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  margin-left: 19px;
+  padding-top: 36px;
+  padding-bottom: 18px;
 }
 
 .main-nav__logo-image {
@@ -55,6 +53,7 @@
 }
 
 .main-nav__toggle {
+  display: none;
   position: absolute;
   top: 20px;
   right: 52px;
@@ -85,8 +84,8 @@
     width: 660px;
   }
   .main-nav__logo {
-    padding-top: 25px;
-    padding-bottom: 27px;
+    padding-top: 10px;
+    padding-bottom: 34px;
   }
   .main-nav__logo-image {
     width: 147px;
@@ -118,6 +117,7 @@
   }
   .main-nav__logo {
     width: 160px;
-    padding-top: 25px;
+    margin-left: 0;
+    padding-top: 24px;
   }
 }
