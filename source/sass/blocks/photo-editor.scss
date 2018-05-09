@@ -68,7 +68,7 @@
   width: 214px;
   @include list-reset;
   margin: 0 auto;
-  margin-bottom: 108px;
+  margin-bottom: 106px;
 }
 
 .photo-editor__item {
@@ -219,7 +219,7 @@
   }
   .photo-editor__btn {
     width: 260px;
-    margin-left: 25px;
+    margin-left: 27px;
     margin-bottom: 26px;
   }
 }
@@ -253,13 +253,14 @@
   }
   .photo-editor__toggle {
     &--crop {
-      left: 71px;
+      left: 73px;
     }
     &--fill {
+      left: auto;
       right: 29px;
     }
     &--contrast {
-      left: 160px;
+      left: 163px;
     }
   }
   .photo-editor__btn-wrap {
@@ -269,7 +270,7 @@
   }
   .photo-editor__btn {
     width: 183px;
-    margin-left: 2px;
+    margin-left: 4px;
     margin-right: 43px;
   }
   .photo-editor__btn:last-child {

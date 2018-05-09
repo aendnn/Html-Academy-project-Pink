@@ -104,13 +104,13 @@
       margin-bottom: 40px;
     }
   }
+  .main-nav--opened .main-nav__wrap {
+    background: none;
+  }
   .main-nav__wrap {
     display: flex;
     width: 940px;
     margin: 0 auto;
-  }
-  .main-nav--opened .main-nav__wrap {
-    background-color: rgba(0, 0, 0, 0.3);
   }
   .main-nav__toggle {
     display: none;

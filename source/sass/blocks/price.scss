@@ -20,7 +20,7 @@
 .price__list {
   width: 100%;
   margin-top: 12px;
-  margin-bottom: 39px;
+  margin-bottom: 41px;
   transform: translateX(-277px);
 }
 
@@ -82,7 +82,7 @@
 
 .price__filter {
   width: 280px;
-  padding: 14px 21px;
+  padding: 13px 21px;
   padding-bottom: 15px;
   font-size: 14px;
   line-height: 30px;
@@ -103,11 +103,13 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 20px;
-    width: 21px;
-    height: 16px;
-    background-image: url("../../img/icon-yes.svg");
+    top: 1px;
+    left: 9px;
+    width: 32px;
+    height: 33px;
+    background-image: url(../../img/icon-yes.svg);
+    background-size: 33px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -116,13 +118,13 @@
     position: relative;
     margin-right: 28px;
   &::before {
-    content:"";
+    content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 3px;
     width: 26px;
     height: 26px;
-    background-image: url("../../img/icon-no.svg");
+    background-image: url(../../img/icon-no.svg);
   }
 }
 
@@ -201,14 +203,22 @@
     text-transform: none;
   }
   .price__filter-yes {
-    width: 31px;
+    width: 28px;
     height: 31px;
     margin-right: 50%;
+    &--check::before {
+      top: 3px;
+      left: 10px;
+    }
   }
-  .price__filter-no{
+  .price__filter-no {
     width: 31px;
     height: 31px;
     margin-right: 42%;
+    &--cross::before {
+      top: 2px;
+      left: 1px;
+    }
   }
   .price__toggles  {
     &--hidden {
@@ -222,7 +232,7 @@
     padding-bottom: 52px;
   }
   .price__list {
-    margin-top: 57px;
+    margin-top: 56px;
   }
   .price__filter-name--hidden {
     display: none;
@@ -261,8 +271,16 @@
   }
   .price__filter-yes {
     margin-right: 55%;
+    &--check::before {
+      top: 5px;
+      left: 12px;
+    }
   }
   .price__filter-no {
     margin-right: 46.5%;
+    &--cross::before {
+      top: 1px;
+      left: 0px;
+    }
   }
 }

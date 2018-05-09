@@ -68,15 +68,48 @@
     position: relative;
     margin-bottom: 0;
     padding-top: 121px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 149px;
+      left: 1px;
+      width: 21px;
+      height: 41px;
+      background-image: url("../../img/icon-review-arrow-left.svg");
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 149px;
+      right: 1px;
+      width: 21px;
+      height: 41px;
+      background-image: url("../../img/icon-review-arrow-right.svg");
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
   }
   .reviews__list {
     display: flex;
     justify-content: center;
   }
   .reviews__text {
+    position: relative;
     width: 695px;
     margin: 0 auto;
     margin-bottom: 37px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -111px;
+      left: 311px;
+      width: 78px;
+      height: 63px;
+      background-image: url("../../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+    }
   }
   .reviews__author {
     font-size: 24px;

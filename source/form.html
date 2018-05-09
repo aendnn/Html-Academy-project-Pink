@@ -118,32 +118,32 @@
                   <p class="competition__item competition__item--checkbox competition__item--margin competition__item--order-first">
                     <input class="competition__input competition__input--checkbox visually-hidden" type="checkbox"
                     id="selfie" name="selfie" checked>
-                    <label class="competition__input-mark competition__input-mark--dark competition__input-mark--padding" for="selfie">Сделал селфи с акулой</label>
+                    <label class="competition__input-mark competition__input-mark--dark competition__input-mark--padding competition__input-mark--checkbox" for="selfie">Сделал селфи с акулой</label>
                   </p>
                   <p class="competition__item competition__item--checkbox competition__item--margin competition__item--last competition__item--order-fourth">
                     <input class="competition__input competition__input--checkbox visually-hidden" type="checkbox"
                     id="beach" name="beach" checked>
-                    <label class="competition__input-mark competition__input-mark--dark competition__input-mark--padding competition__item--order-fourth" for="beach">Обгорел на пляже</label>
+                    <label class="competition__input-mark competition__input-mark--dark competition__input-mark--padding competition__item--order-fourth competition__input-mark--checkbox" for="beach">Обгорел на пляже</label>
                   </p>
                 <p class="competition__item competition__item--checkbox competition__item--margin competition__item--order-second">
                   <input class="competition__input competition__input--checkbox visually-hidden" type="checkbox"
                   id="chuck-norris" name="chuck-norris">
-                  <label class="competition__input-mark competition__input-mark--dark competition__input-mark--padding" for="chuck-norris">Видел Чака Норриса</label>
+                  <label class="competition__input-mark competition__input-mark--dark competition__input-mark--padding competition__input-mark--checkbox" for="chuck-norris">Видел Чака Норриса</label>
                 </p>
                 <p class="competition__item competition__item--checkbox competition__item--margin competition__item--order-fifth">
                   <input class="competition__input competition__input--checkbox visually-hidden" type="checkbox"
                   id="souvenirs" name="souvenirs">
-                  <label class="competition__input-mark competition__input-mark--dark competition__input-mark--padding" for="souvenirs">Накупил сувениров</label>
+                  <label class="competition__input-mark competition__input-mark--dark competition__input-mark--padding competition__input-mark--checkbox" for="souvenirs">Накупил сувениров</label>
                 </p>
                 <p class="competition__item competition__item--checkbox competition__item--margin competition__item--order-third">
                   <input class="competition__input competition__input--checkbox visually-hidden" type="checkbox"
                   id="tower" name="tower" checked>
-                  <label class="competition__input-mark competition__input-mark--dark competition__input-mark--padding" for="tower">Удержал башню</label>
+                  <label class="competition__input-mark competition__input-mark--dark competition__input-mark--padding competition__input-mark--checkbox" for="tower">Удержал башню</label>
                 </p>
                 <p class="competition__item competition__item--checkbox competition__item--margin competition__item--order-sixth">
                   <input class="competition__input competition__input--checkbox visually-hidden" type="checkbox"
                   id="hotel" name="hotel">
-                  <label class="competition__input-mark competition__input-mark--dark competition__input-mark--padding" for="hotel">Разгромил отель</label>
+                  <label class="competition__input-mark competition__input-mark--dark competition__input-mark--padding competition__input-mark--checkbox" for="hotel">Разгромил отель</label>
                 </p>
             </div>
           </fieldset>
@@ -169,14 +169,13 @@
     </main>
     <footer class="main-footer main-footer--form">
       <div class="main-footer__container container">
-        <section class="main-footer__info main-footer__info--column">
+        <section class="main-footer__info main-footer__info--column main-footer__info--form">
           <h2 class="visually-hidden">Второстепенная информация</h2>
           <a class="main-footer__logo logo-link logo-link--blue main-footer__logo--center" href="index.html">
             <span class="visually-hidden">Главная</span>
             <picture>
-              <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-              <img class="contacts__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg" alt="Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+              <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+              <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Мобильное приложение «Pink»">
             </picture>
           </a>
           <section class="main-footer__social main-footer__social--center">
@@ -194,7 +193,7 @@
             </ul>
           </section>
           <div class="main-footer__copyright copyright copyright--small">
-            <p class="main-footer__copyright-author">
+            <p class="main-footer__copyright-author main-footer__copyright-author--margin">
               Разработано:
             </p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
