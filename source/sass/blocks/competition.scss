@@ -306,19 +306,17 @@
     border: none;
   }
   .competition__group-title {
+    position: static;
+    text-align: center;
+    padding: 0 25px;
     &--travel {
-      position: static;
-      width: 320px;
-      margin: 0 auto;
+      width: 380px;
     }
     &--hidden {
       display: block;
-      position: static;
     }
     &--achieves {
-      position: static;
-      width: 380px;
-      margin: 0 auto;
+      width: 440px;
     }
   }
   .competition__group-wrap {
