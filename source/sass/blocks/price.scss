@@ -103,12 +103,12 @@
   &::before {
     content: "";
     position: absolute;
-    top: 1px;
+    top: 4px;
     left: 9px;
-    width: 32px;
-    height: 33px;
-    background-image: url(../../img/icon-yes.svg);
-    background-size: 33px;
+    width: 31px;
+    height: 31px;
+    background-image: url("../../img/icon-yes.svg");
+    background-size: 31px;
     background-repeat: no-repeat;
   }
 }
@@ -124,7 +124,7 @@
     left: 3px;
     width: 26px;
     height: 26px;
-    background-image: url(../../img/icon-no.svg);
+    background-image: url("../../img/icon-no.svg");
   }
 }
 
@@ -207,8 +207,8 @@
     height: 31px;
     margin-right: 50%;
     &--check::before {
-      top: 3px;
-      left: 10px;
+      top: 6px;
+      left: 7px;
     }
   }
   .price__filter-no {
@@ -220,7 +220,12 @@
       left: 1px;
     }
   }
-  .price__toggles  {
+  .price__toggles {
+    &--hidden {
+      display: none;
+    }
+  }
+  .price__button  {
     &--hidden {
       display: none;
     }
@@ -230,6 +235,12 @@
 @media (min-width: $desktop-width) {
   .price {
     padding-bottom: 52px;
+    &::before {
+      top: -9px;
+      left: 0;
+      width: 100%;
+      height: 129px;
+    }
   }
   .price__list {
     margin-top: 56px;
@@ -272,8 +283,8 @@
   .price__filter-yes {
     margin-right: 55%;
     &--check::before {
-      top: 5px;
-      left: 12px;
+      top: 7px;
+      left: 14px;
     }
   }
   .price__filter-no {

@@ -43,13 +43,24 @@
 .main-nav__logo {
   display: block;
   margin-left: 19px;
-  padding-top: 36px;
-  padding-bottom: 18px;
+  padding-top: 18px;
 }
 
-.main-nav__logo-image {
+.main-nav__logo svg {
+  width: 147px;
+  height: 41px;
+}
+
+.main-nav__logo-name {
   width: 75px;
   height: 22px;
+}
+.main-nav__logo-glasses {
+  display: none;
+}
+
+.main-nav__logo-decor {
+  display: none;
 }
 
 .main-nav__toggle {
@@ -84,13 +95,18 @@
     width: 660px;
   }
   .main-nav__logo {
-    padding-top: 10px;
-    padding-bottom: 34px;
+    padding-top: 27px;
+    padding-bottom: 17px;
   }
-  .main-nav__logo-image {
+  .main-nav__logo svg {
     width: 147px;
-    height: 40px;
+    height: 41px;
+    margin-left: 74px;
   }
+  .main-nav__logo-glasses {
+    display: inline-block;
+  }
+
   .main-nav__toggle {
     top: 34px;
     right: 52px;

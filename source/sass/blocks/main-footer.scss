@@ -1,3 +1,4 @@
+
 .main-footer {
   padding-top: 48px;
   &--photo {
@@ -42,7 +43,7 @@
   margin: 0 auto;
   margin-bottom: 31px;
   &--center {
-    margin-bottom: 38px;
+    margin-bottom: 32px
   }
 }
 
@@ -56,7 +57,7 @@
 .main-footer__copyright-author {
   @include text-reset;
   &--margin {
-    margin-top: 5px;
+    margin-top: 14px;
   }
 }
 
@@ -106,10 +107,13 @@
   }
   .main-footer__copyright {
     margin: 0;
-    margin-top: 12px;
+    margin-top: 8px;
     &--small {
       width: 130px;
     }
+  }
+  .main-footer__copyright-author--form-margin {
+    margin-top: 10px;
   }
   .main-footer__copyright-link {
     margin-right: 0;
@@ -119,6 +123,9 @@
 @media (min-width: $desktop-width) {
   .main-footer {
     padding-top: 69px;
+    &--photo {
+      padding-top: 75px;
+    }
     &--form {
       padding-top: 27px;
     }
@@ -126,7 +133,10 @@
   .main-footer__info {
     width: 940px;
     margin: 0 auto;
-    padding: 46px 0;
+    padding: 39px 0;
+    &--padding {
+      padding: 45px 0;
+    }
   }
   .main-footer__social {
     width: 175px;

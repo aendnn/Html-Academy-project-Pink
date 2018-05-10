@@ -4,7 +4,7 @@ function init() {
 
   var mapOptions = {
     zoom: 18,
-    center: new google.maps.LatLng(59.93843330000001, 30.323323500000015),
+    center: new google.maps.LatLng(59.93972581776409, 30.324273001991287),
     styles:
     [
       {"featureType": "poi.business","elementType": "all","stylers":[{"visibility": "off"}]},{"featureType": "poi.park","elementType": "labels.text","stylers":[{"visibility": "off"}]}]
@@ -21,7 +21,7 @@ function init() {
     var marker = new google.maps.Marker({
       draggable: true,
       raiseOnDrag: false,
-      position: new google.maps.LatLng(59.93843330000001, 30.323323500000015),
+      position: new google.maps.LatLng(59.93972581776409, 30.324273001991287),
       icon: marker,
       map: map
     });

@@ -9,7 +9,7 @@
     top: 168px;
     left: 0;
     width: 320px;
-    height: 80px;
+    height: 89px;
     background-color: #f2f2f2;
     background-image: linear-gradient(176deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
     background-repeat: no-repeat;
@@ -172,9 +172,15 @@
     margin-bottom: 0;
     padding-bottom: 50px;
     background-color: #f2f2f2;
+    &::before {
+    top: 228px;
+    width: 100%;
+    background-image: linear-gradient(178deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
+    height: 248px;
+    }
   }
   .features__header {
-    width: 945px;
+    width: 940px;
     margin: 0 auto;
   }
   .features__title {
