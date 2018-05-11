@@ -172,11 +172,12 @@
       margin-top: 30px;
     }
     &--image {
+      width: 100%;
       height: 455px;
     }
     &--image::before {
       top: -75px;
-      width: 960px;
+      width: 100%;
       height: 172px;
       background-size: 940px auto;
     }
@@ -186,8 +187,8 @@
     }
   }
   #map {
-    top: 00px;
-    width: 960px;
+    top: 0;
+    width: 100%;
     height: 506px;
   }
   .contacts__offer {
