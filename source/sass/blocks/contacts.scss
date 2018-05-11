@@ -173,13 +173,13 @@
     }
     &--image {
       width: 100%;
-      height: 455px;
+      height: 494px;
     }
     &--image::before {
-      top: -75px;
+      top: -46px;
       width: 100%;
-      height: 172px;
-      background-size: 940px auto;
+      height: 189px;
+      background-size: 100%;
     }
     &--image::after {
       top: 54%;
@@ -189,12 +189,12 @@
   #map {
     top: 0;
     width: 100%;
-    height: 506px;
+    height: 584px;
   }
   .contacts__offer {
     margin-bottom: 23px;
   &--margin {
-    margin-bottom: 26px;
+    margin-bottom: 22px;
   }
  }
  .contacts__image {
