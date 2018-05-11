@@ -5,7 +5,7 @@
   background-color: #1d2631;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 268px;
+  background-position: 0 261px;
   @media (min-resolution: $retina-dpi),
    (min-resolution: $retina-dppx) {
     background-image: url("../../img/bg-back-mobile@2x.jpg");
@@ -42,5 +42,12 @@
     background-image: url("../../img/bg-back-desktop@2x.jpg");
     background-size: 2555px auto;
     }
+  }
+}
+
+@media (min-width: 940px) {
+  .page-header {
+    background-size: cover;
+    background-position: top center;
   }
 }

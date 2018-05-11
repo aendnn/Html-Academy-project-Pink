@@ -20,11 +20,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 320px;
-  margin: 0 auto;
   margin-bottom: 63px;
   padding-bottom: 50px;
   background-color: #ffffff;
+}
+
+.features__header-wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .features__intro {
@@ -117,10 +120,14 @@
   .features__header {
     display: flex;
     flex-direction: column;
-    width: 660px;
-    margin: 0 auto;
     margin-bottom: 37px;
   }
+
+  .features__header-wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+
   .features__list {
     margin-top: 34px;
   }
@@ -179,7 +186,7 @@
     height: 248px;
     }
   }
-  .features__header {
+  .features__header-wrapper {
     width: 940px;
     margin: 0 auto;
   }

@@ -1,1 +1,104 @@
+.logo-link {
+  display: block;
+  position: relative;
+  left: -51px;
+  top: 5px;
+  padding-bottom: 22.5px;
+}
 
+.logo-link__glasses {
+    opacity: 0;
+}
+
+.logo-link__point {
+  opacity: 0;
+}
+
+.logo-link__sparks {
+  opacity: 0;
+}
+
+.logo-link:hover .logo-link__pink--header,
+.logo-link:focus .logo-link__pink--header {
+  fill: $secondary-color;
+}
+
+.logo-link:active .logo-link__pink--header {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-link {
+    left: -50px;
+    top: 14px;
+    padding: 0;
+    padding-bottom: 48px;
+    &--blue {
+      left: 0;
+    }
+  }
+  .logo-link__pink--footer {
+    fill: $primary-color;
+  }
+  .logo-link__glasses--full {
+      opacity: 1;
+      fill: #ffffff;
+  }
+  .logo-link__glasses--full-pink {
+    fill: $secondary-color;
+  }
+  .logo-link--blue {
+    top: 3px;
+  }
+  .logo-link:hover .logo-link__glasses--full,
+  .logo-link:focus .logo-link__glasses--full {
+    fill: $secondary-color;
+  }
+  .logo-link:active .logo-link__glasses--full {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+  .logo-link:active .logo-link__pink--header {
+    opacity: 0;
+  }
+  .logo-link:hover .logo-link__pink--footer,
+  .logo-link:focus .logo-link__pink--footer {
+    fill: $secondary-color;
+  }
+  .logo-link:active .logo-link__pink--footer {
+    fill: $primary-color;
+    opacity: 0.3;
+  }
+  .logo-link:active .logo-link__glasses--full-pink {
+    fill: $secondary-color;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo-link {
+    left: -71px;
+    top: 21px;
+    padding: 0;
+    &--blue {
+      left: 0;
+    }
+  }
+  .logo-link__point {
+    opacity: 1;
+  }
+  .logo-link__pink-point--header {
+    opacity: 1;
+  }
+
+  .logo-link__sparks {
+    &--header {
+      opacity: 1;
+    }
+    &--footer {
+      opacity: 1;
+      fill: $primary-color;
+    }
+  }
+}

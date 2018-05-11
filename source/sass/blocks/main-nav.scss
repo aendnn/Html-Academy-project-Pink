@@ -40,27 +40,9 @@
   margin: 0 auto;
 }
 
-.main-nav__logo {
-  display: block;
-  margin-left: 19px;
-  padding-top: 18px;
-}
-
 .main-nav__logo svg {
   width: 147px;
   height: 41px;
-}
-
-.main-nav__logo-name {
-  width: 75px;
-  height: 22px;
-}
-.main-nav__logo-glasses {
-  display: none;
-}
-
-.main-nav__logo-decor {
-  display: none;
 }
 
 .main-nav__toggle {
@@ -94,19 +76,11 @@
   .main-nav__wrap {
     width: 660px;
   }
-  .main-nav__logo {
-    padding-top: 27px;
-    padding-bottom: 17px;
-  }
   .main-nav__logo svg {
     width: 147px;
     height: 41px;
-    margin-left: 74px;
+    margin-left: 70px;
   }
-  .main-nav__logo-glasses {
-    display: inline-block;
-  }
-
   .main-nav__toggle {
     top: 34px;
     right: 52px;
@@ -130,10 +104,5 @@
   }
   .main-nav__toggle {
     display: none;
-  }
-  .main-nav__logo {
-    width: 160px;
-    margin-left: 0;
-    padding-top: 24px;
   }
 }
