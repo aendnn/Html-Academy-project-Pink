@@ -14,7 +14,7 @@
   }
   &--image {
     position: relative;
-    width: 320px;
+    width: 100%;
     height: 203px;
     margin-bottom: 0;
     margin: 0 auto;
@@ -48,7 +48,7 @@
 #map {
   position: absolute;
   top: -10px;
-  width: 320px;
+  width: 100%;
   height: 310px;
 }
 
@@ -116,7 +116,7 @@
     }
     &--image::before {
       top: -17px;
-      width: 660px;
+      width: 100%;
       height: 99px;
       background-size: 660px auto;
     }
@@ -126,7 +126,7 @@
     }
   }
   #map {
-    width: 660px;
+    width: 100%;
     height: 476px;
   }
   .contacts__item:last-child {
