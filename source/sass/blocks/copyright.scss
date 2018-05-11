@@ -1,29 +1,37 @@
 .copyright {
   width: 150px;
   &--small {
-    width: 127px;
+    width: 132px;
   }
 }
 
 .copyright__author {
   width: 110px;
+  margin-right: 5px;
   line-height: 18px;
 }
 
-.copyright__img path {
+.copyright__image {
   fill: $secondary-color;
+  &:hover {
+    fill: $primary-color;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .copyright {
     display: flex;
   }
   .copyright__author {
-    margin-top: 6px;
-    margin-left: 5px;
+    margin-top: 14px;
+    margin-left: 3px;
   }
   .copyright__link {
-    margin-left: 15px;
+    display: block;
   }
 }
 

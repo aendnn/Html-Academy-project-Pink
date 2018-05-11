@@ -31,10 +31,13 @@
     height: 2px;
     background-color: #ffffff;
   }
-  &:hover {
+  &--no-border::before {
+    display: none;
+  }
+  &:hover:not(.site-nav__link--current) {
     color: $secondary-color;
   }
-  &:active {
+  &:active:not(.site-nav__link--current) {
     color: rgba(255, 255, 255, 0.3);
   }
 }

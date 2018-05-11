@@ -1,6 +1,6 @@
 .reviews {
-  margin-bottom: 87px;
-  padding-bottom: 45px;
+  margin-bottom: 25px;
+  padding-bottom: 33px;
 }
 
 .reviews__list {
@@ -39,12 +39,18 @@
   text-align: center;
 }
 
+.reviews__button {
+  &--hidden {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .reviews {
-    margin-bottom: 61px;
+    margin-bottom: 0;
   }
   .reviews__list {
-    margin-bottom: 2px;
+    margin-bottom: 0;
   }
   .reviews__author {
     margin: 0;
@@ -66,7 +72,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     position: relative;
-    margin-bottom: 105px;
+    margin-bottom: 0;
     padding-top: 121px;
   }
   .reviews__list {
@@ -74,9 +80,20 @@
     justify-content: center;
   }
   .reviews__text {
+    position: relative;
     width: 695px;
     margin: 0 auto;
     margin-bottom: 37px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -111px;
+      left: 311px;
+      width: 78px;
+      height: 63px;
+      background-image: url("../../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+    }
   }
   .reviews__author {
     font-size: 24px;
@@ -89,5 +106,41 @@
   }
   .reviews__toggles--hidden {
     display: none;
+  }
+  .reviews__button {
+    position: relative;
+    display: block;
+    &--prev::before {
+      content: "";
+      position: absolute;
+      top: -195px;
+      left: 0;
+      width: 21px;
+      height: 41px;
+      background-image: url("../../img/icon-review-arrow-left.svg");
+      background-repeat: no-repeat;
+      cursor: pointer;
+      opacity: 0.3;
+    }
+    &--next::after {
+      content: "";
+      position: absolute;
+      top: -195px;
+      right: 0;
+      width: 21px;
+      height: 41px;
+      background-image: url("../../img/icon-review-arrow-right.svg");
+      background-repeat: no-repeat;
+      cursor: pointer;
+      opacity: 0.3;
+    }
+    &--prev:hover::before,
+    &--next:hover::after {
+      opacity: 0.6;
+    }
+    &--prev:active::before,
+    &--next:active::after {
+      opacity: 0.1;
+    }
   }
 }

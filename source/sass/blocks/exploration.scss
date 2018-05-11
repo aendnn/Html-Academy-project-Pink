@@ -8,17 +8,32 @@
   position: relative;
   &::before {
     content: "24";
+    display: block;
     position: absolute;
-    top: 0;
-    left: 25px;
-    width: 253px;
-    height: 253px;
+    top: 16px;
+    left: 19px;
+    z-index: 5;
+    width: 204px;
+    height: 205px;
     font-size: 96px;
-    line-height: 149px;
+    line-height: 190px;
     font-weight: 700;
     text-align: center;
-    color: $secondary-color;
+    color: #d22856;
     background-image: url("../../img/icon-editor-diagram-fill.svg");
+    background-size: 202px;
+    background-repeat: no-repeat;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: -38px;
+    left: 0px;
+    width: 242px;
+    height: 345px;
+    background-image: url(../../img/icon-timer.svg);
+    background-size: 242px 276px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -73,6 +88,37 @@
     margin-bottom: 65px;
     padding-bottom: 112px;
     background-color: #f2f2f2;
+  }
+  .exploration__container {
+    &::before {
+      content: "24";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 21px;
+      width: 254px;
+      height: 256px;
+      font-size: 120px;
+      line-height: 233px;
+      font-weight: 700;
+      text-align: center;
+      color: #d22856;
+      background-image: url(../../img/icon-editor-diagram-fill.svg);
+      background-size: 253px auto;
+      background-repeat: no-repeat;
+      z-index: 5;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: -69px;
+      left: 0;
+      width: 300px;
+      height: 345px;
+      background-image: url("../../img/icon-timer.svg");
+      background-size: 300px;
+      background-repeat: no-repeat;
+    }
   }
   .exploration__wrapper {
     width: 540px;
