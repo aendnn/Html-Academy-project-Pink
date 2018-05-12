@@ -157,8 +157,8 @@
 .competition__input--checkbox:checked + .competition__input-mark::after {
   content: "";
   position: absolute;
-  top: 9px;
-  left: 9px;
+  top: 7px;
+  left: 7px;
   width: 22px;
   height: 16px;
   background-image: url("../../img/icon-yes-red.svg");
@@ -351,6 +351,9 @@
       width: 195px;
       margin-bottom: 28px;
     }
+    &--checkbox {
+      width: 300px;
+    }
     &--column {
       flex-direction: column;
       margin-bottom: 30px;
@@ -487,8 +490,8 @@
     }
   }
   .competition__group:first-child {
-    margin-right: 64px;
-    margin-top: 15px;
+    padding-right: 64px;
+    padding-top: 15px;
   }
   .competition__item {
     margin-bottom: 25px;
@@ -496,7 +499,7 @@
       margin-bottom: 54px;
     }
     &--radio {
-      width: 225px;
+      width: 215px;
       margin-bottom: 28px;
     }
     &--center {
@@ -560,7 +563,6 @@
     &--row {
     display: flex;
     flex-direction: row;
-    margin-left: 57px;
   }
   &--last {
     justify-content: space-between;
@@ -571,7 +573,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 57px;
+    padding-left: 57px;
   }
   &--top {
     padding-top: 34px;

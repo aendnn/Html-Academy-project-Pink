@@ -2,12 +2,25 @@
   display: block;
   position: relative;
   left: -51px;
-  top: 5px;
+  top: 7px;
   padding-bottom: 22.5px;
+  &--photo {
+    top: 18px;
+  }
+  &--form {
+    top: 19px;
+  }
+}
+
+.logo-link__pink--footer {
+  fill: $primary-color;
 }
 
 .logo-link__glasses {
     opacity: 0;
+    &--full-pink {
+      opacity: 1;
+    }
 }
 
 .logo-link__point {
@@ -28,9 +41,22 @@
   opacity: 0.3;
 }
 
+.logo-link:hover .logo-link__pink--footer,
+.logo-link:focus .logo-link__pink--footer {
+  fill: $secondary-color;
+}
+.logo-link:active .logo-link__pink--footer {
+  fill: $primary-color;
+  opacity: 0.3;
+}
+.logo-link:active .logo-link__glasses--full-pink {
+  fill: $secondary-color;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .logo-link {
-    left: -50px;
+    left: -49px;
     top: 14px;
     padding: 0;
     padding-bottom: 48px;

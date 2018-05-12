@@ -6,10 +6,11 @@
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 261px;
+  background-size: 100%;
   @media (min-resolution: $retina-dpi),
    (min-resolution: $retina-dppx) {
     background-image: url("../../img/bg-back-mobile@2x.jpg");
-    background-size: 1400px auto;
+    background-size: 700px auto;
     background-position: center 256px;
   }
 }
@@ -17,6 +18,14 @@
 .page-header__container {
   width: 100%;
   padding: 0;
+}
+
+@media (min-width: 321px) and (max-width: 559px) {
+  .page-header {
+    &--index {
+    background-size: 100% 46.4%;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -31,6 +40,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .page-header {
     margin-bottom: 68px;

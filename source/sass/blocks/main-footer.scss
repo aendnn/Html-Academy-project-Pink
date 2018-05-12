@@ -1,11 +1,10 @@
-
 .main-footer {
   padding-top: 48px;
   &--photo {
-    padding-top: 42px;
+    padding-top: 22px;
   }
   &--form {
-    padding-top: 44px;
+    padding-top: 35px;
   }
 }
 
@@ -30,6 +29,7 @@
 }
 
 .main-footer__logo {
+  left: 0;
   width: 147px;
   margin: 0 auto;
   margin-bottom: 31px;
@@ -43,7 +43,7 @@
   margin: 0 auto;
   margin-bottom: 31px;
   &--center {
-    margin-bottom: 32px
+    margin-bottom: 29px;
   }
 }
 
@@ -70,7 +70,7 @@
   .main-footer {
     padding-top: 48px;
     &--photo {
-      padding-top: 50px;
+    padding-top: 47px;
     }
   }
   .main-footer--padding-form {
@@ -124,10 +124,10 @@
   .main-footer {
     padding-top: 69px;
     &--photo {
-      padding-top: 75px;
+      padding-top: 69px;
     }
     &--form {
-      padding-top: 27px;
+      padding-top: 0;
     }
   }
   .main-footer__info {
@@ -142,8 +142,5 @@
     width: 175px;
     margin: 0 auto;
     margin-top: 6px;
-  }
-  .main-footer__copyright {
-    margin-left: 0;
   }
 }
