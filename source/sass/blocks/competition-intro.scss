@@ -1,5 +1,5 @@
 .competition-intro {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
   padding-top: 31px;
   padding-bottom: 53px;
@@ -15,7 +15,8 @@
 
 @media (min-width: $tablet-width) {
   .competition-intro {
-    width: 660px;
+    width: 620px;
+    margin: 0 auto;
     padding-bottom: 82px;
   }
   .competition-intro__title {

@@ -1,14 +1,6 @@
 .copyright {
-  width: 150px;
-  &--small {
-    width: 132px;
-  }
-}
-
-.copyright__author {
-  width: 110px;
-  margin-right: 5px;
-  line-height: 18px;
+  width: 130px;
+  margin: 0 auto;
 }
 
 .copyright__image {
@@ -24,24 +16,34 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
+    width: 140px;
     display: flex;
+    margin: 0;
   }
   .copyright__author {
-    margin-top: 14px;
-    margin-left: 3px;
+    margin-top: 11px;
+    padding: 0;
+    padding-left: 11px;
   }
   .copyright__link {
     display: block;
+    padding-left: 8px;
+    padding-top: 5px;
   }
+
 }
 
 @media (min-width: $desktop-width) {
   .copyright {
-    width: 155px;
+    width: 168px;
     font-size: 18px;
     line-height: 18px;
+    &--form {
+      margin: 0;
+      margin-left: auto;
+    }
   }
   .copyright__author {
-    margin-left: 0;
+    padding-left: 0;
   }
 }

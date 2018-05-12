@@ -147,6 +147,11 @@
   }
 }
 
+@media (min-width: 321px) and (max-width: $tablet-width) {
+  .promo-app {
+    background-position:top center;
+  }
+}
 
 @media (min-width: $desktop-width) {
     .promo-app__container {

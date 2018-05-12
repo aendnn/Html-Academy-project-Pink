@@ -20,6 +20,14 @@
   padding: 0;
 }
 
+@media (min-width: 321px) and (max-width: 559px) {
+  .page-header {
+    &--index {
+    background-size: 100% 46.4%;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     margin-bottom: 50px;
@@ -32,6 +40,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .page-header {
     margin-bottom: 68px;
