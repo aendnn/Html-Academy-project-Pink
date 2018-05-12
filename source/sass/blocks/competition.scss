@@ -157,8 +157,8 @@
 .competition__input--checkbox:checked + .competition__input-mark::after {
   content: "";
   position: absolute;
-  top: 7px;
-  left: 7px;
+  top: 9px;
+  left: 10px;
   width: 22px;
   height: 16px;
   background-image: url("../../img/icon-yes-red.svg");
@@ -413,7 +413,7 @@
     }
   }
   .competition__input {
-    padding: 14px 19px;
+    padding: 14px 21px;
     width: 525px;
     margin-left: auto;
     &--width {
@@ -426,6 +426,11 @@
     }
   }
 
+  .competition__input--checkbox:checked + .competition__input-mark::after {
+    top: 7px;
+    left: 8px;
+  }
+
   .competition__textarea {
     width: 499px;
     min-height: 195px;
@@ -434,9 +439,8 @@
     padding: 15px 19px;
   }
   .competition__require {
-    width: 183px;
-    margin-right: 0;
-    margin-top: 17px;
+    margin: 0;
+    margin-top: 15px;
     margin-left: auto;
   }
   .competition__require-text {
@@ -498,6 +502,9 @@
     &--text {
       margin-bottom: 54px;
     }
+    &--checkbox {
+      width: 260px;
+    }
     &--radio {
       width: 215px;
       margin-bottom: 28px;
@@ -507,6 +514,7 @@
     }
     &--center:first-child {
       margin-right: 70px;
+      margin-left: 57px;
     }
     &--column {
       margin-bottom: 0;
@@ -523,25 +531,25 @@
     }
     &--order-first {
       order: 1;
-      margin-right: 57px;
     }
     &--order-third {
       order: 3;
+      width: 210px;
     }
     &--order-second {
       order: 2;
-      margin-right: 54px;
+      padding-left: 7px;
     }
     &--order-fifth {
       order: 5;
-      margin-right: 63px;
+      padding-left: 8px;
     }
     &--order-fourth {
       order: 4;
-      margin-right: 48px;
     }
     &--order-sixth {
       order: 5;
+      width: 210px;
     }
     &--tel::before {
       right: 3px;
@@ -573,7 +581,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 57px;
+    justify-content: space-around;
+    width: 880px;
+    padding-left: 5px;
   }
   &--top {
     padding-top: 34px;
