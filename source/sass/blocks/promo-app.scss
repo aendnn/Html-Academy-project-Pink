@@ -1,13 +1,14 @@
 .promo-app {
   width: 100%;
   margin: 0 auto;
+  position: relative;
   background-image: url("../../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 1px;
+  background-position: 0 2px;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/iphone-hand-mobile@2x.png");
     background-size: 258px auto;
-  }
+    }
 }
 
 .promo-app__wrapper-text {
