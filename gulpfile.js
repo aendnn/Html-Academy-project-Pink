@@ -31,11 +31,10 @@ gulp.task("style", function() {
 });
 
 gulp.task("images", function() {
-  gulp.src("source/img/**/*.{png,jpg,svg}")
+  gulp.src("source/img/**/*.{png,jpg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
+      imagemin.jpegtran({progressive: true})
     ]))
     .pipe(gulp.dest("source/img"));
 });
@@ -47,7 +46,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/sprite/*.svg")
+  return gulp.src("source/img/sprite/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
