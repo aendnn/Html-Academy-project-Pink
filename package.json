@@ -1,9 +1,4 @@
 {
-  "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
-  ],
   "name": "pink",
   "version": "14.0.0",
   "private": true,
