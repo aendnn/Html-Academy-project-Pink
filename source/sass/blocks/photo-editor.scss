@@ -78,10 +78,6 @@
   margin-right: 35px;
 }
 
-.photo-editor__item:last-child {
-  margin-right: none;
-}
-
 .photo-editor__pic-wrap {
   width: 48px;
   height: 48px;
@@ -173,7 +169,7 @@
 
 @media (min-width: $tablet-width) {
   .photo-editor {
-    padding-bottom: 0;
+    padding-bottom: 10px;
   }
   .photo-editor__intro {
     padding-bottom: 68px;

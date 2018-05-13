@@ -2,9 +2,11 @@
   padding-top: 48px;
   &--photo {
     padding-top: 22px;
+    padding-bottom: 25px;
   }
   &--form {
     padding-top: 35px;
+    padding-bottom: 25px;
   }
 }
 
@@ -69,8 +71,12 @@
 @media (min-width: $tablet-width) {
   .main-footer {
     padding-top: 48px;
+    padding-bottom: 15px;
     &--photo {
-    padding-top: 47px;
+    padding-top: 36px;
+    }
+    &--form {
+      padding-bottom: 30px;
     }
   }
   .main-footer--padding-form {
