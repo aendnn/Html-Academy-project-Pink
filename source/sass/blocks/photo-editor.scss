@@ -7,7 +7,7 @@
     position: absolute;
     bottom: 200px;
     left: 0;
-    width: 320px;
+    width: 100%;
     height: 2px;
     background-color: #dddfe0;
   }
@@ -56,9 +56,9 @@
   line-height: 18px;
   &--post {
     margin-bottom: 13px;
-  color: $secondary-color;
-  border-color: $secondary-color;
-}
+    color: $secondary-color;
+    border-color: $secondary-color;
+  }
   &--cancel {
     color: transparentize($primary-color, 0.9);
     border-color: transparentize($primary-color, 0.9);
@@ -71,7 +71,7 @@
   width: 214px;
   @include list-reset;
   margin: 0 auto;
-  margin-bottom: 111px;
+  margin-bottom: 112px;
 }
 
 .photo-editor__item {
@@ -83,7 +83,8 @@
   height: 48px;
   margin-top: 3px;
   &--last {
-    padding-top: 5px;
+    padding-top: 6px;
+    padding-left: 4px;
   }
 }
 
@@ -100,9 +101,6 @@
     cursor: default;
   }
   &:hover:not(.photo-editor__filter--current) {
-    opacity: 0.3;
-  }
-  &:active:not(.photo-editor__filter--current) {
     opacity: 0.5;
   }
 }
@@ -246,7 +244,6 @@
     height: 24px;
     &--last {
       margin-top: 0;
-      margin-left: 5px;
     }
   }
   .photo-editor__range-filter {
@@ -268,17 +265,25 @@
       left: 26px;
     }
     &--contrast {
-      left: 91px;
+      left: 97px;
     }
   }
   .photo-editor__btn {
     width: 260px;
-    margin-left: 27px;
+    margin-left: 26px;
     margin-bottom: 26px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .photo-editor {
+    background: none;
+    padding: 0;
+  }
+  .photo-editor__container {
+    background-color: #f2f2f2;
+    padding-bottom: 18px;
+  }
   .photo-editor__img-wrap {
     margin-top: 55px;
     margin-left: 80px;
@@ -315,7 +320,7 @@
     margin-left: 45px;
     padding: 0;
     padding-top: 23px;
-    padding-bottom: 33px;
+    padding-bottom: 34px;
   }
   .photo-editor__toggle {
     &--crop {
@@ -323,10 +328,10 @@
     }
     &--fill {
       left: auto;
-      right: 29px;
+      right: 27px;
     }
     &--contrast {
-      left: 159px;
+      left: 161px;
     }
   }
   .photo-editor__btn-wrap {

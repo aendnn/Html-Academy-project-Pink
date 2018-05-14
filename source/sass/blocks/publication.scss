@@ -93,7 +93,7 @@
     left: 0;
     width: 13px;
     height: 12px;
-    background-image: url("../../img/icon-heart.svg");
+    background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
   }
 }
@@ -145,9 +145,9 @@
     &--width {
       width: 595px;
     }
-      &--margin {
-        margin-bottom: 34px;
-      }
+    &--margin {
+      margin-bottom: 34px;
+    }
   }
   .publication__author-wrap {
     display: flex;
@@ -200,7 +200,7 @@
     &--pub-day {
       width: 100%;
     }
-    }
+  }
   .publication__image {
     &--height {
       width: 100%;
@@ -217,7 +217,7 @@
     &--width {
       width: auto;
     }
-}
+  }
   .publication__likes-wrap {
     &--pub-day {
       top: 25px;
@@ -225,6 +225,6 @@
     }
   }
   .publication__like--pub-day::before {
-      top: -12px;
+    top: -12px;
   }
 }
