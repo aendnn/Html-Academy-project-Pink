@@ -11,7 +11,7 @@
       left: 0;
       width: 50px;
       height: 24px;
-      background-image: url("../../img/icon-menu-burger.svg");
+      background-image: url("../img/icon-menu-burger.svg");
     }
   }
   &--opened {
@@ -23,7 +23,7 @@
       left: 38px;
       width: 24px;
       height: 24px;
-      background-image: url("../../img/icon-menu-cross.svg");
+      background-image: url("../img/icon-menu-cross.svg");
     }
   }
   &--margin {
@@ -50,7 +50,6 @@
   position: absolute;
   top: 20px;
   right: 52px;
-  display: block;
   font: inherit;
   border: 0;
   background: none;

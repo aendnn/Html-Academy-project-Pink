@@ -16,7 +16,6 @@
     position: relative;
     width: 100%;
     height: 214px;
-    margin-bottom: 0;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -28,26 +27,19 @@
     z-index: 100;
     width: 100%;
     height: 61px;
-    background-image: url("../../img/bg-triangle-white-footer.svg");
+    background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-size: 595px auto;
     background-position: center;
-  }/*
-  &--image::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 44%;
-    width: 36px;
-    height: 36px;
-    background-image: url("../../img/icon-map-marker.svg");
-    background-repeat: no-repeat;
-  }*/
+  }
+}
+
+.contacts__map {
+  position: absolute;
+  top: -10px;
 }
 
 #map {
-  position: absolute;
-  top: -10px;
   width: 100%;
   height: 310px;
 }
@@ -111,14 +103,15 @@
     }
     &--image {
       width: 100%;
-      height: 375px;
+      height: 370px;
       margin-bottom: 0;
     }
     &--image::before {
-      top: -17px;
+      top: -33px;
       width: 100%;
       height: 99px;
-      background-size: 660px auto;
+      background-size: 100% auto;
+      background-position: bottom center;
     }
     &--image::after {
       top: 49%;
@@ -176,30 +169,33 @@
       height: 494px;
     }
     &--image::before {
-      top: -46px;
+      top: -92px;
       width: 100%;
       height: 189px;
       background-size: 100%;
+      background-position: bottom center;
     }
     &--image::after {
       top: 54%;
       left: 48%;
     }
   }
-  #map {
+  .contacts__map {
     top: 0;
+  }
+  #map {
     width: 100%;
     height: 584px;
   }
   .contacts__offer {
     margin-bottom: 23px;
-  &--margin {
-    margin-bottom: 22px;
+    &--margin {
+      margin-bottom: 22px;
+    }
   }
- }
  .contacts__image {
-   top: -259px;
-   width: 960px;
-   height: 926px;
- }
+    top: -259px;
+    width: 960px;
+    height: 926px;
+  }
 }
