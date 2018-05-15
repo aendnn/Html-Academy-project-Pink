@@ -80,8 +80,11 @@
     left: 69px;
   }
   &--static {
-    position: static;
+    position: relative;
     margin-bottom: 16px;
+    text-align: left;
+    top: -1px;
+    left: 69px;
   }
 }
 
