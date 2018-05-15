@@ -1,7 +1,5 @@
 .price {
-
   overflow: hidden;
-
   padding-bottom: 43px;
   background-color: #f2f2f2;
 }
@@ -22,7 +20,7 @@
   }
 }
 
-.table__wrapper {
+.price__table-wrap {
   padding-top: 15px;
 }
 
@@ -149,7 +147,7 @@
       height: 66px;
     }
   }
-  .table__wrapper {
+  .price__table-wrap {
     padding-top: 9px;
   }
   .price__list {
