@@ -1,28 +1,29 @@
 .features {
-  position: relative;
   display: block;
   margin-bottom: 43px;
   background-color: #f2f2f2;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 168px;
-    left: 0;
-    width: 100%;
-    height: 89px;
-    background-color: #f2f2f2;
-    background-image: linear-gradient(176deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
-    background-repeat: no-repeat;
-  }
+
 }
 
 .features__header {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 63px;
   padding-bottom: 50px;
   background-color: #ffffff;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 146px;
+    left: 0;
+    width: 100%;
+    height: 89px;
+    background-color: #f2f2f2;
+    background-image: linear-gradient(176deg, #ffffff 0%, #ffffff 50%, #f2f2f2 50%, #f2f2f2 100%);
+    background-repeat: no-repeat;
+  }
 }
 
 .features__header-wrapper {
@@ -108,19 +109,18 @@
     justify-content: flex-end;
   }
   .features {
-    position: relative;
     margin-bottom: 49px;
     padding-bottom: 40px;
-    &::before {
-      top: 186px;
-      width: 100%;
-      background-image: linear-gradient(178deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
-    }
   }
   .features__header {
     display: flex;
     flex-direction: column;
     margin-bottom: 37px;
+    &::before {
+      top: 171px;
+      width: 100%;
+      background-image: linear-gradient(176deg, #ffffff 0%, #ffffff 50%, #f2f2f2 50%, #f2f2f2 100%);
+    }
   }
   .features__header-wrapper {
     width: 620px;
@@ -177,11 +177,13 @@
     margin-bottom: 0;
     padding-bottom: 50px;
     background-color: #f2f2f2;
+  }
+  .features__header {
     &::before {
-      top: 228px;
+      top: 229px;
       width: 100%;
-      background-image: linear-gradient(178deg, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
-      height: 248px;
+      background-image: linear-gradient(176deg,#fff 0%,#fff 50%,#f2f2f2 50%,#f2f2f2 100%);
+      height: 152px;
     }
   }
   .features__header-wrapper {

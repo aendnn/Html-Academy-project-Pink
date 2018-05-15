@@ -598,6 +598,12 @@
       padding-top: 34px;
     }
   }
+  .competition__group-title {
+    position: static;
+    &--travel {
+      left: auto;
+    }
+  }
   .competition__input {
     width: 340px;
     margin-left: 17px;

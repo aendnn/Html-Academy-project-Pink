@@ -1,5 +1,5 @@
 .reviews {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   padding-bottom: 33px;
 }
 
@@ -48,6 +48,7 @@
 @media (min-width: $tablet-width) {
   .reviews {
     margin-bottom: 0;
+    padding-bottom: 17px;
   }
   .reviews__list {
     margin-bottom: 0;
