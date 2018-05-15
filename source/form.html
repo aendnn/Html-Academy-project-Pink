@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="form-page">
     <svg style="display:none">
@@ -64,7 +64,9 @@
         </header>
         <form class="competition__form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="competition__group competition__group--margin">
-            <legend class="visually-hidden">ФИО</legend>
+            <legend class="visually-hidden">
+              <span class="competition__legend">ФИО</span>
+            </legend>
             <div class="competition__group-wrap competition__group-wrap--text competition__group-wrap--padding">
               <p class="competition__item competition__item--text">
                 <input class="competition__input competition__input--text-field" type="text"
@@ -84,7 +86,11 @@
             </div>
           </fieldset>
           <fieldset class="competition__group competition__group--bg competition__group--fourth">
-            <legend class="competition__group-title competition__group-title--travel">С каким приложением путешествовали?</legend>
+            <legend class="competition__group-title competition__group-title--travel">
+              <span class="competition__legend competition__legend--travel">
+                С каким приложением путешествовали?
+              </span>
+            </legend>
             <div class="competition__group-wrap competition__group-wrap--margin competition__group-wrap--padding">
               <p class="competition__item competition__item--radio">
                 <input class="competition__input competition__input--radio visually-hidden" type="radio"
@@ -104,7 +110,9 @@
             </div>
           </fieldset>
           <fieldset class="competition__group competition__group--third">
-            <legend class="competition__group-title competition__group-title--hidden">Контактная информация</legend>
+            <legend class="competition__group-title competition__group-title--hidden">
+              <span class="competition__legend competition__legend--contacts">Контактная информация</span>
+            </legend>
             <div class="competition__group-wrap competition__group-wrap--text competition__group-wrap--row competition__group-wrap--top">
               <p class="competition__item competition__item--center competition__item--text competition__item--column competition__item--tel">
                 <input class="competition__input competition__input--text-field competition__input--contacts" type="tel"
@@ -119,7 +127,9 @@
             </div>
           </fieldset>
           <fieldset class="competition__group competition__group--bg competition__group--second">
-            <legend class="competition__group-title competition__group-title--achieves">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="competition__group-title competition__group-title--achieves">
+              <span class="competition__legend competition__legend--achieves">Ваши безбашенные достижения в путешествии</span>
+            </legend>
             <div class="competition__group-wrap competition__group-wrap--margin competition__group-wrap--padding competition__group-wrap--checkbox">
               <p class="competition__item competition__item--checkbox competition__item--margin competition__item--order-first">
                 <input class="competition__input competition__input--checkbox visually-hidden" type="checkbox"
@@ -154,7 +164,9 @@
             </div>
           </fieldset>
           <fieldset class="competition__group competition__group--fifth">
-            <legend class="competition__group-title competition__group-title--static competition__group-title--emotions">Опишите свои эмоции</legend>
+            <legend class="competition__group-title competition__group-title--static competition__group-title--emotions">
+              <span class="competition__legend competition__legend--emotions">Опишите свои эмоции</span>
+            </legend>
             <div class="competition__group-wrap competition__group-wrap--padding">
               <p class="competition__item competition__item--text">
                 <label class="visually-hidden" for="emotions">Напишите, что чувствуете</label>
