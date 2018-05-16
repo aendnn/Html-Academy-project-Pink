@@ -2,6 +2,7 @@
   position: relative;
   margin-bottom: 108px;
   background-color: rgba(0, 0, 0, 0.3);
+
   &--closed {
     .main-nav__toggle::before {
       display: none;
@@ -14,6 +15,7 @@
       background-image: url("../img/icon-menu-burger.svg");
     }
   }
+
   &--opened {
     .main-nav__toggle::after {
       display: none;
@@ -26,6 +28,7 @@
       background-image: url("../img/icon-menu-cross.svg");
     }
   }
+
   &--margin {
     margin-bottom: 0;
   }
@@ -60,6 +63,7 @@
   .main-nav--closed .site-nav__item {
     display: none;
   }
+
   .main-nav--no-js .main-nav__toggle {
     display: none;
   }
@@ -68,18 +72,22 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     margin-bottom: 71px;
+
     &--margin {
       margin-bottom: 41px;
     }
   }
+
   .main-nav__wrap {
     width: 100%;
   }
+
   .main-nav__logo svg {
     width: 147px;
     height: 41px;
     margin-left: 70px;
   }
+
   .main-nav__toggle {
     top: 34px;
     right: 52px;
@@ -89,18 +97,22 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     margin-bottom: 93px;
+
     &--margin {
       margin-bottom: 40px;
     }
   }
+
   .main-nav--opened .main-nav__wrap {
     background: none;
   }
+
   .main-nav__wrap {
     display: flex;
     width: 940px;
     margin: 0 auto;
   }
+
   .main-nav__toggle {
     display: none;
   }

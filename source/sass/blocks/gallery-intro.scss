@@ -7,6 +7,7 @@
 
 .gallery-intro__title {
   width: 175px;
+
   @include text-reset;
   margin: 0 auto;
   font-size: 24px;
@@ -20,6 +21,7 @@
     width: 620px;
     padding-bottom: 141px;
   }
+
   .gallery-intro__title {
     width: 360px;
     margin: 0 auto;

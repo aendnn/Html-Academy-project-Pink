@@ -2,6 +2,7 @@
   &--reviews {
     display: none;
   }
+
   &--reviews-block {
     display: block;
   }
@@ -12,6 +13,7 @@
   justify-content: center;
   align-items: center;
   width: 60px;
+
   @include text-reset;
   margin: 0 auto;
 }
@@ -24,6 +26,7 @@
   height: 6px;
   background-color: #bec2c7;
   border-radius: 50%;
+
   &--current {
     width: 11px;
     height: 10px;
@@ -31,13 +34,16 @@
     background-color: #ffffff;
     border: 3px solid #2d3b49;
   }
+
   &--margin {
     margin-right: 17px;
   }
+
   &:not(.slider__toggle--current):hover,
   &:not(.slider__toggle--current):hover {
     background-color: #7e868f;
   }
+
   &:not(.slider__toggle--current):active {
     background-color: rgba(40, 54, 69, 0.1);
   }

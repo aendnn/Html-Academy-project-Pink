@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="photo-page">
@@ -77,6 +80,9 @@
               <a class="publication__photo-full" href="full-size.html">
                 <span class="visually-hidden">Увиличить изображение</span>
                 <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
                   <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
                   <img class="publication__image publication__image--height" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Вид с моста для банджи-джампинга">
@@ -111,6 +117,9 @@
               <a class="publication__photo-full" href="full-size.html">
                 <span class="visually-hidden">Увиличить изображение</span>
                 <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
                   <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
                   <img class="publication__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото машины">
@@ -140,6 +149,9 @@
               <a class="publication__photo-full" href="full-size.html">
                 <span class="visually-hidden">Увиличить изображение</span>
                 <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
                   <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
                   <img class="publication__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабаны">
@@ -167,6 +179,9 @@
                 <a class="publication__photo-full" href="full-size.html">
                   <span class="visually-hidden">Увиличить изображение</span>
                   <picture>
+                    <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
                     <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                     <img class="publication__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Вид из окна">
@@ -194,6 +209,9 @@
                   <a class="publication__photo-full" href="full-size.html">
                   <span class="visually-hidden">Увиличить изображение</span>
                   <picture>
+                    <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
                     <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
                     <img class="publication__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Рынок Кубанская Бахча">
@@ -221,6 +239,9 @@
                   <a class="publication__photo-full" href="full-size.html">
                   <span class="visually-hidden">Увиличить изображение</span>
                   <picture>
+                    <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
                     <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
                     <img class="publication__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото ног на фоне гор">
@@ -248,6 +269,9 @@
                 <a class="publication__photo-full" href="full-size.html">
                   <span class="visually-hidden">Увиличить изображение</span>
                   <picture>
+                    <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
                     <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
                     <img class="publication__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Вид с окна самолета">
@@ -285,6 +309,9 @@
           <div class="photo-editor__container container">
             <div class="photo-editor__img-wrap">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
                 <img class="photo-editor__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото заснеженной дороги">
@@ -295,39 +322,39 @@
               <li class="photo-editor__item">
                 <span class="visually-hidden">Обрезка</span>
                   <div class="photo-editor__pic-wrap">
-                    <svg class="photo-editor__filter photo-editor__filter--current" width="48" height="48">
+                    <svg class="photo-editor__filter photo-editor__filter--current" width="48" height="48" tabindex="0">
                       <use xlink:href="#crop"></use>
                     </svg>
                   </div>
                   <div class="photo-editor__range-filter">
                     <div class="photo-editor__bar">
-                      <div class="photo-editor__toggle photo-editor__toggle--crop"></div>
+                      <div class="photo-editor__toggle photo-editor__toggle--crop" tabindex="0"></div>
                       </div>
                     </div>
                   </li>
                 <li class="photo-editor__item">
                   <span class="visually-hidden">Заливка</span>
                   <div class="photo-editor__pic-wrap">
-                    <svg class="photo-editor__filter" width="48" height="48">
+                    <svg class="photo-editor__filter" width="48" height="48" tabindex="0">
                       <use xlink:href="#fill"></use>
                     </svg>
                   </div>
                   <div class="photo-editor__range-filter photo-editor__range-filter--hidden">
                     <div class="photo-editor__bar">
-                      <div class="photo-editor__toggle photo-editor__toggle--fill"></div>
+                      <div class="photo-editor__toggle photo-editor__toggle--fill" tabindex="0"></div>
                     </div>
                   </div>
                 </li>
                 <li class="photo-editor__item">
                   <span class="visually-hidden">Контраст</span>
                   <div class="photo-editor__pic-wrap photo-editor__pic-wrap--last">
-                    <svg class="photo-editor__filter" width="48" height="48">
+                    <svg class="photo-editor__filter" width="48" height="48" tabindex="0">
                       <use xlink:href="#contrast"></use>
                     </svg>
                   </div>
                   <div class="photo-editor__range-filter photo-editor__range-filter--hidden">
                     <div class="photo-editor__bar">
-                      <div class="photo-editor__toggle photo-editor__toggle--contrast"></div>
+                      <div class="photo-editor__toggle photo-editor__toggle--contrast" tabindex="0"></div>
                     </div>
                   </div>
                 </li>

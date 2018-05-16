@@ -1,9 +1,11 @@
 .main-footer {
   padding-top: 48px;
+
   &--photo {
     padding-top: 33px;
     padding-bottom: 25px;
   }
+
   &--form {
     padding-top: 48px;
     padding-bottom: 35px;
@@ -20,9 +22,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   &--hidden {
     display: none;
   }
+
   &--column {
     display: flex;
     flex-direction: column;
@@ -35,6 +39,7 @@
   width: 147px;
   margin: 0 auto;
   margin-bottom: 19px;
+
   &--center {
     margin-top: 12px;
     margin-bottom: 32px;
@@ -44,6 +49,7 @@
 .main-footer__social {
   margin: 0 auto;
   margin-bottom: 31px;
+
   &--center {
     margin-bottom: 38px;
   }
@@ -52,12 +58,14 @@
 .main-footer__copyright {
   display: flex;
   justify-content: space-between;
+
   @include text-reset;
   margin: 0 auto;
 }
 
 .main-footer__copyright-author {
   @include text-reset;
+
   &--margin {
     margin-top: 6px;
   }
@@ -72,16 +80,20 @@
   .main-footer {
     padding-top: 48px;
     padding-bottom: 15px;
+
     &--photo {
       padding-top: 36px;
     }
+
     &--form {
       padding-bottom: 30px;
     }
   }
+
   .main-footer--padding-form {
     padding-top: 41px;
   }
+
   .main-footer__info {
     display: flex;
     flex-direction: row;
@@ -90,40 +102,50 @@
     margin: 0 auto;
     padding-top: 36px;
     padding-bottom: 10px;
+
     &--padding {
       padding: 0;
     }
+
     &--form {
       padding: 36px 0;
     }
   }
+
   .main-footer__logo {
     width: 150px;
     margin: 0;
     padding: 0;
   }
+
   .main-footer__logo-image {
     width: 150px;
   }
+
   .main-footer__social {
     width: 200px;
     margin-top: 5px;
     margin-bottom: 0;
   }
+
   .main-footer__social-list {
     width: 180px;
     margin: 0 auto;
   }
+
   .main-footer__copyright {
     margin: 0;
     margin-top: 10px;
+
     &--small {
       width: 130px;
     }
   }
+
   .main-footer__copyright-author--form-margin {
     margin-top: 10px;
   }
+
   .main-footer__copyright-link {
     margin-right: 0;
   }
@@ -132,26 +154,32 @@
 @media (min-width: $desktop-width) {
   .main-footer {
     padding-top: 69px;
+
     &--photo {
       padding-top: 69px;
     }
+
     &--form {
       padding-top: 0;
       padding-bottom: 10px;
     }
   }
+
   .main-footer__info {
     width: 940px;
     margin: 0 auto;
     padding: 68px 0;
+
     &--padding {
       padding: 28px 0;
     }
   }
+
   .main-footer__social {
     width: 175px;
     margin: 0 auto;
     margin-top: 6px;
+
     &--form {
       margin: 0;
       margin-left: 231px;
