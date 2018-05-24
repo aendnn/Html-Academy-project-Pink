@@ -137,11 +137,14 @@
         <div class="reviews__container container">
           <div class="reviews__wrapper slider">
             <h2 class="visually-hidden">Отзывы наших пользователей</h2>
-            <input class="reviews__input slider__input visually-hidden" type="radio" id="slide-1" name="input" checked>
-            <input class="reviews__input slider__input visually-hidden" type="radio" id="slide-2" name="input">
-            <input class="reviews__input slider__input visually-hidden" type="radio" id="slide-3" name="input">
+            <input class="reviews__input slider__input visually-hidden" type="radio" id="review-1" name="review" checked>
+            <input class="reviews__input slider__input visually-hidden" type="radio" id="review-2" name="review">
+            <input class="reviews__input slider__input visually-hidden" type="radio" id="review-3" name="review">
+            <span id="target-item-1"></span>
+            <span id="target-item-2"></span>
+            <span id="target-item-3"></span>
             <ul class="reviews__list slider__list">
-              <li class="reviews__item slider__item slider__item--reviews slider__item--reviews-block">
+              <li class="reviews__item slider__item slider__item--reviews slider__item--reviews-block" id="#target-">
                 <blockquote class="reviews__review">
                   <cite class="reviews__author">
                     Николай Петров
@@ -152,6 +155,12 @@
                     А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                   </p>
                 </blockquote>
+                <a class="reviews__button reviews__button--prev reviews__button--hidden" href="#target-item-3">
+                  <span class="visually-hidden">Предыдущий отзыв</span>
+                </a>
+                <a class="reviews__button reviews__button--next reviews__button--hidden" href="#target-item-2">
+                  <span class="visually-hidden">Следующий отзыв</span>
+                </a>
               </li>
               <li class="reviews__item slider__item slider__item--reviews">
                 <blockquote class="reviews__review">
@@ -164,6 +173,12 @@
                     А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                   </p>
                 </blockquote>
+                <a class="reviews__button reviews__button--prev reviews__button--hidden" href="#target-item-1">
+                  <span class="visually-hidden">Предыдущий отзыв</span>
+                </a>
+                <a class="reviews__button reviews__button--next reviews__button--hidden" href="#target-item-3">
+                  <span class="visually-hidden">Следующий отзыв</span>
+                </a>
               </li>
               <li class="reviews__item slider__item slider__item--reviews">
                 <blockquote class="reviews__review">
@@ -176,22 +191,22 @@
                     А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                   </p>
                 </blockquote>
+                <a class="reviews__button reviews__button--prev reviews__button--hidden" href="#target-item-2">
+                  <span class="visually-hidden">Предыдущий отзыв</span>
+                </a>
+                <a class="reviews__button reviews__button--next reviews__button--hidden" href="#target-item-1">
+                  <span class="visually-hidden">Следующий отзыв</span>
+                </a>
               </li>
             </ul>
-            <span class="reviews__button reviews__button--prev reviews__button--hidden" tabindex="0">
-              <span class="visually-hidden">Предыдущий отзыв</span>
-            </span>
-            <span class="reviews__button reviews__button--next reviews__button--hidden" tabindex="0">
-                <span class="visually-hidden">Следующий отзыв</span>
-            </span>
             <p class="reviews__toggles slider__toggles slider__toggles--hidden">
-              <label class="reviews__toggle slider__toggle slider__toggle--current" for="slide-1">
+              <label class="reviews__toggle slider__toggle slider__toggle--current" for="review-1">
                 <span class="visually-hidden">Первый отзыв</span>
               </label>
-              <label class="reviews__toggle slider__toggle" for="slide-2">
+              <label class="reviews__toggle slider__toggle" for="review-2">
                 <span class="visually-hidden">Второй отзыв</span>
               </label>
-              <label class="reviews__toggle slider__toggle" for="slide-3">
+              <label class="reviews__toggle slider__toggle" for="review-3">
                 <span class="visually-hidden">Третий отзыв</span>
               </label>
             </p>
@@ -206,7 +221,7 @@
             <input class="price__input slider__input visually-hidden" type="radio" id="price-slide-1" name="input">
             <input class="price__input slider__input visually-hidden" type="radio" id="price-slide-2" name="input" checked>
             <input class="price__input slider__input visually-hidden" type="radio" id="price-slide-3" name="input">
-            <table class="price__list">
+            <table class="price__list slider__list">
               <thead>
                 <tr>
                   <td class="price__header price__header--hidden">
