@@ -1,14 +1,14 @@
-.slider__item {
-  &--reviews {
-    display: none;
-  }
+.slider {
+  position: relative;
+}
 
-  &--reviews-block {
-    display: block;
-  }
+.slider__list {
+  position: relative;
 }
 
 .slider__toggles {
+  position: absolute;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,21 +20,13 @@
 
 .slider__toggle {
   position: relative;
-  margin-right: 20px;
+  margin-right: 17px;
   font-size: 0;
   width: 6px;
   height: 6px;
   background-color: #bec2c7;
+  border: 3px solid transparent;
   border-radius: 50%;
-
-  &--current {
-    width: 11px;
-    height: 10px;
-    margin-right: 17px;
-    background-color: #ffffff;
-    border: 3px solid #2d3b49;
-  }
-
   &--margin {
     margin-right: 17px;
   }
@@ -51,6 +43,27 @@
 
 .slider__toggle:last-child {
   margin-right: 0;
+}
+
+.slider__input:first-of-type:checked ~ .slider__toggles .slider__toggle:first-child {
+  width: 12px;
+  height: 12px;
+  border-color: $primary-color;
+  background-color: transparent;
+}
+
+.slider__input:nth-of-type(2):checked ~ .slider__toggles .slider__toggle:nth-child(2) {
+  width: 12px;
+  height: 12px;
+  border-color: $primary-color;
+  background-color: transparent;
+}
+
+.slider__input:last-of-type:checked ~ .slider__toggles .slider__toggle:last-child {
+  width: 12px;
+  height: 12px;
+  border-color: $primary-color;
+  background-color: transparent;
 }
 
 @media (min-width: $desktop-width) {
