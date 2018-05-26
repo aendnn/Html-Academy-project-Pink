@@ -72,13 +72,13 @@
             </legend>
             <div class="competition__group-wrap competition__group-wrap--text competition__group-wrap--padding">
               <p class="competition__item competition__item--text">
-                <input class="competition__input competition__input--text-field" type="text"
-                id="surname" name="surname" placeholder="Укажите фамилию *" required>
+                <input class="competition__input competition__input--text-field competition__input--required" type="text"
+                id="surname" name="surname" placeholder="Укажите фамилию *">
                 <label class="competition__input-mark competition__input-mark--text" for="surname">Фамилия:</label>
               </p>
               <p class="competition__item competition__item--text">
-                <input class="competition__input competition__input--text-field competition__input--width" type="text"
-                id="name" name="name" placeholder="Введите ваше имя *" required>
+                <input class="competition__input competition__input--text-field competition__input--width competition__input--required" type="text"
+                id="name" name="name" placeholder="Введите ваше имя *">
                 <label class="competition__input-mark competition__input-mark--text" for="name">Имя:</label>
               </p>
               <p class="competition__item competition__item--text">
@@ -123,8 +123,8 @@
                 <label class="competition__input-mark competition__input-mark--text competition__input-mark--order" for="phone">Номер телефона</label>
               </p>
               <p class="competition__item competition__item--center competition__item--text competition__item--column competition__item--email">
-                <input class="competition__input competition__input--text-field competition__input--contacts" type="email"
-                id="email" name="email" placeholder="Введите почту *" required>
+                <input class="competition__input competition__input--text-field competition__input--contacts competition__input--required" type="email"
+                id="email" name="email" placeholder="Введите почту *">
                 <label class="competition__input-mark competition__input-mark--text competition__input-mark--order" for="phone">Адрес почты</label>
               </p>
             </div>
@@ -231,13 +231,13 @@
         </section>
       </div>
     </footer>
-    <section class="modal modal--hidden modal--error">
+    <section class="modal modal--error">
       <div class="modal__container  container">
         <h2 class="modal__message modal__message--error">Что-то пошло не так!</h2>
         <p class="modal__instructions modal__instructions--error">
           Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
-        <button class="modal__button competition-button" type="button">OK</button>
+        <button class="modal__button modal__button--error competition-button" type="button">OK</button>
       </div>
     </section>
     <section class="modal modal--success">
@@ -252,6 +252,7 @@
         <button class="modal__button modal__button--success competition-button competition-button--width" type="button">ЗАКРЫТЬ ОКНО</button>
       </div>
     </section>
+    <script src="js/popups.js"></script>
     <script src="js/picturefill.js">
     </script>
   </body>

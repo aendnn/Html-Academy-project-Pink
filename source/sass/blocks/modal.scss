@@ -1,4 +1,5 @@
 .modal {
+  display: none;
   position: fixed;
   z-index: 10;
   left: 50%;
@@ -17,10 +18,10 @@
     bottom: 105px;
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   }
+}
 
-  &--hidden {
-    display: none;
-  }
+.modal--show {
+  display: block;
 }
 
 .modal__container {
