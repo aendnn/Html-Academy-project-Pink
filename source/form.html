@@ -16,9 +16,20 @@
           <path d="M13.62.017L13.472 0 0 1.412v24.66l13.472 8.018 13.43-7.99.042-.026V1.412L13.62.017zm11.4 12.11L13.494 5.334V5.23l-.088.05-.088-.056v.11L1.924 12.117v-8.97l11.547-1.213L25.02 3.147v8.98zm-11.615-5.34L24.923 13.5l-4.48 2.64-7.092-4.22-.012 1.414 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.032-1.787-.012 1.413 1.852 1.092-1.8 1.08-11.356-6.75 11.37-6.835zm-11.48 8.34l11.41 6.79.016 1.045-7.94-4.728-.015 1.416 7.98 4.796.016 1.076-7.97-4.74-.014 1.414 8.02 4.82.046.027 8.143-4.872v-1.267l-.01-.148v-3.76l3.414-2.037v10.02L13.47 31.85 1.925 24.98v-9.853z"></path>
           </svg>
       </symbol>
+      <symbol id="toggle-burger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="49.945" height="24.007">
+          <path d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z"/>
+          <path d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z"/>
+        </svg>
+      </symbol>
+      <symbol id="toggle-cross">
+        <svg xmlns="http://www.w3.org/2000/svg" width="23.867" height="23.867">
+          <path d="M15.087 11.933l8.56-8.559a.75.75 0 0 0 0-1.061L21.554.22a.747.747 0 0 0-1.06 0l-8.561 8.56L3.373.22a.771.771 0 0 0-1.061 0L.22 2.313a.75.75 0 0 0 0 1.061l8.56 8.559-8.56 8.559a.751.751 0 0 0 0 1.062l2.093 2.094a.744.744 0 0 0 1.06 0l8.561-8.56 8.56 8.56a.746.746 0 0 0 1.06 0l2.093-2.094a.751.751 0 0 0 0-1.062l-8.56-8.559z"/>
+        </svg>
+      </symbol>
     </svg>
-    <header class="page-header">
-      <nav class="main-nav main-nav--opened main-nav--no-js main-nav--margin main-nav--bottom">
+    <header class="page-header page-header--form">
+      <nav class="main-nav main-nav--margin main-nav--bottom">
         <div class="main-nav__wrap">
           <a class="main-nav__logo logo-link" href="index.html">
             <svg class="logo-link__image logo-link__image--header" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
@@ -30,10 +41,7 @@
               <path class="logo-link__sparks logo-link__sparks--header" fill="#D22856" d="M50.686 16.125c-2.485 0-4.5-2.014-4.5-4.5 0 2.486-2.013 4.5-4.498 4.5 2.485 0 4.5 2.014 4.5 4.5 0-2.486 2.012-4.5 4.498-4.5zM37.904 19.626c-1.52 0-2.75-1.23-2.75-2.75 0 1.52-1.23 2.75-2.748 2.75 1.52 0 2.75 1.23 2.75 2.75 0-1.52 1.23-2.75 2.748-2.75zM10.734 34.072c-1.52 0-2.75-1.23-2.75-2.75 0 1.52-1.23 2.75-2.748 2.75 1.52 0 2.75 1.23 2.75 2.748 0-1.517 1.23-2.748 2.748-2.748z"/>
             </svg>
           </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Меню</span>
-          </button>
-          <ul class="main-nav__list site-nav">
+          <ul class="main-nav__list site-nav site-nav--closed site-nav--no-js">
             <li class="site-nav__item">
               <a class="site-nav__link" href="index.html">Главная</a>
             </li>
@@ -47,6 +55,12 @@
               <a class="site-nav__link site-nav__link--border-dark" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
+          <button class="main-nav__toggle" type="button">
+            <svg class="main-nav__toggle-img">
+              <use class="main-nav__burger" xlink:href="#toggle-burger"></use>
+              <use class="main-nav__cross" xlink:href="#toggle-cross"></use>
+            </svg>
+          </button>
         </div>
       </nav>
       <div class="page-header__competition-intro competition-intro">
@@ -252,6 +266,8 @@
         <button class="modal__button modal__button--success competition-button competition-button--width" type="button">ЗАКРЫТЬ ОКНО</button>
       </div>
     </section>
+    <script src ="js/menu.js">
+    </script>
     <script src="js/popups.js"></script>
     <script src="js/picturefill.js">
     </script>
