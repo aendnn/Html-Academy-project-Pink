@@ -1,34 +1,41 @@
 {
-  "name": "pink",
+  "name": "interior",
   "version": "14.0.0",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "8.3.x",
     "browser-sync": "2.23.x",
     "del": "^3.0.0",
+    "editorconfig-cli": "^0.2.1",
     "gulp": "^3.9.1",
     "gulp-csso": "^3.0.1",
-    "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^1.2.2",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "4.0.x",
+    "gulp-svgo": "^1.5.4",
     "gulp-svgstore": "^6.1.1",
+    "gulp-tinypng": "^1.0.2",
+    "gulp-tinypng-compress": "^1.2.1",
+    "gulp-uglify": "^3.0.1",
     "gulp-webp": "^3.0.0",
     "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.1",
-    "stylelint": "9.2.x",
+    "stylelint": "^9.5.0",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "clean": "gulp clean",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "images": "gulp images",
+    "sprite": "gulp-svgstore",
+    "svgmin": "gulp svgmin",
+    "imagemin": "gulp images",
+    "webp": "gulp webp",
     "start": "npm run build && gulp serve"
   },
   "browserslist": [
@@ -48,6 +55,10 @@
     "node": "8.11"
   },
   "dependencies": {
-    "node-sass": "^4.9.0"
+    "gulp-htmlmin": "^4.0.0",
+    "hoek": "^5.0.4",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.9.3",
+    "popper.js": "^1.14.4"
   }
 }
