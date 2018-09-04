@@ -20,7 +20,7 @@ var del = require("del");
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
-  gulp.src("source/sass/global/style.scss")
+  gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
@@ -44,7 +44,7 @@ gulp.task("imagemin", function() {
 });
 
 gulp.task("webp", function() {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("source/img/*.{png,jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/img"));
 });
@@ -91,7 +91,8 @@ gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**/*.{png,jpg,svg}",
-    "source/js/**/*.js"
+    "source/js/**/*.js",
+    "source/favicon.ico"
   ], {
     base: "source"
   })

@@ -45,9 +45,9 @@
 
 @media (min-width: 321px) and (max-width: 659px) {
   .page-header {
-    background-size: 100%;
+    background-size: cover;
     background-position: top center;
-    
+
     &::before {
       top: 177px;
       left: 19%;
